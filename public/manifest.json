@@ -1,0 +1,25 @@
+{
+  "short_name": "Angelita Doria",
+  "name": "Angelita Doria illustra",
+  "icons": [
+    {
+      "src": "blu_p.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "blu_p.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "_logo.png",
+      "type": "image/png",
+      "sizes": "843x390"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
