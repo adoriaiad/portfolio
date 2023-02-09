@@ -8,23 +8,48 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import * as React from 'react';
 
-interface HeaderProps {
-  sections: ReadonlyArray<{
+export interface HeaderProps {
+  sections: Array<{
     title: string;
     url: string;
   }>;
   title: string;
 }
 
+const enum GoToEnum {
+  mail = 'mail',
+  fb = 'facebook',
+  ig = 'instagram',
+  tw = 'twitter'
+}
+
 export default function Header(props: HeaderProps) {
   const { sections, title } = props;
+
+  const goTo: {[key: string]: () => void} = {
+    mail: () => {
+      window.open('mailto:info@angelitadoria.com');
+    },
+    facebook: () => {
+      window.open('https://www.facebook.com/angelitadoriaillustra/', '_blank');
+      window.focus();
+    },
+    instagram: () => {
+      window.open('https://www.instagram.com/angelita.doria/', '_blank');
+      window.focus();
+    },
+    twitter: () => {
+      window.open('https://twitter.com/art_lita', '_blank');
+      window.focus();
+    }
+  }
 
   return (
     <React.Fragment>
       <Toolbar sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <Typography
           component="h2"
-          variant="h5"
+          variant="h4"
           color="inherit"
           align="center"
           noWrap
@@ -32,16 +57,16 @@ export default function Header(props: HeaderProps) {
         >
           {title}
         </Typography>
-        <IconButton>
+        <IconButton onClick={goTo[GoToEnum.mail]}>
           <MailOutlineIcon />
         </IconButton>
-        <IconButton>
+        <IconButton onClick={goTo[GoToEnum.fb]}>
           <FacebookIcon />
         </IconButton>
-        <IconButton>
+        <IconButton onClick={goTo[GoToEnum.ig]}>
           <InstagramIcon />
         </IconButton>
-        <IconButton>
+        <IconButton onClick={goTo[GoToEnum.tw]}>
           <TwitterIcon />
         </IconButton>
       </Toolbar>
@@ -55,7 +80,8 @@ export default function Header(props: HeaderProps) {
             color="inherit"
             noWrap
             key={section.title}
-            variant="body2"
+            variant="overline"
+            underline='hover'
             href={section.url}
             sx={{ p: 1, flexShrink: 0 }}
           >

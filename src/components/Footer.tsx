@@ -7,12 +7,9 @@ import Link from '@mui/material/Link';
 function Copyright() {
   return (
     <Typography variant="body2" color="text.secondary" align="center">
-      {'Copyright © '}
-      <Link color="inherit" href="https://www.angelitadoria.com/protezionedati">
+      <Link color="inherit" href="/data">
         Protezione dei dati
       </Link>{' '}
-      {new Date().getFullYear()}
-      {'.'}
     </Typography>
   );
 }
