@@ -47,3 +47,11 @@
   align-items: center;
   margin: 10px;
 }
+
+.PortfolioPaper {
+  height: 95%;
+  width: 95%;
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}

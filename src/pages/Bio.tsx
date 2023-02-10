@@ -11,25 +11,34 @@ function Bio() {
           <img src={lita} alt="logo" width={"90%"} style={{ margin: "20px" }} />
         </Grid>
         <Grid item xs={12} md={9}>
+          <Typography variant="h4" color="text.secondary"
+            align="justify" style={{ marginLeft: "60px" }}>
+            Chi sono
+          </Typography>
           <Typography
             variant="body1"
             color="text.secondary"
             align="justify"
             style={{ margin: "60px" }}
           >
-            Angelita Doria è nata e cresciuta in Italia.
-            Ha conseguito studi scientifici e si è laureata in Biologia,
-            ma ha sviluppato interesse per l'informatica e
-            lavora da sempre in questo ambito.
-            Nel corso degli anni ha frequentato un corso
-            di illustrazione naturalistica ad acquerello e ha studiato da autodidatta
+            Che io ricordi ho sempre disegnato, fin da piccola.
+            Riempivo fogli e fogli di disegni, copiavo i miei personaggi
+            preferiti o ne creavo nuovi, frutto della mia fantasia.<br />
+            Non ho mai smesso, anche se nella vita ho fatto tutt'altro
+            conseguendo studi scientifici e lavorando in campo informatico.
+            Ho sempre amato il disegno a matita e carboncino, ritraendo chiunque mi
+            capitasse a tiro e ho sperimentato spesso con la pittura e i pastelli.<br/>
+            Nel corso degli anni ho frequentato un corso
+            di illustrazione naturalistica ad acquerello e ho studiato da autodidatta
             le tecniche della pittura e del disegno soprattutto della figura umana.
-            Appassionata al disegno e all'illustrazione fin da bambina, curiosa,
-            sensibile alla natura e alla sua bellezza. Attualmente
-            interessata al campo dell'illustrazione per bambini ha in corso un
-            progetto che spera diventi il primo di tanti altri. Ama la musica e
-            suona a livello amatoriale il sassofono, l'armonica blues, l'ukulele
-            e frequenta la scuola di pianoforte moderno.
+            Da sempre curiosa, desiderosa di imparare e di migliorare sempre,
+            sensibile alla natura e alla sua bellezza. <br />
+            Da pochi anni ho scoperto il disegno digitale sperimentando e cercando sempre
+            soluzioni nuove per migliorare e rendere le mie illustrazioni coerenti al mio stile.
+            Attualmente interessata all'illustrazione per bambini ho in corso un
+            progetto che spero diventi il primo di tanti altri.<br /> 
+            Comunicare con l'illustrazione, esprimere la mia creatività attraverso quest'arte,
+            concretizzare quello che è sempre stato un sogno nel cassetto: questa è la mia mission.
           </Typography>
         </Grid>
       </Grid>

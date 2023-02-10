@@ -36,11 +36,15 @@ function Gallery() {
       alt: "volpe",
     },
   ];
+  function showPicture(imageUrl: string){
+
+  }
+  
   return (
     <Container>
       <Grid container spacing={2} style={{display: 'flex', justifyContent: 'space-evenly'}}>
       {gallery.map(item =>
-      <Paper elevation={4} square className="Paper">
+      <Paper elevation={4} square className="Paper" onClick={() => {showPicture(item.src)}}>
         <img src={item.src} alt={item.alt} width={"90%"} style={{ margin: "20px" }} />
       </Paper>
       )}
