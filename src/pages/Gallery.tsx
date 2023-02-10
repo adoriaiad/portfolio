@@ -7,6 +7,7 @@ import bimba from "./../assets/img/bimba.png";
 import dino from "./../assets/img/dino.png";
 import palloncini from "./../assets/img/palloncini.png";
 import volpe from "./../assets/img/volpe.png";
+import { Grid } from "@mui/material";
 
 function Gallery() {
   const gallery = [
@@ -36,12 +37,14 @@ function Gallery() {
     },
   ];
   return (
-    <Container style={{display: 'flex', flexDirection: 'column'}}>
+    <Container>
+      <Grid container spacing={2} style={{display: 'flex', justifyContent: 'space-evenly'}}>
       {gallery.map(item =>
-      <Paper elevation={6} square className="Paper">
+      <Paper elevation={4} square className="Paper">
         <img src={item.src} alt={item.alt} width={"90%"} style={{ margin: "20px" }} />
       </Paper>
       )}
+      </Grid>
     </Container>
   );
 }
