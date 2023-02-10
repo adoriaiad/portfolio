@@ -16,7 +16,7 @@ function MainLayout() {
     <>
       <CssBaseline />
       <Header sections={sections} title={""} />
-      <div style={{marginTop:'40px'}}><Outlet /></div>
+      <div style={{marginTop:'10px'}}><Outlet /></div>
       <Footer description="" title='' />
     </>
   );
