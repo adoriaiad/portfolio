@@ -23,7 +23,7 @@ const routes: RouteObject = {
       element: <Bio />,
     },
     {
-      path: "/portfolio",
+      path: "/progetti",
       element: <Portfolio />,
     },
     {

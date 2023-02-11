@@ -23,12 +23,12 @@ function Bio() {
           >
             Che io ricordi ho sempre disegnato, fin da piccola.
             Riempivo fogli e fogli di disegni, copiavo i miei personaggi
-            preferiti o ne creavo nuovi, frutto della mia fantasia.<br />
-            Non ho mai smesso, anche se nella vita ho fatto tutt'altro
-            conseguendo studi scientifici e lavorando in campo informatico.
+            preferiti o ne creavo nuovi.<br />
+            Non ho mai smesso, anche se nella vita ho fatto tutt'altro:
+            studi scientifici e lavoro in campo informatico.
             Ho sempre amato il disegno a matita e carboncino, ritraendo chiunque mi
             capitasse a tiro e ho sperimentato spesso con la pittura e i pastelli.<br/>
-            Nel corso degli anni ho frequentato un corso
+            Durante gli studi universitari ho frequentato un corso
             di illustrazione naturalistica ad acquerello e ho studiato da autodidatta
             le tecniche della pittura e del disegno soprattutto della figura umana.
             Da sempre curiosa, desiderosa di imparare e di migliorare sempre,

@@ -7,7 +7,7 @@ import Header from "../../components/Header";
 function MainLayout() {
   const sections = [
     { title: "Home", url: "/" },
-    { title: "Portfolio", url: "/portfolio" },
+    { title: "Progetti", url: "/progetti" },
     { title: "Gallery", url: "/gallery" },
     { title: "Bio", url: "/bio" },
 ];
