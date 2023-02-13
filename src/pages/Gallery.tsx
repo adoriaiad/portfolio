@@ -1,15 +1,14 @@
-import Container from "@mui/material/Container";
+import { Button, Grid } from "@mui/material";
 import Paper from "@mui/material/Paper";
-import React, { useState } from "react";
-import gatto from "./../assets/img/gatto.png";
-import neve from "./../assets/img/neve.png";
+import isEmpty from "lodash.isempty";
+import { useState } from "react";
+import ImageView from "../components/ImageView";
 import bimba from "./../assets/img/bimba.png";
 import dino from "./../assets/img/dino.png";
+import gatto from "./../assets/img/gatto.png";
+import neve from "./../assets/img/neve.png";
 import palloncini from "./../assets/img/palloncini.png";
 import volpe from "./../assets/img/volpe.png";
-import { Button, Grid } from "@mui/material";
-import isEmpty from "lodash.isempty";
-import ImageView from "../components/ImageView";
 
 type GalleryItem = {
   src: string;
@@ -53,7 +52,7 @@ function Gallery() {
   }
 
   return (
-    <Container>
+    
       <Grid
         container
         spacing={2}
@@ -81,7 +80,7 @@ function Gallery() {
           <ImageView src={selected.src} closeHandler={closePicture} />
         )}
       </Grid>
-    </Container>
+    
   );
 }
 

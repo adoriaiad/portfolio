@@ -1,11 +1,10 @@
-import { Container, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
 import Grid from "@mui/material/Grid";
-import React from "react";
 import lita from "./../assets/img/lita_p.png";
 
 function Bio() {
   return (
-    <Container>
+   
       <Grid container spacing={0} className="App-header">
         <Grid item xs={8} md={3}>
           <img src={lita} alt="logo" width={"90%"} style={{ margin: "20px" }} />
@@ -42,7 +41,7 @@ function Bio() {
           </Typography>
         </Grid>
       </Grid>
-    </Container>
+   
   );
 }
 

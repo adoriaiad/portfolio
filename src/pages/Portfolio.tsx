@@ -1,7 +1,5 @@
-import Container from "@mui/material/Container";
-import Paper from "@mui/material/Paper";
-import React from 'react';
 import { Grid } from "@mui/material";
+import Paper from "@mui/material/Paper";
 import portfolio1 from "./../assets/img/portfolio01.png";
 import portfolio2 from "./../assets/img/portfolio02.png";
 import portfolio3 from "./../assets/img/portfolio03.png";
@@ -24,7 +22,7 @@ function Portfolio() {
       },
     ];
   return (
-    <Container>
+   
       <Grid container spacing={2} style={{display: 'flex', justifyContent: 'space-evenly'}}>
       {gallery.map(item =>
       <Paper elevation={4} square className="PortfolioPaper">
@@ -32,7 +30,7 @@ function Portfolio() {
       </Paper>
       )}
       </Grid>
-    </Container>
+  
   )
 }
 
