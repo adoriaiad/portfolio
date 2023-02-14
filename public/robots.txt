@@ -1,3 +1,9 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+Disallow: /gallery/
+Disallow: /progetti/
+Disallow: /contact/
+Disallow: /data/
+
+User-agent: Googlebot
+Disallow: /*.png$
