@@ -1,8 +1,8 @@
 import { Grid } from "@mui/material";
 import Paper from "@mui/material/Paper";
-import portfolio1 from "./../assets/img/portfolio01.png";
-import portfolio2 from "./../assets/img/portfolio02.png";
-import portfolio3 from "./../assets/img/portfolio03.png";
+import portfolio1 from "./../assets/img/portfolio01.avif";
+import portfolio2 from "./../assets/img/portfolio02.avif";
+import portfolio3 from "./../assets/img/portfolio03.avif";
 
 
 function Portfolio() {

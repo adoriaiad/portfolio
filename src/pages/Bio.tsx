@@ -1,6 +1,6 @@
 import { Typography } from "@mui/material";
 import Grid from "@mui/material/Grid";
-import lita from "./../assets/img/lita_p.png";
+import lita from "./../assets/img/lita_p.avif";
 
 function Bio() {
   return (

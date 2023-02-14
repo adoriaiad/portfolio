@@ -7,7 +7,7 @@ import Link from '@mui/material/Link';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import * as React from 'react';
-import logo from './../assets/img/_logo.png';
+import logo from './../assets/img/_logo.avif';
 
 export interface HeaderProps {
   sections: Array<{
