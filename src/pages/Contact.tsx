@@ -114,8 +114,9 @@ function Contact() {
                 fullWidth
                 type="submit"
                 endIcon={<EmailOutlinedIcon />}
+                className={'Contact-button'}
               >
-                INVIA
+                INVIA MODULO
               </Button>
             </>
           )}
