@@ -5,16 +5,11 @@ import MenuItem from "@mui/material/MenuItem";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 import { useNavigate } from "react-router-dom";
 import { ListItemIcon, Typography } from "@mui/material";
+import { MenuItemType } from "../models/type";
 
-interface MenuProps {
-  sections: Array<MenuItemType>;
+type MenuProps = {
+  sections: MenuItemType[];
 }
-
-type MenuItemType = {
-  title: string;
-  url: string;
-  icon: JSX.Element;
-};
 
 const ITEM_HEIGHT = 48;
 

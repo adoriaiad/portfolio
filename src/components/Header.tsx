@@ -3,20 +3,17 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import IconButton from '@mui/material/IconButton';
-import Link from '@mui/material/Link';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
+import useMediaQuery from '@mui/material/useMediaQuery';
 import * as React from 'react';
+import { MenuItemType } from '../models/type';
 import logo from './../assets/img/_logo.png';
 import Menu from './Menu';
-import useMediaQuery from '@mui/material/useMediaQuery';
+import ColorTabs from './Tabs';
 
 export interface HeaderProps {
-  sections: Array<{
-    title: string;
-    url: string;
-    icon: JSX.Element;
-  }>;
+  sections: Array<MenuItemType>;
   title: string;
 }
 
@@ -86,19 +83,7 @@ export default function Header(props: HeaderProps) {
         sx={{ justifyContent: 'center', overflowX: 'auto'}}
         className={'Menu-header'}
       >
-        {sections.map((section, index) => (
-          <Link
-            color="inherit"
-            noWrap
-            key={index}
-            variant="overline"
-            underline='hover'
-            href={section.url}
-            sx={{ p: 1, flexShrink: 0 }}
-          >
-            {section.title}
-          </Link>
-        ))}
+       <ColorTabs sections={sections} />
       </Toolbar>}
     </React.Fragment>
   );

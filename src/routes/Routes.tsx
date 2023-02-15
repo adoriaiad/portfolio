@@ -1,6 +1,5 @@
 import { RouteObject, useRoutes } from "react-router-dom";
 import MainLayout from "../layouts/main/MainLayout";
-
 import Bio from "../pages/Bio";
 import Contact from "../pages/Contact";
 import DataProtection from "../pages/DataProtection";

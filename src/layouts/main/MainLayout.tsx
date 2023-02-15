@@ -8,9 +8,10 @@ import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import MenuBookOutlinedIcon from '@mui/icons-material/MenuBookOutlined';
 import CollectionsOutlinedIcon from '@mui/icons-material/CollectionsOutlined';
 import PermIdentityOutlinedIcon from '@mui/icons-material/PermIdentityOutlined';
+import { MenuItemType } from "../../models/type";
 
 function MainLayout() {
-  const sections = [
+  const sections: MenuItemType[] = [
     { title: "Home", url: "/", icon: <HomeOutlinedIcon /> },
     { title: "Progetti", url: "/progetti", icon: <MenuBookOutlinedIcon /> },
     { title: "Gallery", url: "/gallery", icon: <CollectionsOutlinedIcon /> },
