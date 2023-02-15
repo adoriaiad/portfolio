@@ -8,11 +8,14 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import * as React from 'react';
 import logo from './../assets/img/_logo.avif';
+import Menu from './Menu';
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 export interface HeaderProps {
   sections: Array<{
     title: string;
     url: string;
+    icon: JSX.Element;
   }>;
   title: string;
 }
@@ -45,6 +48,8 @@ export default function Header(props: HeaderProps) {
     }
   }
 
+  const matches = useMediaQuery('(max-width:600px)');
+
   return (
     <React.Fragment>
       <Toolbar sx={{ borderBottom: 1, borderColor: 'divider' }}>
@@ -74,27 +79,27 @@ export default function Header(props: HeaderProps) {
       <Toolbar sx={{ justifyContent: 'center', overflowX: 'auto' }} className={'App-header'}>
       <img src={logo} alt="logo" height={'200px'}/>
       </Toolbar>
-      <Toolbar
+      {matches && <Menu sections={sections}/>}
+      {!matches && <Toolbar
         component="nav"
         variant="dense"
         sx={{ justifyContent: 'center', overflowX: 'auto'}}
-        className={'App-header'}
-        style={{flexDirection: 'row'}}
+        className={'Menu-header'}
       >
-        {sections.map((section) => (
+        {sections.map((section, index) => (
           <Link
             color="inherit"
             noWrap
-            key={section.title}
+            key={index}
             variant="overline"
             underline='hover'
             href={section.url}
-            sx={{ p: 2, flexShrink: 0 }}
+            sx={{ p: 1, flexShrink: 0 }}
           >
             {section.title}
           </Link>
         ))}
-      </Toolbar>
+      </Toolbar>}
     </React.Fragment>
   );
 }

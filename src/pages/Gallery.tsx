@@ -72,12 +72,13 @@ function Gallery() {
                   alt={item.alt}
                   width={"90%"}
                   style={{ margin: "20px" }}
+                  key={index}
                 />
               </Button>
             </Paper>
           ))}
         {selected && (
-          <ImageView src={selected.src} closeHandler={closePicture} />
+          <ImageView src={selected.src} closeHandler={closePicture}/>
         )}
       </Grid>
     

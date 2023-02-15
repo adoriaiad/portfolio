@@ -7,14 +7,29 @@
   pointer-events: none;
 }
 
+.Menu-header {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: row;
+  align-items: top;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #332d2d;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
 
+@media screen and (max-width: 600px) {
+  .Menu-header {
+    flex-direction: column;
+  }
+}
+
 .App-header {
-  min-height: 60vh;
   display: flex;
   flex-direction: column;
   align-items: top;

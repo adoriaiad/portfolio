@@ -24,9 +24,9 @@ function Portfolio() {
   return (
    
       <Grid container spacing={2} style={{display: 'flex', justifyContent: 'space-evenly'}}>
-      {gallery.map(item =>
-      <Paper elevation={4} square className="PortfolioPaper">
-        <img src={item.src} alt={item.alt} width={"90%"} style={{ margin: "20px" }} />
+      {gallery.map((item, index) =>
+      <Paper elevation={4} square className="PortfolioPaper" key={index}>
+        <img src={item.src} alt={item.alt} width={"90%"} style={{ margin: "20px" }} key={index} />
       </Paper>
       )}
       </Grid>
