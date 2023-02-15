@@ -3,12 +3,12 @@ import Paper from "@mui/material/Paper";
 import isEmpty from "lodash.isempty";
 import { useState } from "react";
 import ImageView from "../components/ImageView";
-import bimba from "./../assets/img/bimba.avif";
-import dino from "./../assets/img/dino.avif";
-import gatto from "./../assets/img/gatto.avif";
-import neve from "./../assets/img/neve.avif";
-import palloncini from "./../assets/img/palloncini.avif";
-import volpe from "./../assets/img/volpe.avif";
+import bimba from "./../assets/img/bimba.png";
+import dino from "./../assets/img/dino.png";
+import gatto from "./../assets/img/gatto.png";
+import neve from "./../assets/img/neve.png";
+import palloncini from "./../assets/img/palloncini.png";
+import volpe from "./../assets/img/volpe.png";
 
 type GalleryItem = {
   src: string;
