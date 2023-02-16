@@ -1,10 +1,10 @@
-import CssBaseline from '@mui/material/CssBaseline';
+import CssBaseline from "@mui/material/CssBaseline";
 import {
   createTheme,
   Theme,
   ThemeProvider as ThemeProviderMUI,
-} from '@mui/material/styles';
-import React, { useContext, useEffect, useMemo, useState } from 'react';
+} from "@mui/material/styles";
+import React, { useContext, useEffect, useMemo, useState } from "react";
 
 type AppThemeProps = { toggleColorMode: () => void };
 
@@ -14,17 +14,17 @@ export function useAppTheme() {
   return useContext(AppTheme);
 }
 
-const PORTFOLIO_THEME_MODE = 'gregorio_theme_mode';
+const PORTFOLIO_THEME_MODE = "gregorio_theme_mode";
 
-const AppThemeProvider: React.FC<{ children: React.ReactNode }> = props => {
-  const [mode, setMode] = useState<Theme['palette']['mode']>(
-    (localStorage.getItem(PORTFOLIO_THEME_MODE) as Theme['palette']['mode']) ||
-      'light'
+const AppThemeProvider: React.FC<{ children: React.ReactNode }> = (props) => {
+  const [mode, setMode] = useState<Theme["palette"]["mode"]>(
+    (localStorage.getItem(PORTFOLIO_THEME_MODE) as Theme["palette"]["mode"]) ||
+      "light"
   );
   const colorMode = useMemo(
     () => ({
       toggleColorMode: () => {
-        setMode(prevMode => (prevMode === 'light' ? 'dark' : 'light'));
+        setMode((prevMode) => (prevMode === "light" ? "dark" : "light"));
       },
     }),
     []
@@ -37,35 +37,35 @@ const AppThemeProvider: React.FC<{ children: React.ReactNode }> = props => {
   const theme = useMemo(
     () =>
       createTheme({
-        ...(mode === 'light' && {
+        ...(mode === "light" && {
           palette: {
             mode,
             primary: {
-              main: '#332d2d',
-              light: '#5B5757',
-              dark: '#231F1F',
-              contrastText: '#FFFFFF'
+              main: "#332d2d",
+              light: "#5B5757",
+              dark: "#231F1F",
+              contrastText: "#FFFFFF",
             },
             secondary: {
-              main: '#a2918f',
-              light: '#B4A7A5',
-              dark: '#716564',
-              contrastText: '#FFFFFF'
+              main: "#a2918f",
+              light: "#B4A7A5",
+              dark: "#716564",
+              contrastText: "#FFFFFF",
             },
             background: {
-              default: '#FAFAFA',
-              paper: '#fff',
+              default: "#FAFAFA",
+              paper: "#fff",
             },
             text: {
-              primary: 'rgba(0, 0, 0, 0.87)',
-              secondary: 'rgba(0, 0, 0, 0.54)',
+              primary: "rgba(0, 0, 0, 0.87)",
+              secondary: "rgba(0, 0, 0, 0.54)",
             },
             error: {
-                main: '#F44336',
+              main: "#F44336",
             },
             warning: {
-                main: '#ff9800'
-            }
+              main: "#ff9800",
+            },
           },
         }),
       }),

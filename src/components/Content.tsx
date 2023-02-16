@@ -1,15 +1,13 @@
-import React from 'react'
+import React from "react";
 
 type ContentProps = {
-    children: JSX.Element;
-}
+  children: JSX.Element;
+};
 
 function Content(props: ContentProps) {
-    const {children} = props;
+  const { children } = props;
 
-  return (
-    <div>{children}</div>
-  )
+  return <div>{children}</div>;
 }
 
-export default Content
+export default Content;

@@ -9,7 +9,7 @@ import { MenuItemType } from "../models/type";
 
 type MenuProps = {
   sections: MenuItemType[];
-}
+};
 
 const ITEM_HEIGHT = 48;
 
@@ -56,10 +56,14 @@ export default function LongMenu(props: MenuProps) {
       >
         {sections.map((item, index) => (
           <MenuItem key={`menuitem-${index}`} onClick={() => handleClose(item)}>
-            <ListItemIcon key={`listitem-${index}`}>
-            {item.icon}
-            </ListItemIcon>
-            <Typography variant="body2" color={'text.secondary'} key={`label-${index}`}>{item.title}</Typography>
+            <ListItemIcon key={`listitem-${index}`}>{item.icon}</ListItemIcon>
+            <Typography
+              variant="body2"
+              color={"text.secondary"}
+              key={`label-${index}`}
+            >
+              {item.title}
+            </Typography>
           </MenuItem>
         ))}
       </Menu>

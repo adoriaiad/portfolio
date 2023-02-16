@@ -1,11 +1,4 @@
-import {
-  Box,
-  Button,
-  Grid,
-  Paper,
-  TextField,
-  Typography,
-} from "@mui/material";
+import { Box, Button, Grid, Paper, TextField, Typography } from "@mui/material";
 import React, { useState } from "react";
 import { useFormik } from "formik";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
@@ -44,7 +37,11 @@ function Contact() {
   function onSubmitSendEmail(values: ContactTypeForm) {
     emailjs
       .send("service_bkcem08", "template_4j6tu9d", values, "9Ay7yWcbRks3S8h5Z")
-      .then((res) => setResponse('Il messaggio è stato inviato correttamente. Vi ricontatterò al più presto, grazie!'))
+      .then((res) =>
+        setResponse(
+          "Il messaggio è stato inviato correttamente. Vi ricontatterò al più presto, grazie!"
+        )
+      )
       .catch((err) => setResponse(err));
   }
 
@@ -114,7 +111,7 @@ function Contact() {
                 fullWidth
                 type="submit"
                 endIcon={<EmailOutlinedIcon />}
-                className={'Contact-button'}
+                className={"Contact-button"}
               >
                 INVIA MODULO
               </Button>

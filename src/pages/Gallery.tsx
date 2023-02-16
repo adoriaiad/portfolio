@@ -52,36 +52,32 @@ function Gallery() {
   }
 
   return (
-    
-      <Grid
-        container
-        spacing={2}
-        style={{ display: "flex", justifyContent: "space-evenly" }}
-      >
-        {isEmpty(selected) &&
-          gallery.map((item, index) => (
-            <Paper elevation={4} square className="Paper" key={index}>
-              <Button
-                onClick={() => {
-                  showPicture(item);
-                }}
+    <Grid
+      container
+      spacing={2}
+      style={{ display: "flex", justifyContent: "space-evenly" }}
+    >
+      {isEmpty(selected) &&
+        gallery.map((item, index) => (
+          <Paper elevation={4} square className="Paper" key={index}>
+            <Button
+              onClick={() => {
+                showPicture(item);
+              }}
+              key={index}
+            >
+              <img
+                src={item.src}
+                alt={item.alt}
+                width={"90%"}
+                style={{ margin: "20px" }}
                 key={index}
-              >
-                <img
-                  src={item.src}
-                  alt={item.alt}
-                  width={"90%"}
-                  style={{ margin: "20px" }}
-                  key={index}
-                />
-              </Button>
-            </Paper>
-          ))}
-        {selected && (
-          <ImageView src={selected.src} closeHandler={closePicture}/>
-        )}
-      </Grid>
-    
+              />
+            </Button>
+          </Paper>
+        ))}
+      {selected && <ImageView src={selected.src} closeHandler={closePicture} />}
+    </Grid>
   );
 }
 
