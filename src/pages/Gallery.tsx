@@ -9,6 +9,9 @@ import gatto from "./../assets/img/gatto.png";
 import neve from "./../assets/img/neve.png";
 import palloncini from "./../assets/img/palloncini.png";
 import volpe from "./../assets/img/volpe.png";
+import bimbi from "./../assets/img/bimbi.png";
+import cani from "./../assets/img/cani.png";
+import GoodBoy from "./../assets/img/GoodBoy.png";
 
 type GalleryItem = {
   src: string;
@@ -39,8 +42,20 @@ function Gallery() {
       alt: "palloncini",
     },
     {
+      src: bimbi,
+      alt: "bimbi",
+    },
+    {
       src: volpe,
       alt: "volpe",
+    },
+    {
+      src: cani,
+      alt: "cani",
+    },
+    {
+      src: GoodBoy,
+      alt: "Good boy",
     },
   ];
   function showPicture(item: GalleryItem) {
