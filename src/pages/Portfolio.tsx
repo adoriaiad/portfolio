@@ -1,22 +1,32 @@
+import * as React from 'react';
 import { Grid } from "@mui/material";
-import Paper from "@mui/material/Paper";
-import portfolio1 from "./../assets/img/portfolio01.png";
-import portfolio2 from "./../assets/img/portfolio02.png";
-import portfolio3 from "./../assets/img/portfolio03.png";
+import Accordions from "../components/Accordion";
+import { ImageGalleryType } from "../models/type";
+import p02 from "./../assets/img/02.jpg";
+import p11 from "./../assets/img/11.jpg";
 
 function Portfolio() {
-  const gallery = [
+  const [expanded, setExpanded] = React.useState<string | false>('01');
+  const handleChange =
+  (panel: string) => (event: React.SyntheticEvent, isExpanded: boolean) => {
+    setExpanded(isExpanded ? panel : false);
+  };
+  
+  const gallery: ImageGalleryType[] = [
     {
-      src: portfolio1,
-      alt: "portfolio1",
-    },
-    {
-      src: portfolio2,
-      alt: "portfolio2",
-    },
-    {
-      src: portfolio3,
-      alt: "portfolio3",
+      id: "01",
+      title: "Progetto in corso: Senti che musica! (albo illustrato)",
+      images: [
+        {
+        src: p02,
+        alt: "p02",
+        description: "Amo creare illustrazioni che evochino leggerezza, allegria. Il mio stile coniuga semplicità e armonia tra i colori ricercando col digitale l'effetto morbido del pastello"
+        },
+        {
+        src: p11,
+        alt: "p11",
+        },
+      ],
     },
   ];
   return (
@@ -26,15 +36,7 @@ function Portfolio() {
       style={{ display: "flex", justifyContent: "space-evenly" }}
     >
       {gallery.map((item, index) => (
-        <Paper elevation={4} square className="PortfolioPaper" key={index}>
-          <img
-            src={item.src}
-            alt={item.alt}
-            width={"90%"}
-            style={{ margin: "20px" }}
-            key={index}
-          />
-        </Paper>
+        <Accordions imgGallery={item} expanded={expanded} handleChange={handleChange}/>
       ))}
     </Grid>
   );
