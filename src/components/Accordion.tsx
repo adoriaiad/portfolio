@@ -29,16 +29,16 @@ export default function Accordions(props: AccordionsProps) {
         <AccordionDetails>
           <Grid container
       spacing={2}
-      style={{ display: "flex", justifyContent: "space-evenly" }}>
+      style={{ display: "flex", justifyContent: "space-evenly", alignItems: "center" }}>
             
           {imgGallery.images.map((img, index) => (
             <>
-              <Typography variant={'body1'} color={'text.secondary'} style={{ margin: "60px" }} key={index}>{img.description}</Typography>
+              { img.description && <Typography variant={'body1'} color={'text.secondary'} style={{ margin: "60px", maxWidth: "220px" }} key={index}>{img.description}</Typography> }
               <img
                 src={img.src}
                 alt={img.alt}
                 width={'90%'}
-                style={{ margin: '20px', maxWidth: '400px' }}
+                style={{ margin: '20px', maxWidth: '450px' }}
                 key={index}
               />
             </>
