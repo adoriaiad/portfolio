@@ -16,3 +16,11 @@ export type ImageGalleryType = {
   subtitle?: string;
   images: ImageType[];
 };
+
+export type GalleryItem = {
+  src: string;
+  alt: string;
+  title: string;
+  description?: string;
+  technique: string;
+};
