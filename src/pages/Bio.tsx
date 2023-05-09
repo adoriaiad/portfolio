@@ -43,9 +43,9 @@ function Bio() {
           bambini ho in corso un progetto che spero diventi il primo di tanti
           altri.
           <br />
-          Comunicare con l'illustrazione, esprimere la mia creatività attraverso
-          quest'arte, concretizzare quello che è sempre stato un sogno nel
-          cassetto: questa è la mia mission.
+          Nel tempo libero suono il sassofono, l'ukulele e mi diletto nello studio del pianoforte moderno.
+          Penso che l'arte in tutte le sue forme permetta di esprimere creatività da poter riversare nel mondo 
+          e allo stesso tempo aiuti ad abbandonare la razionalità che spesso la vita ci impone, facendoci avvicinare di più al proprio "sentire".
         </Typography>
       </Grid>
     </Grid>
