@@ -9,14 +9,16 @@ import MenuBookOutlinedIcon from "@mui/icons-material/MenuBookOutlined";
 import CollectionsOutlinedIcon from "@mui/icons-material/CollectionsOutlined";
 import PermIdentityOutlinedIcon from "@mui/icons-material/PermIdentityOutlined";
 import { MenuItemType } from "../../models/type";
+import { useTranslation } from "react-i18next";
 
 function MainLayout() {
+  const {t} = useTranslation();
   const sections: MenuItemType[] = [
     { title: "Home", url: "/", icon: <HomeOutlinedIcon /> },
-    { title: "Progetti", url: "/progetti", icon: <MenuBookOutlinedIcon /> },
+    { title: t("MENU.PROJECTS"), url: "/progetti", icon: <MenuBookOutlinedIcon /> },
     { title: "Gallery", url: "/gallery", icon: <CollectionsOutlinedIcon /> },
     { title: "Bio", url: "/bio", icon: <PermIdentityOutlinedIcon /> },
-    { title: "Contatti", url: "/contact", icon: <EmailOutlinedIcon /> },
+    { title: t("MENU.CONTACTS"), url: "/contact", icon: <EmailOutlinedIcon /> },
   ];
 
   return (

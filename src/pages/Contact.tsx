@@ -1,10 +1,11 @@
-import { Box, Button, Grid, Paper, TextField, Typography } from "@mui/material";
-import React, { useState } from "react";
-import { useFormik } from "formik";
-import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
-import { object, string } from "yup";
-import emailjs from "@emailjs/browser";
-import isEmpty from "lodash.isempty";
+import { Box, Button, Grid, Paper, TextField, Typography } from '@mui/material';
+import React, { useState } from 'react';
+import { useFormik } from 'formik';
+import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
+import { object, string } from 'yup';
+import emailjs from '@emailjs/browser';
+import isEmpty from 'lodash.isempty';
+import { useTranslation } from 'react-i18next';
 
 type ContactTypeForm = {
   name: string;
@@ -13,21 +14,24 @@ type ContactTypeForm = {
 };
 
 function Contact() {
-  const [response, setResponse] = useState<string>("");
+  const { t } = useTranslation();
+  const [response, setResponse] = useState<string>('');
   const contactSchema = object({
-    name: string().required("Nome obbligatorio"),
-    email: string().email("Email non valida").required("Email obbligatoria"),
-    message: string().required("Messaggio obbligatorio"),
+    name: string().required(t('CONTACTS.ERRORNAME') || 'Name required'),
+    email: string()
+      .email(t('CONTACTS.ERRORMAIL') || 'Email not valid')
+      .required(t('CONTACTS.ERRORMAILREQUIRED') || 'Email required'),
+    message: string().required(t("CONTACTS.ERRORMSG") || 'Message required'),
   });
 
   const formik = useFormik({
     initialValues: {
-      name: "",
-      email: "",
-      message: "",
+      name: '',
+      email: '',
+      message: '',
     },
     validationSchema: contactSchema,
-    onSubmit: (values) => {
+    onSubmit: values => {
       onSubmitSendEmail(values);
     },
   });
@@ -36,13 +40,13 @@ function Contact() {
 
   function onSubmitSendEmail(values: ContactTypeForm) {
     emailjs
-      .send("service_bkcem08", "template_4j6tu9d", values, "9Ay7yWcbRks3S8h5Z")
-      .then((res) =>
+      .send('service_bkcem08', 'template_4j6tu9d', values, '9Ay7yWcbRks3S8h5Z')
+      .then(res =>
         setResponse(
-          "Il messaggio è stato inviato correttamente. Vi ricontatterò al più presto, grazie!"
+          t("CONTACTS.SUCCESSMSG") || 'Message sent successfully'
         )
       )
-      .catch((err) => setResponse(err));
+      .catch(err => setResponse(err));
   }
 
   return (
@@ -50,18 +54,18 @@ function Contact() {
       <Grid
         container
         spacing={2}
-        style={{ display: "flex", justifyContent: "center" }}
+        style={{ display: 'flex', justifyContent: 'center' }}
       >
         <Paper
           elevation={4}
           square
           className="PortfolioPaper"
           style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            padding: "20px",
-            margin: "20px",
+            display: 'flex',
+            justifyContent: 'center',
+            flexDirection: 'column',
+            padding: '20px',
+            margin: '20px',
           }}
         >
           {isEmpty(response) && (
@@ -70,7 +74,7 @@ function Contact() {
                 fullWidth
                 id="name"
                 name="name"
-                label="Nome"
+                label={t("CONTACTS.NAME")}
                 variant="standard"
                 onChange={formik.handleChange}
                 value={formik.values.name}
@@ -94,7 +98,7 @@ function Contact() {
                 fullWidth
                 id="message"
                 name="message"
-                label="Scrivi qui il tuo messaggio"
+                label={t("CONTACTS.MESSAGE")}
                 variant="standard"
                 multiline
                 rows={6}
@@ -111,9 +115,9 @@ function Contact() {
                 fullWidth
                 type="submit"
                 endIcon={<EmailOutlinedIcon />}
-                className={"Contact-button"}
+                className={'Contact-button'}
               >
-                INVIA MODULO
+                {t("CONTACTS.BUTTONTEXT")}
               </Button>
             </>
           )}
