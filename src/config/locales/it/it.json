@@ -20,5 +20,27 @@
     "NAME": "Nome",
     "MESSAGE": "Scrivi qui il tuo messaggio",
     "BUTTONTEXT": "INVIA MODULO"
+  },
+  "PORTFOLIO": {
+    "PROJECT1": {
+      "TITLE": "Progetto in corso",
+      "IMAGES": {
+        "DESCRIPTION1": "Amo creare illustrazioni che evochino leggerezza, allegria.",
+        "DESCRIPTION2": "Il mio stile coniuga semplicità e armonia tra i colori ricercando col digitale l'effetto morbido del pastello."
+      }
+    },
+    "PROJECT2": {
+      "TITLE": "Studio dei personaggi",
+      "IMAGES": {
+        "DESCRIPTION1": "Tutto nasce su carta per poi prendere colore attraverso la pittura digitale"
+      }
+    },
+    "PROJECT3": {
+      "TITLE": "Dalla bozza...",
+      "IMAGES": {
+        "DESCRIPTION1": "Piccoli animali musicisti simpatici e curiosi, in un bosco magico che si trasforma e si colora di allegria...",
+        "DESCRIPTION2": "...alla tavola definitiva e all'impaginazione"
+      }
+    }
   }
 }

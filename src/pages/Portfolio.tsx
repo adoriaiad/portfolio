@@ -19,8 +19,10 @@ import pag02 from './../assets/img/pagina02.jpg';
 import pag03 from './../assets/img/pagina03.jpg';
 import m01 from './../assets/img/mockup01.jpg';
 import m02 from './../assets/img/mockup02.jpg';
+import { useTranslation } from 'react-i18next';
 
 function Portfolio() {
+  const {t} = useTranslation();
   const [expanded, setExpanded] = React.useState<string | false>('01');
   const handleChange =
     (panel: string) => (event: React.SyntheticEvent, isExpanded: boolean) => {
@@ -30,30 +32,30 @@ function Portfolio() {
   const gallery: ImageGalleryType[] = [
     {
       id: '01',
-      title: 'Progetto in corso',
+      title: t('PORTFOLIO.PROJECT1.TITLE'),
       images: [
         {
           src: p02,
           alt: 'p02',
           description:
-            "Amo creare illustrazioni che evochino leggerezza, allegria.",
+          t('PORTFOLIO.PROJECT1.IMAGES.DESCRIPTION1') || '',
         },
         {
           src: p11,
           alt: 'p11',
-          description: "Il mio stile coniuga semplicità e armonia tra i colori ricercando col digitale l'effetto morbido del pastello."
+          description:  t('PORTFOLIO.PROJECT1.IMAGES.DESCRIPTION2') || ''
         },
       ],
     },
     {
       id: '02',
-      title: 'Studio dei personaggi',
+      title: t('PORTFOLIO.PROJECT2.TITLE'),
       images: [
         {
           src: blu,
           alt: 'blu',
           description:
-            'Tutto nasce su carta per poi prendere colore attraverso la pittura digitale',
+          t('PORTFOLIO.PROJECT2.IMAGES.DESCRIPTION1') || '',
         },
         {
           src: scoiattolo,
@@ -83,13 +85,13 @@ function Portfolio() {
     },
     {
       id: '03',
-      title: 'Dalla bozza...',
+      title: t('PORTFOLIO.PROJECT3.TITLE'),
       images: [
         {
           src: bozza,
           alt: 'bozza',
           description:
-            'Piccoli animali musicisti simpatici e curiosi, in un bosco magico che si trasforma e si colora di allegria...',
+          t('PORTFOLIO.PROJECT3.IMAGES.DESCRIPTION1') || '',
         },
         {
           src: sketch,
@@ -102,7 +104,7 @@ function Portfolio() {
         {
           src: pag01,
           alt: 'pag01',
-          description: "...alla tavola definitiva e all'impaginazione",
+          description:  t('PORTFOLIO.PROJECT3.IMAGES.DESCRIPTION2') || '',
         },
         {
           src: pag02,
