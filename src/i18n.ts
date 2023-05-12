@@ -10,6 +10,7 @@ i18n
   .use(initReactI18next)
   .init({
     debug: true,
+    load: 'languageOnly',
     fallbackLng: 'en',
     interpolation: {
       escapeValue: false, // not needed for react as it escapes by default
@@ -21,6 +22,9 @@ i18n
       it: {
         translation: it,
       },
+      fr: {
+        translation: en, //devo fare la traduzione in francese
+      }
     },
   });
 
