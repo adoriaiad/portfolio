@@ -15,63 +15,62 @@ import volpe from './../assets/img/volpeviolinista.jpg';
 import settembre from './../assets/img/settembre.jpg';
 import b01 from './../assets/img/Bozze01.jpg';
 import b02 from './../assets/img/Bozze02.jpg';
+import { useTranslation } from 'react-i18next';
 
 function Gallery() {
+  const {t} = useTranslation();
   const [selected, setSelected] = useState<GalleryItem>();
 
   const gallery1: GalleryItem[] = [
     {
       src: gatto,
       alt: 'gatto',
-      title: 'Character design',
-      description: 'Il gatto stregone',
-      technique:
-        'Tecnica mista grafite, carboncino e ritocco in digitale (esperimenti)',
+      title: t('GALLERY.CDTITLE') || '',
+      description: t('GALLERY.GALLERY1.IMAGE1.DESCRIPTION') || '',
+      technique: t('GALLERY.TECHNIQUE.MIXED_EXP') || '',
     },
     {
       src: neve,
       alt: 'neve',
-      title: 'Character design',
-      description:
-        'Illustrazione pensata per decorare oggetti (tazze, copertine di quaderni o agende) ma anche per sperimentare col bianco e nero.',
-      technique: 'grafite e carboncino su carta',
+      title: t('GALLERY.CDTITLE') || '',
+      description:  t('GALLERY.GALLERY1.IMAGE2.DESCRIPTION') || '',
+      technique: t('GALLERY.TECHNIQUE.CARBONCINO') || '',
     },
     {
       src: bimba,
       alt: 'bimba',
-      title: 'Illustrazione',
-      description: 'Studio di un personaggio',
-      technique: 'disegno e colorazione in digitale',
+      title: t('GALLERY.ILLUSTRATIONTITLE') || '',
+      description:  t('GALLERY.GALLERY1.IMAGE3.DESCRIPTION') || '',
+      technique: t('GALLERY.TECHNIQUE.DIGITAL') || '',
     },
   ];
   const gallery2: GalleryItem[] = [
     {
       src: dino,
       alt: 'dino',
-      title: 'Character design',
-      description:
-        'Interpretazione del tema "racer", non proprio competitivo ma piuttosto calmo e rilassato!',
-      technique: 'pittura digitale',
+      title: t('GALLERY.CDTITLE') || '',
+      description: t('GALLERY.GALLERY2.IMAGE1.DESCRIPTION') || '',
+      technique: t('GALLERY.TECHNIQUE.DIGITAL') || '',
     },
     {
       src: palloncini,
       alt: 'palloncini',
-      title: 'Illustrazione',
-      description: 'Dove vanno a finire i palloncini?',
-      technique: 'mista, grafite su carta e colorazione digitale',
+      title: t('GALLERY.ILLUSTRATIONTITLE') || '',
+      description: t('GALLERY.GALLERY2.IMAGE2.DESCRIPTION') || '',
+      technique: t('GALLERY.TECHNIQUE.MIXED') || '',
     },
     {
       src: drago,
       alt: 'drago',
-      title: 'Illustrazione',
-      technique: 'pastelli e grafite su carta da disegno marrone',
+      title: t('GALLERY.ILLUSTRATIONTITLE') || '',
+      technique: t('GALLERY.TECHNIQUE.BROWNPAPER') || '',
     },
     {
       src: bimbineve,
       alt: 'bimbineve',
-      title: 'Illustrazione',
-      description: 'Nevica!',
-      technique: 'mista, grafite su carta e colorazione in digitale',
+      title: t('GALLERY.ILLUSTRATIONTITLE') || '',
+      description: t('GALLERY.GALLERY2.IMAGE4.DESCRIPTION') || '',
+      technique:  t('GALLERY.TECHNIQUE.MIXED') || '',
     },
   ];
 
@@ -79,26 +78,26 @@ function Gallery() {
     {
       src: volpe,
       alt: 'volpe',
-      title: 'Mese di gennaio',
-      technique: 'mista, disegno a grafite su carta e colorazione digitale',
+      title: t('GALLERY.GALLERY3.IMAGE1.TITLE') || '',
+      technique:  t('GALLERY.TECHNIQUE.MIXED') || '',
     },
     {
       src: settembre,
       alt: 'settembre',
-      title: 'Mese di settembre',
-      technique: 'mista, disegno a grafite su carta e colorazione digitale',
+      title: t('GALLERY.GALLERY3.IMAGE2.TITLE') || '',
+      technique:  t('GALLERY.TECHNIQUE.MIXED') || '',
     },
     {
       src: b01,
       alt: 'bozze',
-      title: 'Bozze mesi gennaio - giugno',
-      technique: 'matita su carta',
+      title: t('GALLERY.GALLERY3.IMAGE3.TITLE') || '',
+      technique:  t('GALLERY.TECHNIQUE.PENCIL') || '',
     },
     {
       src: b02,
       alt: 'bozze',
-      title: 'Bozze dei mesi luglio - dicembre',
-      technique: 'matita su carta',
+      title: t('GALLERY.GALLERY3.IMAGE4.TITLE') || '',
+      technique:  t('GALLERY.TECHNIQUE.PENCIL') || '',
     },
   ];
 
@@ -118,7 +117,7 @@ function Gallery() {
         color={'text.secondary'}
         sx={{ flexShrink: 0 }}
       >
-        Il bianco e nero
+        {t('GALLERY.TITLE1')}
       </Typography>
       <Grid
         container
@@ -146,7 +145,7 @@ function Gallery() {
         sx={{ flexShrink: 0 }}
         style={{ marginTop: '20px' }}
       >
-        Il colore: illustrazioni digitali
+        {t('GALLERY.TITLE2')}   
       </Typography>
       <Grid
         container
@@ -174,16 +173,14 @@ function Gallery() {
           sx={{ flexShrink: 0 }}
           style={{ marginTop: '20px' }}
         >
-          Concorso Illustratore dell'anno della Città del sole anno 2019: progetto incluso alla selezione finale.
+           {t('GALLERY.TITLE3')}   
         </Typography>
         <Typography
           variant={'h6'}
           color={'text.secondary'}
           sx={{ flexShrink: 0 }}
         >
-          L'idea: 12 mesi in cui i protagonisti sono gli animali del bosco. In
-          ogni mese entra in scena un animale che popola via via l'orchestra. Il
-          paesaggio di sfondo e i colori variano seguendo le stagioni.
+          {t('GALLERY.SUBTITLE3')}  
         </Typography>
       <Grid
         container

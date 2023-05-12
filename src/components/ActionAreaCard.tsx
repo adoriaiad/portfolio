@@ -4,6 +4,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { GalleryItem } from '../models/type';
+import { useTranslation } from 'react-i18next';
 
 type ActionAreaCardProps = {
   item: GalleryItem;
@@ -11,6 +12,7 @@ type ActionAreaCardProps = {
 };
 
 export default function ActionAreaCard(props: ActionAreaCardProps) {
+  const {t} = useTranslation();
   const { item, clickHandler } = props;
   return (
     <Card
@@ -43,7 +45,7 @@ export default function ActionAreaCard(props: ActionAreaCardProps) {
             {item.description}
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            {`Tecnica: ${item.technique}`}
+            {`${t('ACTIONAREACARD.TECHNIQUE')}: ${item.technique}`}
           </Typography>
         </CardContent>
       </CardActionArea>

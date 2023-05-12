@@ -42,5 +42,63 @@
         "DESCRIPTION2": "...alla tavola definitiva e all'impaginazione"
       }
     }
+  },
+  "GALLERY": {
+    "TITLE1": "Il bianco e nero",
+    "TITLE2": "Il colore: illustrazioni digitali",
+    "TITLE3": "Concorso Illustratore dell'anno della Città del sole anno 2019: progetto incluso alla selezione finale.",
+    "SUBTITLE3": "L'idea: 12 mesi in cui i protagonisti sono gli animali del bosco. In ogni mese entra in scena un animale che popola via via l'orchestra. Il paesaggio di sfondo e i colori variano seguendo le stagioni.",
+    "ILLUSTRATIONTITLE": "Illustrazione",
+    "TECHNIQUE": {
+      "MIXED:": "mista, disegno a grafite su carta e colorazione digitale",
+      "MIXED_EXP": "Tecnica mista grafite, carboncino e ritocco in digitale (esperimenti)",
+      "DIGITAL": "pittura digitale",
+      "PENCIL": "matita su carta",
+      "CARBONCINO": "grafite e carboncino su carta",
+      "BROWNPAPER": "pastelli e grafite su carta da disegno marrone"
+    },
+    "CDTITLE": "Character design",
+    "GALLERY1": {
+      "IMAGE1": {
+        "DESCRIPTION": "Il gatto stregone"
+      },
+      "IMAGE2": {
+        "DESCRIPTION": "Illustrazione pensata per decorare oggetti (tazze, copertine di quaderni o agende) ma anche per sperimentare col bianco e nero."
+      },
+      "IMAGE3": {
+        "DESCRIPTION": "Studio di un personaggio"
+      }
+    },
+    "GALLERY2": {
+      "IMAGE1": {
+        "DESCRIPTION": "Interpretazione del tema \"racer\", non proprio competitivo ma piuttosto calmo e rilassato!"
+      },
+      "IMAGE2": {
+        "DESCRIPTION": "Dove vanno a finire i palloncini?"
+      },
+      "IMAGE3": {
+        "DESCRIPTION": ""
+      },
+      "IMAGE4": {
+        "DESCRIPTION": "Nevica!"
+      }
+    },
+    "GALLERY3": {
+      "IMAGE1": {
+        "TITLE": "Mese di gennaio"
+      },
+      "IMAGE2": {
+        "TITLE": "Mese di settembre"
+      },
+      "IMAGE3": {
+        "TITLE": "Bozze mesi gennaio - giugno"
+      },
+      "IMAGE4": {
+        "TITLE": "Bozze dei mesi luglio - dicembre"
+      }
+    }
+  },
+  "ACTIONAREACARD": {
+    "TECHNIQUE": "Tecnica"
   }
 }
