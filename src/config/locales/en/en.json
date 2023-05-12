@@ -42,5 +42,63 @@
         "DESCRIPTION2": "...to the final drawing and page layout"
       }
     }
+  },
+  "GALLERY": {
+    "TITLE1": "Black & White",
+    "TITLE2": "Colors: digital illustrations",
+    "TITLE3": "Competition: Illustrator of the year \"Città del sole\" 2019: project included in the final selection.",
+    "SUBTITLE3": "The idea: 12 months in which protagonists are forest's animals. In each month there a new animal on the scene and gradually the orchestra grows. The landscape and colors follow the seasons changing.",
+    "ILLUSTRATIONTITLE": "Illustration",
+    "TECHNIQUE": {
+      "MIXED:": "mixed, graphite drawing on paper and digital colouring",
+      "MIXED_EXP": "mixed technique graphite, charcoal and digital retouching (experiments)",
+      "DIGITAL": "digital painting",
+      "PENCIL": "pencil on paper",
+      "CARBONCINO": "graphite and charcoal on paper",
+      "BROWNPAPER": "pastels and graphite on brown paper"
+    },
+    "CDTITLE": "Character design",
+    "GALLERY1": {
+      "IMAGE1": {
+        "DESCRIPTION": "Wizard cat"
+      },
+      "IMAGE2": {
+        "DESCRIPTION": "Illustration designed to decorate any kind of objects (cups, notebook covers or diaries) but also black and white experiment."
+      },
+      "IMAGE3": {
+        "DESCRIPTION": "Character study"
+      }
+    },
+    "GALLERY2": {
+      "IMAGE1": {
+        "DESCRIPTION": "Interpretation of the \"racer\" theme, not exactly competitive but rather calm and relaxed!"
+      },
+      "IMAGE2": {
+        "DESCRIPTION": "Where do the balloons go?"
+      },
+      "IMAGE3": {
+        "DESCRIPTION": ""
+      },
+      "IMAGE4": {
+        "DESCRIPTION": "Snows!"
+      }
+    },
+    "GALLERY3": {
+      "IMAGE1": {
+        "TITLE": "january"
+      },
+      "IMAGE2": {
+        "TITLE": "september"
+      },
+      "IMAGE3": {
+        "TITLE": "Sketches of months from january to june"
+      },
+      "IMAGE4": {
+        "TITLE": "Sketches of months from july to dicember"
+      }
+    }
+  },
+  "ACTIONAREACARD": {
+    "TECHNIQUE": "Technique"
   }
 }
