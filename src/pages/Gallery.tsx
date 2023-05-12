@@ -57,7 +57,7 @@ function Gallery() {
       alt: 'palloncini',
       title: t('GALLERY.ILLUSTRATIONTITLE') || '',
       description: t('GALLERY.GALLERY2.IMAGE2.DESCRIPTION') || '',
-      technique: t('GALLERY.TECHNIQUE.MIXED') || '',
+      technique:  t('GALLERY.TECHNIQUE.MIXED') || '',
     },
     {
       src: drago,
@@ -70,7 +70,7 @@ function Gallery() {
       alt: 'bimbineve',
       title: t('GALLERY.ILLUSTRATIONTITLE') || '',
       description: t('GALLERY.GALLERY2.IMAGE4.DESCRIPTION') || '',
-      technique:  t('GALLERY.TECHNIQUE.MIXED') || '',
+      technique:   t('GALLERY.TECHNIQUE.MIXED') || '',
     },
   ];
 
@@ -79,13 +79,13 @@ function Gallery() {
       src: volpe,
       alt: 'volpe',
       title: t('GALLERY.GALLERY3.IMAGE1.TITLE') || '',
-      technique:  t('GALLERY.TECHNIQUE.MIXED') || '',
+      technique:  t('GALLERY.TECHNIQUE.MIXED') ||  '',
     },
     {
       src: settembre,
       alt: 'settembre',
       title: t('GALLERY.GALLERY3.IMAGE2.TITLE') || '',
-      technique:  t('GALLERY.TECHNIQUE.MIXED') || '',
+      technique:  t('GALLERY.TECHNIQUE.MIXED') ||  '',
     },
     {
       src: b01,

@@ -16,7 +16,7 @@ function MainLayout() {
   const sections: MenuItemType[] = [
     { title: "Home", url: "/", icon: <HomeOutlinedIcon /> },
     { title: t("MENU.PROJECTS"), url: "/progetti", icon: <MenuBookOutlinedIcon /> },
-    { title: "Gallery", url: "/gallery", icon: <CollectionsOutlinedIcon /> },
+    { title:  t("MENU.GALLERY"), url: "/gallery", icon: <CollectionsOutlinedIcon /> },
     { title: "Bio", url: "/bio", icon: <PermIdentityOutlinedIcon /> },
     { title: t("MENU.CONTACTS"), url: "/contact", icon: <EmailOutlinedIcon /> },
   ];

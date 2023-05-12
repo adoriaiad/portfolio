@@ -1,7 +1,8 @@
 {
   "MENU": {
     "PROJECTS": "Projects",
-    "CONTACTS": "Contacts"
+    "CONTACTS": "Contacts",
+    "GALLERY": "Gallery"
   },
   "BIO": {
     "WHO": "Who I am",
