@@ -3,12 +3,14 @@ import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
+import { useTranslation } from "react-i18next";
 
 function Copyright() {
+  const {t} = useTranslation();
   return (
     <Typography variant="body2" color="text.secondary" align="center">
       <Link color="inherit" href="/data">
-        Protezione dei dati
+        {t('DATAPROTECTION')}
       </Link>{" "}
     </Typography>
   );

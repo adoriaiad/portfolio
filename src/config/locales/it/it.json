@@ -51,12 +51,12 @@
     "SUBTITLE3": "L'idea: 12 mesi in cui i protagonisti sono gli animali del bosco. In ogni mese entra in scena un animale che popola via via l'orchestra. Il paesaggio di sfondo e i colori variano seguendo le stagioni.",
     "ILLUSTRATIONTITLE": "Illustrazione",
     "TECHNIQUE": {
-      "MIXED:": "mista, disegno a grafite su carta e colorazione digitale",
       "MIXED_EXP": "Tecnica mista grafite, carboncino e ritocco in digitale (esperimenti)",
       "DIGITAL": "pittura digitale",
       "PENCIL": "matita su carta",
       "CARBONCINO": "grafite e carboncino su carta",
-      "BROWNPAPER": "pastelli e grafite su carta da disegno marrone"
+      "BROWNPAPER": "pastelli e grafite su carta da disegno marrone",
+      "MIXED:": "mista, disegno a grafite su carta e colorazione digitale"
     },
     "CDTITLE": "Character design",
     "GALLERY1": {

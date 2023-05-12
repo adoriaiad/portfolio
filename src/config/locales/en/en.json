@@ -51,12 +51,12 @@
     "SUBTITLE3": "The idea: 12 months in which protagonists are forest's animals. In each month there a new animal on the scene and gradually the orchestra grows. The landscape and colors follow the seasons changing.",
     "ILLUSTRATIONTITLE": "Illustration",
     "TECHNIQUE": {
-      "MIXED:": "mixed, graphite drawing on paper and digital colouring",
       "MIXED_EXP": "mixed technique graphite, charcoal and digital retouching (experiments)",
       "DIGITAL": "digital painting",
       "PENCIL": "pencil on paper",
       "CARBONCINO": "graphite and charcoal on paper",
-      "BROWNPAPER": "pastels and graphite on brown paper"
+      "BROWNPAPER": "pastels and graphite on brown paper",
+      "MIXED:": "mixed, graphite drawing on paper and digital colouring"
     },
     "CDTITLE": "Character design",
     "GALLERY1": {
