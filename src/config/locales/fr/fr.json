@@ -1,0 +1,108 @@
+{
+    "MENU": {
+      "PROJECTS": "Projets",
+      "CONTACTS": "Contacts",
+      "GALLERY": "Illustrations"
+    },
+    "BIO": {
+      "WHO": "Qui suis je",
+      "TEXT1": "Aussi loin que je me souvienne, j'ai toujours dessiné, depuis que je suis une petit fille. J'ai rempli des feuilles et des feuilles de dessins, copié mes personnages préférés ou en ai créé de nouveaux.",
+      "TEXT2": "Je n'ai jamais arrêté, même si j'en ai fait d'autres dans ma vie : études scientifiques et travail dans le monde de l'informatique. J'ai toujours aimé dessiner au crayon et au fusain, représenter tout le monde, et j'ai souvent expérimenté la couleur et le pastel.",
+      "TEXT3": "Pendant mes études universitaires, j'ai suivi un cours d'illustration naturaliste à l'aquarelle et j'ai étudié les techniques de peinture et de dessin, en particulier de la figure humaine, en autodidacte. Toujours curieux, désireux d'apprendre et de m'améliorer, sensible à la nature et à sa beauté.",
+      "TEXT4": "Il y a quelques années j'ai découvert le dessin digital en expérimentant et en cherchant toujours de nouvelles solutions pour améliorer mon style. Actuellement intéressé par l'illustration jeunesse, j'ai un projet en cours qui je l'espère deviendra le premier de bien d'autres.",
+      "TEXT5": "Pendant mon temps libre, je joue du saxophone, du ukulélé et j'aime étudier le piano moderne. Je pense que l'art sous toutes ses formes nous permet d'exprimer la créativité dans le monde et aide à abandonner la rationalité que la vie nous impose souvent, se rapprochant de notre sentiments"
+    },
+    "CONTACTS": {
+      "ERRORNAME": "Prenom et Nom obligatoire",
+      "ERRORMAIL": "Email non valide",
+      "ERRORMAILREQUIRED": "Email obligatoire",
+      "ERRORMSG": "Message obligatoire",
+      "SUCCESSMSG": "Message envoyé avec succès. Je vous contacterai dès que possible, merci!",
+      "NAME": "Prenome et Nom",
+      "MESSAGE": "Écrivez ici votre message",
+      "BUTTONTEXT": "ENVOYER LE MODULE"
+    },
+    "PORTFOLIO": {
+      "PROJECT1": {
+        "TITLE": "Projet en cours",
+        "IMAGES": {
+          "DESCRIPTION1": "J'aime créer des illustrations qui évoquent la légèreté, la joie.",
+          "DESCRIPTION2": "Mon style allie simplicité et harmonie entre les couleurs à la recherche d'un effet pastel doux par la peinture digitale."
+        }
+      },
+      "PROJECT2": {
+        "TITLE": "Conception de personnages",
+        "IMAGES": {
+          "DESCRIPTION1": "Chaque dessin naît sur papier puis prend de la couleur grâce à la peinture digitale"
+        }
+      },
+      "PROJECT3": {
+        "TITLE": "Du dessiner...",
+        "IMAGES": {
+          "DESCRIPTION1": "Des animaux musiciens mignons et curieux, dans une forêt magique qui transforme ses couleurs et se remplit de joie...",
+          "DESCRIPTION2": "...au dessin final et à la mise en page"
+        }
+      }
+    },
+    "TECH_MIXED": "mixte, dessin au graphite sur papier et coloration digitale",
+    "GALLERY": {
+      "TITLE1": "Noir & Blanc",
+      "TITLE2": "Couleurs : illustrations digitales",
+      "TITLE3": "Concours : Illustrateur de l'année \"Città del sole\" 2019 : projet inclus dans la sélection finale.",
+      "SUBTITLE3": "L'idée : 12 mois dont les protagonistes sont des animaux de la forêt. A chaque mois un nouvel animal entre en scène et petit à petit l'orchestre s'agrandit. Le paysage et les couleurs suivent l'évolution des saisons.",
+      "ILLUSTRATIONTITLE": "Illustration",
+      "TECHNIQUE": {
+        "MIXED_EXP": "technique mixte graphite, fusain et retouche digital (expérimentations)",
+        "DIGITAL": "peinture digitale",
+        "PENCIL": "crayon sur papier",
+        "CARBONCINO": "graphite et fusain sur papier",
+        "BROWNPAPER": "pastels et mine de plomb sur papier brun",
+        "MIXED:": "mixte, dessin au graphite sur papier et coloration digitale"
+      },
+      "CDTITLE": "Conception de personnages",
+      "GALLERY1": {
+        "IMAGE1": {
+          "DESCRIPTION": "Chat magicien"
+        },
+        "IMAGE2": {
+          "DESCRIPTION": "Illustration conçue pour décorer tout type d'objet (gobelets, couvertures de cahiers ou agendas) mais aussi expérience en noir et blanc."
+        },
+        "IMAGE3": {
+          "DESCRIPTION": "Étude de personnage"
+        }
+      },
+      "GALLERY2": {
+        "IMAGE1": {
+          "DESCRIPTION": "Interprétation du thème du coureur, pas exactement compétitif mais plutôt calme et détendu!"
+        },
+        "IMAGE2": {
+          "DESCRIPTION": "Où vont les ballons?"
+        },
+        "IMAGE3": {
+          "DESCRIPTION": ""
+        },
+        "IMAGE4": {
+          "DESCRIPTION": "Neiges!"
+        }
+      },
+      "GALLERY3": {
+        "IMAGE1": {
+          "TITLE": "janvier"
+        },
+        "IMAGE2": {
+          "TITLE": "septembre"
+        },
+        "IMAGE3": {
+          "TITLE": "Croquis des mois de janvier à juin"
+        },
+        "IMAGE4": {
+          "TITLE": "Croquis des mois de juillet à décembre"
+        }
+      }
+    },
+    "ACTIONAREACARD": {
+      "TECHNIQUE": "Technique"
+    },
+    "DATAPROTECTION": "Protection des données"
+  }
+  

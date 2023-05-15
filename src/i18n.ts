@@ -3,6 +3,7 @@ import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 import it from './config/locales/it/it.json';
 import en from './config/locales/en/en.json';
+import fr from './config/locales/fr/fr.json';
 
 i18n
   .use(LanguageDetector)
@@ -23,7 +24,7 @@ i18n
         translation: it,
       },
       fr: {
-        translation: en, //devo fare la traduzione in francese
+        translation: fr,
       }
     },
   });
