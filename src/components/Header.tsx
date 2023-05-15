@@ -11,6 +11,7 @@ import { MenuItemType } from "../models/type";
 import logo from "./../assets/img/_logo.png";
 import Menu from "./Menu";
 import ColorTabs from "./Tabs";
+import LangDropdown from "./LangDropdown";
 
 export interface HeaderProps {
   sections: Array<MenuItemType>;
@@ -60,6 +61,7 @@ export default function Header(props: HeaderProps) {
         >
           {title}
         </Typography>
+        <LangDropdown />
         <IconButton onClick={goTo[GoToEnum.mail]}>
           <MailOutlineIcon />
         </IconButton>
