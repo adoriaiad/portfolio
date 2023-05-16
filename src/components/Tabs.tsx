@@ -1,29 +1,25 @@
-import * as React from "react";
-import Tabs from "@mui/material/Tabs";
-import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
+import Tab from "@mui/material/Tab";
+import Tabs from "@mui/material/Tabs";
+import * as React from "react";
 import { MenuItemType } from "../models/type";
-import { useNavigate } from "react-router-dom";
 
 type ColorTabsProps = {
   sections: MenuItemType[];
+  anchor: string;
+  onhandleChange: (event: React.SyntheticEvent, newValue: string) => void;
 };
 
 export default function ColorTabs(props: ColorTabsProps) {
-  const { sections } = props;
-  const [value, setValue] = React.useState("/");
+  const { sections, anchor, onhandleChange } = props;
+  /* const [value, setValue] = React.useState(anchor);
   const navigation = useNavigate();
-
-  const handleChange = (event: React.SyntheticEvent, newValue: string) => {
-    setValue(newValue);
-    navigation(newValue);
-  };
-
+ */
   return (
     <Box>
       <Tabs
-        value={value}
-        onChange={handleChange}
+        value={anchor}
+        onChange={onhandleChange}
         textColor="primary"
         indicatorColor="secondary"
         aria-label="secondary tabs example"

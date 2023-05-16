@@ -12,6 +12,8 @@ import logo from "./../assets/img/_logo.png";
 import Menu from "./Menu";
 import ColorTabs from "./Tabs";
 import LangDropdown from "./LangDropdown";
+import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 export interface HeaderProps {
   sections: Array<MenuItemType>;
@@ -23,12 +25,15 @@ const enum GoToEnum {
   fb = "facebook",
   ig = "instagram",
   tw = "twitter",
+  home = "home"
 }
 
 export default function Header(props: HeaderProps) {
   const { sections, title } = props;
+  const [anchor, setAnchor] = useState<string>('/');
+  const navigation = useNavigate();
 
-  const goTo: { [key: string]: () => void } = {
+  const goTo: { [key: string]: (event: React.SyntheticEvent) => void } = {
     mail: () => {
       window.open("mailto:info@angelitadoria.com");
     },
@@ -44,6 +49,14 @@ export default function Header(props: HeaderProps) {
       window.open("https://twitter.com/art_lita", "_blank");
       window.focus();
     },
+    home: (event) => {
+      handleChange(event, '/')
+    }
+  };
+
+  const handleChange = (event: React.SyntheticEvent, newValue: string) => {
+    setAnchor(newValue);
+    navigation(newValue);
   };
 
   const matches = useMediaQuery("(max-width:600px)");
@@ -78,8 +91,9 @@ export default function Header(props: HeaderProps) {
       <Toolbar
         sx={{ justifyContent: "center", overflowX: "auto" }}
         className={"App-header"}
+        onClick={goTo[GoToEnum.home]}
       >
-        <img src={logo} alt="logo" height={"200px"} />
+        <img src={logo} alt="logo" height={"200px"} className="Logo-cursor"/>
       </Toolbar>
       {matches && <Menu sections={sections} />}
       {!matches && (
@@ -89,7 +103,7 @@ export default function Header(props: HeaderProps) {
           sx={{ justifyContent: "center", overflowX: "auto" }}
           className={"Menu-header"}
         >
-          <ColorTabs sections={sections} />
+          <ColorTabs sections={sections} anchor={anchor} onhandleChange={handleChange}/>
         </Toolbar>
       )}
     </React.Fragment>

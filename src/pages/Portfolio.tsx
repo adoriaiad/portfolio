@@ -22,7 +22,7 @@ import m02 from './../assets/img/mockup02.jpg';
 import { useTranslation } from 'react-i18next';
 
 function Portfolio() {
-  const {t} = useTranslation();
+  const { t } = useTranslation();
   const [expanded, setExpanded] = React.useState<string | false>('01');
   const handleChange =
     (panel: string) => (event: React.SyntheticEvent, isExpanded: boolean) => {
@@ -37,13 +37,12 @@ function Portfolio() {
         {
           src: p02,
           alt: 'p02',
-          description:
-          t('PORTFOLIO.PROJECT1.IMAGES.DESCRIPTION1') || '',
+          description: t('PORTFOLIO.PROJECT1.IMAGES.DESCRIPTION1') || '',
         },
         {
           src: p11,
           alt: 'p11',
-          description:  t('PORTFOLIO.PROJECT1.IMAGES.DESCRIPTION2') || ''
+          description: t('PORTFOLIO.PROJECT1.IMAGES.DESCRIPTION2') || '',
         },
       ],
     },
@@ -54,8 +53,7 @@ function Portfolio() {
         {
           src: blu,
           alt: 'blu',
-          description:
-          t('PORTFOLIO.PROJECT2.IMAGES.DESCRIPTION1') || '',
+          description: t('PORTFOLIO.PROJECT2.IMAGES.DESCRIPTION1') || '',
         },
         {
           src: scoiattolo,
@@ -90,8 +88,7 @@ function Portfolio() {
         {
           src: bozza,
           alt: 'bozza',
-          description:
-          t('PORTFOLIO.PROJECT3.IMAGES.DESCRIPTION1') || '',
+          description: t('PORTFOLIO.PROJECT3.IMAGES.DESCRIPTION1') || '',
         },
         {
           src: sketch,
@@ -104,7 +101,7 @@ function Portfolio() {
         {
           src: pag01,
           alt: 'pag01',
-          description:  t('PORTFOLIO.PROJECT3.IMAGES.DESCRIPTION2') || '',
+          description: t('PORTFOLIO.PROJECT3.IMAGES.DESCRIPTION2') || '',
         },
         {
           src: pag02,
@@ -132,11 +129,12 @@ function Portfolio() {
       spacing={2}
       style={{ display: 'flex', justifyContent: 'space-evenly' }}
     >
-      {gallery.map((item, index) => (
+      {gallery.map(item => (
         <Accordions
           imgGallery={item}
           expanded={expanded}
           handleChange={handleChange}
+          key={item.id}
         />
       ))}
     </Grid>

@@ -37,6 +37,9 @@
   font-size: calc(10px + 2vmin);
   color: #332d2d;
 }
+.Logo-cursor {
+  cursor: pointer;
+}
 
 .App-bgcolor {
   background-color: #f4f2ed;
