@@ -116,6 +116,7 @@ function Gallery() {
         variant={'h5'}
         color={'text.secondary'}
         sx={{ flexShrink: 0 }}
+        style={{fontFamily: 'Yomogi'}}
       >
         {t('GALLERY.TITLE1')}
       </Typography>
@@ -143,7 +144,7 @@ function Gallery() {
         variant={'h5'}
         color={'text.secondary'}
         sx={{ flexShrink: 0 }}
-        style={{ marginTop: '20px' }}
+        style={{ marginTop: '20px',fontFamily: 'Yomogi' }}
       >
         {t('GALLERY.TITLE2')}   
       </Typography>
@@ -171,7 +172,7 @@ function Gallery() {
           variant={'h6'}
           color={'text.secondary'}
           sx={{ flexShrink: 0 }}
-          style={{ marginTop: '20px' }}
+          style={{ marginTop: '20px', fontFamily: 'Yomogi' }}
         >
            {t('GALLERY.TITLE3')}   
         </Typography>
@@ -179,6 +180,7 @@ function Gallery() {
           variant={'h6'}
           color={'text.secondary'}
           sx={{ flexShrink: 0 }}
+          style={{fontFamily: 'Yomogi'}}
         >
           {t('GALLERY.SUBTITLE3')}  
         </Typography>

@@ -58,7 +58,7 @@ const AppThemeProvider: React.FC<{ children: React.ReactNode }> = (props) => {
             },
             text: {
               primary: "rgba(0, 0, 0, 0.87)",
-              secondary: "rgba(0, 0, 0, 0.54)",
+              secondary: "rgba(0, 0, 0, 0.87)",
             },
             error: {
               main: "#F44336",

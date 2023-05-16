@@ -61,6 +61,7 @@ export default function LongMenu(props: MenuProps) {
               variant="body2"
               color={"text.secondary"}
               key={`label-${index}`}
+              style={{fontFamily: 'Yomogi'}}
             >
               {item.title}
             </Typography>

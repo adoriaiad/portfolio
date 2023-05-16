@@ -38,13 +38,14 @@ export default function ActionAreaCard(props: ActionAreaCardProps) {
             variant="h6"
             color="text.secondary"
             component="div"
+            style={{fontFamily: 'Yomogi'}}
           >
             {item.title}
           </Typography>
-          <Typography variant="body2" color="text.secondary">
+          <Typography variant="body2" color="text.secondary" style={{fontFamily: 'Yomogi'}}>
             {item.description}
           </Typography>
-          <Typography variant="body2" color="text.secondary">
+          <Typography variant="body2" color="text.secondary" style={{fontFamily: 'Yomogi'}}>
             {`${t('ACTIONAREACARD.TECHNIQUE')}: ${item.technique}`}
           </Typography>
         </CardContent>

@@ -15,15 +15,15 @@ function Bio() {
           variant="h4"
           color="text.secondary"
           align="justify"
-          style={{ marginLeft: '60px' }}
+          style={{ marginLeft: '60px', fontFamily: 'Yomogi' }}
         >
           {t('BIO.WHO')}
         </Typography>
         <Typography
-          variant="body1"
+          //variant="body1"
           color="text.secondary"
           align="justify"
-          style={{ margin: '60px' }}
+          style={{ margin: '60px', fontFamily: 'Yomogi'  }}
         >
           {t('BIO.TEXT1')}
           <br />

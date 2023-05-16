@@ -24,12 +24,12 @@ export default function ColorTabs(props: ColorTabsProps) {
       <Tabs
         value={value}
         onChange={handleChange}
-        textColor="secondary"
+        textColor="primary"
         indicatorColor="secondary"
         aria-label="secondary tabs example"
       >
         {sections.map((item, index) => (
-          <Tab value={item.url} label={item.title} key={index} />
+          <Tab value={item.url} label={item.title} key={index} style={{fontFamily: 'Yomogi', fontSize:'18px'}}/>
         ))}
       </Tabs>
     </Box>

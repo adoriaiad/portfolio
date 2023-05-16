@@ -36,10 +36,10 @@ function LangDropdown() {
         id="lang-select"
         value={lang}
         onChange={handleChange}
-        style={{fontSize: '12px', display: 'flex', justifyContent: 'space-evenly'}}
+        style={{fontSize: '12px', display: 'flex', justifyContent: 'space-evenly', fontFamily: 'Yomogi'}}
       >
         {LANGS.map(l => (
-          <MenuItem value={l.shortCode} style={{fontSize: '12px'}}><img src={l.icon} alt="lg" height={"14px"} />{l.label}</MenuItem>
+          <MenuItem value={l.shortCode} style={{fontSize: '12px', fontFamily: 'Yomogi'}}><img src={l.icon} alt="lg" height={"14px"} />{l.label}</MenuItem>
         ))}
       </Select>
     </FormControl>

@@ -8,7 +8,7 @@ import { useTranslation } from "react-i18next";
 function Copyright() {
   const {t} = useTranslation();
   return (
-    <Typography variant="body2" color="text.secondary" align="center">
+    <Typography variant="body2" color="text.secondary" align="center" style={{fontFamily: 'Yomogi'}}>
       <Link color="inherit" href="/data">
         {t('DATAPROTECTION')}
       </Link>{" "}
@@ -27,7 +27,7 @@ function Footer(props: FooterProps) {
   return (
     <Box component="footer" sx={{ bgcolor: "background", py: 6 }}>
       <Container maxWidth="lg">
-        <Typography variant="h6" align="center" gutterBottom>
+        <Typography variant="h6" align="center" gutterBottom style={{fontFamily: 'Yomogi'}}>
           {title}
         </Typography>
         <Typography
@@ -35,6 +35,7 @@ function Footer(props: FooterProps) {
           align="center"
           color="text.secondary"
           component="p"
+          style={{fontFamily: 'Yomogi'}}
         >
           {description}
         </Typography>

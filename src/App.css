@@ -82,4 +82,14 @@
 
 .Contact-button {
   max-width: 50%;
+  font-family: 'Yomogi';
+}
+
+@font-face {
+  font-family: 'Yomogi';
+  src: local('Yomogi'), url(./assets/fonts/Yomogi-Regular.ttf) format('truetype');
+}
+
+.css-13xe7sw-MuiFormLabel-root-MuiInputLabel-root {
+  font-family: 'Yomogi';
 }

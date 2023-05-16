@@ -1,11 +1,11 @@
-import { Box, Button, Grid, Paper, TextField, Typography } from '@mui/material';
-import React, { useState } from 'react';
-import { useFormik } from 'formik';
-import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
-import { object, string } from 'yup';
 import emailjs from '@emailjs/browser';
+import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
+import { Box, Button, FormControl, FormControlLabel, Grid, Paper, TextField, Typography } from '@mui/material';
+import { useFormik } from 'formik';
 import isEmpty from 'lodash.isempty';
+import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { object, string } from 'yup';
 
 type ContactTypeForm = {
   name: string;
@@ -70,6 +70,7 @@ function Contact() {
         >
           {isEmpty(response) && (
             <>
+
               <TextField
                 fullWidth
                 id="name"
@@ -80,8 +81,8 @@ function Contact() {
                 value={formik.values.name}
                 error={formik.errors.name ? true : false}
                 helperText={formik.errors.name}
+                style={{fontFamily: 'Yomogi'}}
               />
-
               <TextField
                 fullWidth
                 id="email"
@@ -92,6 +93,7 @@ function Contact() {
                 value={formik.values.email}
                 error={formik.errors.email ? true : false}
                 helperText={formik.errors.email}
+                style={{fontFamily: 'Yomogi'}}
               />
 
               <TextField
@@ -106,6 +108,7 @@ function Contact() {
                 value={formik.values.message}
                 error={formik.errors.message ? true : false}
                 helperText={formik.errors.message}
+                style={{fontFamily: 'Yomogi'}}
               />
 
               <Spacer />
@@ -116,6 +119,7 @@ function Contact() {
                 type="submit"
                 endIcon={<EmailOutlinedIcon />}
                 className={'Contact-button'}
+                style={{fontFamily: 'Yomogi', fontSize: '18px'}}
               >
                 {t("CONTACTS.BUTTONTEXT")}
               </Button>
@@ -123,7 +127,7 @@ function Contact() {
           )}
 
           {!isEmpty(response) && (
-            <Typography variant="body1" color="text.secondary">
+            <Typography variant="body1" color="text.secondary" style={{fontFamily: 'Yomogi'}}>
               {response}
             </Typography>
           )}
