@@ -1,6 +1,6 @@
 import emailjs from '@emailjs/browser';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
-import { Box, Button, FormControl, FormControlLabel, Grid, Paper, TextField, Typography } from '@mui/material';
+import { Box, Button, Grid, Paper, TextField, Typography } from '@mui/material';
 import { useFormik } from 'formik';
 import isEmpty from 'lodash.isempty';
 import { useState } from 'react';
@@ -70,7 +70,6 @@ function Contact() {
         >
           {isEmpty(response) && (
             <>
-
               <TextField
                 fullWidth
                 id="name"

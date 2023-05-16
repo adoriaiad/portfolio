@@ -85,11 +85,15 @@
   font-family: 'Yomogi';
 }
 
+.MuiTextField-root > label {
+ font-family: 'Yomogi';
+}
+
+.MuiTextField-root > .MuiFormLabel-root.Mui-focused {
+  font-family: 'Yomogi';
+}
+
 @font-face {
   font-family: 'Yomogi';
   src: local('Yomogi'), url(./assets/fonts/Yomogi-Regular.ttf) format('truetype');
-}
-
-.css-13xe7sw-MuiFormLabel-root-MuiInputLabel-root {
-  font-family: 'Yomogi';
 }
