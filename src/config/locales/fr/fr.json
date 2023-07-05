@@ -2,15 +2,16 @@
     "MENU": {
       "PROJECTS": "Projets",
       "CONTACTS": "Contacts",
-      "GALLERY": "Illustrations"
+      "GALLERY": "Illustrations",
+      "GRAPHIC": "Designer Graphique"
     },
     "BIO": {
       "WHO": "Qui suis-je?",
-      "TEXT1": "Aussi loin que je me souvienne, j'ai toujours dessiné, depuis que je suis une petit fille. J'ai rempli des feuilles et des feuilles de dessins, copié mes personnages préférés ou en ai créé de nouveaux.",
-      "TEXT2": "Je n'ai jamais arrêté, même si j'en ai fait d'autres dans ma vie : études scientifiques et travail dans le monde de l'informatique. J'ai toujours aimé dessiner au crayon et au fusain, représenter tout le monde, et j'ai souvent expérimenté la couleur et le pastel.",
-      "TEXT3": "Pendant mes études universitaires, j'ai suivi un cours d'illustration naturaliste à l'aquarelle et j'ai étudié les techniques de peinture et de dessin, en particulier de la figure humaine, en autodidacte. Toujours curieux, désireux d'apprendre et de m'améliorer, sensible à la nature et à sa beauté.",
-      "TEXT4": "Il y a quelques années j'ai découvert le dessin digital en expérimentant et en cherchant toujours de nouvelles solutions pour améliorer mon style. Actuellement intéressé par l'illustration jeunesse, j'ai un projet en cours qui je l'espère deviendra le premier de bien d'autres.",
-      "TEXT5": "Pendant mon temps libre, je joue du saxophone, du ukulélé et j'aime étudier le piano moderne. Je pense que l'art sous toutes ses formes nous permet d'exprimer la créativité dans le monde et aide à abandonner la rationalité que la vie nous impose souvent, se rapprochant de notre sentiments"
+      "TEXT1": "Aussi loin que je me souvienne, j'ai toujours dessiné, depuis que j’étais une petite fille. Je remplissais des feuilles et des feuilles de dessins, copiant mes personnages préférés ou en créant de nouveaux.",
+      "TEXT2": "Je n'ai jamais arrêté de dessiner, même si j'en ai fait d'autres choses dans ma vie : études scientifiques et travail dans le monde de l'informatique. J'ai toujours aimé dessiner au crayon et au fusain, représenter tout le monde, et j'ai souvent expérimenté la couleur et le pastel.",
+      "TEXT3": "Pendant mes études universitaires, j'ai suivi un cours d'illustration naturaliste à l'aquarelle et j'ai étudié les techniques de peinture et de dessin, en particulier de la figure humaine, en autodidacte. Toujours curieuse, désireuse d'apprendre et de m'améliorer, sensible à la nature et à sa beauté.",
+      "TEXT4": "Il y a quelques années j'ai découvert le dessin digital en expérimentant et en cherchant toujours de nouvelles solutions pour améliorer mon style. Actuellement intéressé par l'illustration pour les enfants, j'ai un projet en cours qui j’espère deviendra le premier de bien d'autres.",
+      "TEXT5": "Pendant mon temps libre, je joue du saxophone, de l’ukulélé et j'aime étudier le piano moderne. Je pense que l'art sous toutes ses formes nous permet d'exprimer la créativité dans le monde et aide à abandonner la rationalité que la vie nous impose souvent, se rapprochant de nôtres sentiments."
     },
     "CONTACTS": {
       "ERRORNAME": "Prenom et Nom obligatoire",
@@ -27,13 +28,13 @@
         "TITLE": "Projet en cours",
         "IMAGES": {
           "DESCRIPTION1": "J'aime créer des illustrations qui évoquent la légèreté, la joie.",
-          "DESCRIPTION2": "Mon style allie simplicité et harmonie entre les couleurs à la recherche d'un effet pastel doux par la peinture digitale."
+          "DESCRIPTION2": "Mon style se fait en simplicité et harmonie entre les couleurs à la recherche d'un effet pastel doux parmi la peinture digitale."
         }
       },
       "PROJECT2": {
         "TITLE": "Conception de personnages",
         "IMAGES": {
-          "DESCRIPTION1": "Chaque dessin naît sur papier puis prend de la couleur grâce à la peinture digitale"
+          "DESCRIPTION1": "Chaque dessin naît sur papier puis prend sa couleur grâce à la peinture digitale."
         }
       },
       "PROJECT3": {
@@ -62,10 +63,10 @@
       "CDTITLE": "Conception de personnages",
       "GALLERY1": {
         "IMAGE1": {
-          "DESCRIPTION": "Chat magicien"
+          "DESCRIPTION": "Le chat magicien"
         },
         "IMAGE2": {
-          "DESCRIPTION": "Illustration conçue pour décorer tout type d'objet (gobelets, couvertures de cahiers ou agendas) mais aussi expérience en noir et blanc."
+          "DESCRIPTION": "Illustration conçue pour décorer tout type d'objet (gobelets, couvertures de cahiers ou agendas) mais aussi expérimenter en noir et blanc."
         },
         "IMAGE3": {
           "DESCRIPTION": "Étude de personnage"
@@ -76,13 +77,13 @@
           "DESCRIPTION": "Interprétation du thème du coureur, pas exactement compétitif mais plutôt calme et détendu!"
         },
         "IMAGE2": {
-          "DESCRIPTION": "Où vont les ballons?"
+          "DESCRIPTION": "Où vont-ils les ballons?"
         },
         "IMAGE3": {
           "DESCRIPTION": ""
         },
         "IMAGE4": {
-          "DESCRIPTION": "Neiges!"
+          "DESCRIPTION": "Il neige!"
         }
       },
       "GALLERY3": {

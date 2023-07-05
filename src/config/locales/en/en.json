@@ -2,15 +2,16 @@
   "MENU": {
     "PROJECTS": "Projects",
     "CONTACTS": "Contacts",
-    "GALLERY": "Gallery"
+    "GALLERY": "Gallery",
+    "GRAPHIC": "Graphic Design"
   },
   "BIO": {
     "WHO": "Who I am",
-    "TEXT1": "As far as I can remember, I have always drawn, ever since I was a child. I filled sheets and sheets of drawings, copied my favorite characters or created new ones.",
-    "TEXT2": "I've never stopped, even though I've done other in my life: scientific studies and work in the IT world. I have always loved drawing by pencil and charcoal, portraying everyone and I have often experimented with colors and pastels.",
-    "TEXT3": "During my university studies I attended a naturalistic watercolor illustration course and I studied the techniques of painting and drawing, especially of human figure, as a self-taught. Always curious, eager to learn and improve, sensitive to nature and its beauty.",
-    "TEXT4": "Few years ago I discovered digital drawing by experimenting and always looking for new solutions to improve my style. Currently interested in children's illustration, I have a project in progress that I hope will become the first of many others.",
-    "TEXT5": "In my spare time I play saxophone, ukulele and enjoy studying modern piano. I think that art in all its forms allows us to express creativity in the world and helps to abandon the rationality that life often imposes on us, getting closer to our \"feeling\""
+    "TEXT1": "As far as I can remember, I have always drawn, ever since I was a child. I used to fill sheets and sheets of drawings, copy my favorite characters, or create new ones.",
+    "TEXT2": "I've never stopped drawing, even though I've done other things in my life: scientific studies and work in the IT field. I have always loved drawing by pencil and charcoal, portraying everyone and I have often experimented new pieces with colors and pastels.",
+    "TEXT3": "During my university studies, I attended a course of naturalistic watercolor illustration, and I studied the techniques of painting and drawing, especially human figures, as a self-taught. Always curious, eager to learn and improve, sensitive to nature and its beauty.",
+    "TEXT4": "A few years ago, I discovered the digital drawing technique by experiencing and always looking for new solutions to improve my style. Currently interested in children's illustration, I am developing a project that I hope will become the first of many others.",
+    "TEXT5": "In my spare time I play saxophone, ukulele and enjoy studying modern piano. I think that the art, in all its forms, allows us to express creativity through the world and helps to abandon rationality that life often imposes on us, getting closer to our \"feelings\"."
   },
   "CONTACTS": {
     "ERRORNAME": "Name required",
@@ -26,21 +27,21 @@
     "PROJECT1": {
       "TITLE": "Project in progress",
       "IMAGES": {
-        "DESCRIPTION1": "I love creating illustrations that evoke lightness, joy.",
-        "DESCRIPTION2": "My style combines simplicity and harmony between colors searching for soft pastel effect by digital painting."
+        "DESCRIPTION1": "I love creating illustrations which evoke lightness, joy.",
+        "DESCRIPTION2": "My style combines simplicity and harmony between colors melting them with soft pastel effect by digital painting."
       }
     },
     "PROJECT2": {
       "TITLE": "Character design",
       "IMAGES": {
-        "DESCRIPTION1": "Every drawing borns on paper and then takes color through digital painting"
+        "DESCRIPTION1": "Every drawing gets shape on paper and then takes color through digital painting"
       }
     },
     "PROJECT3": {
       "TITLE": "From sketch...",
       "IMAGES": {
-        "DESCRIPTION1": "Cute and curious animal musicians, in a magical forest that transforms its colors and fills with joy...",
-        "DESCRIPTION2": "...to the final drawing and page layout"
+        "DESCRIPTION1": "Cute and curious animal musicians, in a magical forest that transforms beneath its colors and fills with joy...",
+        "DESCRIPTION2": "...to the final drawing tableau and page layout"
       }
     }
   },
@@ -49,7 +50,7 @@
     "TITLE1": "Black & White",
     "TITLE2": "Colors: digital illustrations",
     "TITLE3": "Competition: Illustrator of the year \"Città del sole\" 2019: project included in the final selection.",
-    "SUBTITLE3": "The idea: 12 months in which protagonists are forest's animals. In each month there a new animal on the scene and gradually the orchestra grows. The landscape and colors follow the seasons changing.",
+    "SUBTITLE3": "The idea: 12 months in which heroes are forest's animals. Each month a new animal pops-up on the scene and gradually the orchestra grows. Landscape and colors follow the seasons, changing their shape.",
     "ILLUSTRATIONTITLE": "Illustration",
     "TECHNIQUE": {
       "MIXED_EXP": "mixed technique graphite, charcoal and digital retouching (experiments)",
@@ -65,7 +66,7 @@
         "DESCRIPTION": "Wizard cat"
       },
       "IMAGE2": {
-        "DESCRIPTION": "Illustration designed to decorate any kind of objects (cups, notebook covers or diaries) but also black and white experiment."
+        "DESCRIPTION": "Illustration designed to decorate any kind of objects (cups, notebook covers or diaries) but also to experiment black and white."
       },
       "IMAGE3": {
         "DESCRIPTION": "Character study"
@@ -93,10 +94,10 @@
         "TITLE": "september"
       },
       "IMAGE3": {
-        "TITLE": "Sketches of months from january to june"
+        "TITLE": "Months'sketches, from january to june"
       },
       "IMAGE4": {
-        "TITLE": "Sketches of months from july to dicember"
+        "TITLE": "Months'sketches, from july to dicember"
       }
     }
   },

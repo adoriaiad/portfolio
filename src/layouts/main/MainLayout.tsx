@@ -8,6 +8,7 @@ import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import MenuBookOutlinedIcon from "@mui/icons-material/MenuBookOutlined";
 import CollectionsOutlinedIcon from "@mui/icons-material/CollectionsOutlined";
 import PermIdentityOutlinedIcon from "@mui/icons-material/PermIdentityOutlined";
+import DesignServicesIcon from '@mui/icons-material/DesignServices';
 import { MenuItemType } from "../../models/type";
 import { useTranslation } from "react-i18next";
 
@@ -17,6 +18,7 @@ function MainLayout() {
     { title: "Home", url: "/", icon: <HomeOutlinedIcon /> },
     { title: t("MENU.PROJECTS"), url: "/progetti", icon: <MenuBookOutlinedIcon /> },
     { title:  t("MENU.GALLERY"), url: "/gallery", icon: <CollectionsOutlinedIcon /> },
+    { title:  t("MENU.GRAPHIC"), url: "#", icon: <DesignServicesIcon /> },
     { title: "Bio", url: "/bio", icon: <PermIdentityOutlinedIcon /> },
     { title: t("MENU.CONTACTS"), url: "/contact", icon: <EmailOutlinedIcon /> },
   ];
