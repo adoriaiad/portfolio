@@ -6,6 +6,7 @@ import DataProtection from "../pages/DataProtection";
 import Gallery from "../pages/Gallery";
 import Home from "../pages/Home";
 import Portfolio from "../pages/Portfolio";
+import Comics from "../pages/Comic";
 
 const Routes = () => {
   return useRoutes([routes]);
@@ -37,6 +38,10 @@ const routes: RouteObject = {
     {
       path: "/contact",
       element: <Contact />,
+    },
+    {
+      path: "/comics",
+      element: <Comics />,
     },
     {
       path: "/*",

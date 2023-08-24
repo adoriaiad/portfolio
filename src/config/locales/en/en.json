@@ -3,7 +3,10 @@
     "PROJECTS": "Projects",
     "CONTACTS": "Contacts",
     "GALLERY": "Gallery",
-    "GRAPHIC": "Graphic Design"
+    "PORTFOLIO": "Portfolio",
+    "BOOKS": "Books",
+    "COMICS": "Comics",
+    "EVENTS": "Events"
   },
   "BIO": {
     "WHO": "Who I am",
