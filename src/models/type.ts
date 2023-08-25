@@ -24,3 +24,9 @@ export type GalleryItem = {
   description?: string;
   technique: string;
 };
+
+export type ComicImageMenuType = {
+  src: string;
+  title: string;
+  path: string;
+}
