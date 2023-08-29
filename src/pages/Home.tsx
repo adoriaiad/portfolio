@@ -1,14 +1,89 @@
-import React from "react";
-import home from "./../assets/img/homepage.png";
+import React from 'react';
+import {
+  Card,
+  CardActionArea,
+  CardMedia,
+  Grid,
+  Typography,
+} from '@mui/material';
+import { useTranslation } from 'react-i18next';
+import portfolio from './../assets/img/home/home_portfolio.png' ;
+import books from './../assets/img/home/home_book.png';
+import comics from './../assets/img/home/home_comic.png';
+import { useNavigate } from 'react-router-dom';
 
 function Home() {
+  const { t } = useTranslation();
+  const navigation = useNavigate();
+  const menuCards = [
+    {
+      image: portfolio,
+      path: '/portfolio',
+      title: t('MENU.PORTFOLIO'),
+    },
+    {
+      image: books,
+      path: '/books',
+      title: t('MENU.BOOKS'),
+    },
+    {
+      image: comics,
+      path: '/comics',
+      title: t('MENU.COMICS'),
+    },
+  ];
+
   return (
-    <header
-      className="App-header"
-      style={{ display: "flex", alignItems: "center" }}
-    >
-      <img src={home} alt="logo" width={"90%"} height={"90%"} />
-    </header>
+    <Grid
+        container
+        spacing={2}
+        style={{ display: 'flex', justifyContent: 'center' }}
+      >
+    <div className="Home">
+      <Grid
+        container
+        spacing={2}
+        style={{
+          display: 'flex',
+          justifyContent: 'space-evenly',
+          marginTop: '50px',
+          marginBottom: '10px',
+        }}
+      >
+        {menuCards.map((item, index) => (
+          <Card
+            sx={{ maxWidth: 240 }}
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'space-evenly',
+              margin: '10px',
+              padding: '10px',
+              backgroundColor: 'rgba(22, 110, 148,0.5)',
+            }}
+            key={index}
+          >
+            <CardActionArea onClick={() => navigation(item.path)}>
+              <CardMedia
+                component="img"
+                image={item.image}
+                alt={''}
+                style={{ width: '190px', height: '190px' }}
+                
+              />
+              <Typography
+                variant="h6"
+                color="text.secondary"
+                style={{ fontFamily: 'Yomogi' }}
+              >
+                {item.title}
+              </Typography>
+            </CardActionArea>
+          </Card>
+        ))}
+      </Grid>
+    </div>
+      </Grid>
   );
 }
 

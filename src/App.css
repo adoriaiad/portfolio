@@ -100,3 +100,14 @@
   font-family: 'Yomogi';
   src: local('Yomogi'), url(./assets/fonts/Yomogi-Regular.ttf) format('truetype');
 }
+
+.Home {
+  background-image: url('../src/assets/img/homepage.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  max-width: 663px;
+  max-height: 485px;
+  display: flex;
+  align-content: center;
+  align-self: center;
+}
