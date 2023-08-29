@@ -16,8 +16,8 @@ function MainLayout() {
   const {t} = useTranslation();
   const sections: MenuItemType[] = [
     { title: "Home", url: "/", icon: <HomeOutlinedIcon /> },
-    { title: t("MENU.PROJECTS"), url: "/progetti", icon: <MenuBookOutlinedIcon /> },
-    { title:  t("MENU.GALLERY"), url: "/gallery", icon: <CollectionsOutlinedIcon /> },
+    { title: t("MENU.PORTFOLIO"), url: "/portfolio", icon: <MenuBookOutlinedIcon /> },
+    { title:  t("MENU.BOOKS"), url: "/books", icon: <CollectionsOutlinedIcon /> },
     { title:  t("MENU.COMICS"), url: "/comics", icon: <BrushIcon /> },
     { title: "Bio", url: "/bio", icon: <PermIdentityOutlinedIcon /> },
     { title: t("MENU.CONTACTS"), url: "/contact", icon: <EmailOutlinedIcon /> },

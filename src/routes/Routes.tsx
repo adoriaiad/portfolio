@@ -1,12 +1,14 @@
-import { RouteObject, useRoutes } from "react-router-dom";
-import MainLayout from "../layouts/main/MainLayout";
-import Bio from "../pages/Bio";
-import Contact from "../pages/Contact";
-import DataProtection from "../pages/DataProtection";
-import Gallery from "../pages/Gallery";
-import Home from "../pages/Home";
-import Portfolio from "../pages/Portfolio";
-import Comics from "../pages/Comic";
+import { RouteObject, useRoutes } from 'react-router-dom';
+import MainLayout from '../layouts/main/MainLayout';
+import Bio from '../pages/Bio';
+import Contact from '../pages/Contact';
+import DataProtection from '../pages/DataProtection';
+import Home from '../pages/Home';
+import Portfolio from '../pages/Portfolio';
+import Comics from '../pages/Comic';
+import Typography from '@mui/material/Typography';
+import joy from '../../src/assets/comics/gioia.png';
+import oops from '../../src/assets/comics/oops.png';
 
 const Routes = () => {
   return useRoutes([routes]);
@@ -16,36 +18,66 @@ const routes: RouteObject = {
   element: <MainLayout />,
   children: [
     {
-      path: "/",
+      path: '/',
       element: <Home />,
     },
     {
-      path: "/bio",
+      path: '/bio',
       element: <Bio />,
     },
     {
-      path: "/progetti",
+      path: '/portfolio',
       element: <Portfolio />,
     },
     {
-      path: "/gallery",
-      element: <Gallery />,
+      path: '/books',
+      element: (
+        <Typography
+          variant="h3"
+          color={'text.secondary'}
+          style={{
+            fontFamily: 'Yomogi',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'space-around',
+            alignItems: 'center',
+          }}
+        >
+          <img src={joy} alt="" style={{ maxWidth: '400px' }} />
+          COMING SOON...
+        </Typography>
+      ),
     },
     {
-      path: "/data",
+      path: '/data',
       element: <DataProtection />,
     },
     {
-      path: "/contact",
+      path: '/contact',
       element: <Contact />,
     },
     {
-      path: "/comics",
+      path: '/comics',
       element: <Comics />,
     },
     {
-      path: "/*",
-      element: <h2>⚠ OOPS... Page not found! ⚠</h2>,
+      path: '/*',
+      element:(
+        <Typography
+          variant="h3"
+          color={'text.secondary'}
+          style={{
+            fontFamily: 'Yomogi',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'space-around',
+            alignItems: 'center',
+          }}
+        >
+           <img src={oops} alt="" style={{ maxWidth: '400px' }} />
+          ⚠ OOPS... Page not found! ⚠
+        </Typography>
+      ) 
     },
   ],
 };

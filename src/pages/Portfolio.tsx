@@ -20,6 +20,7 @@ import pag03 from './../assets/img/pagina03.jpg';
 import m01 from './../assets/img/mockup01.jpg';
 import m02 from './../assets/img/mockup02.jpg';
 import { useTranslation } from 'react-i18next';
+import Gallery from '../components/Gallery';
 
 function Portfolio() {
   const { t } = useTranslation();
@@ -137,6 +138,7 @@ function Portfolio() {
           key={item.id}
         />
       ))}
+      <Gallery expanded={expanded} handleChange={handleChange}/>
     </Grid>
   );
 }
