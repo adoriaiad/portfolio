@@ -3,22 +3,23 @@ import Tab from "@mui/material/Tab";
 import Tabs from "@mui/material/Tabs";
 import * as React from "react";
 import { MenuItemType } from "../models/type";
+import { useMenuNavigation } from "../contexts/MenuNavigation";
 
 type ColorTabsProps = {
   sections: MenuItemType[];
-  anchor: string;
   onhandleChange: (event: React.SyntheticEvent, newValue: string) => void;
 };
 
 export default function ColorTabs(props: ColorTabsProps) {
-  const { sections, anchor, onhandleChange } = props;
+  const { sections, onhandleChange } = props;
+  const menuNavigation = useMenuNavigation();
   /* const [value, setValue] = React.useState(anchor);
   const navigation = useNavigate();
  */
   return (
     <Box>
       <Tabs
-        value={anchor}
+        value={menuNavigation.selected}
         onChange={onhandleChange}
         textColor="primary"
         indicatorColor="secondary"

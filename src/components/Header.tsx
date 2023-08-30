@@ -7,13 +7,13 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import * as React from "react";
+import { useNavigate } from "react-router-dom";
+import { useMenuNavigation } from "../contexts/MenuNavigation";
 import { MenuItemType } from "../models/type";
 import logo from "./../assets/img/_logo.png";
+import LangDropdown from "./LangDropdown";
 import Menu from "./Menu";
 import ColorTabs from "./Tabs";
-import LangDropdown from "./LangDropdown";
-import { useNavigate } from "react-router-dom";
-import { useState } from "react";
 
 export interface HeaderProps {
   sections: Array<MenuItemType>;
@@ -30,7 +30,7 @@ const enum GoToEnum {
 
 export default function Header(props: HeaderProps) {
   const { sections, title } = props;
-  const [anchor, setAnchor] = useState<string>('/');
+  const menuNavigation = useMenuNavigation();
   const navigation = useNavigate();
 
   const goTo: { [key: string]: (event: React.SyntheticEvent) => void } = {
@@ -55,7 +55,7 @@ export default function Header(props: HeaderProps) {
   };
 
   const handleChange = (event: React.SyntheticEvent, newValue: string) => {
-    setAnchor(newValue);
+    menuNavigation.pageSelection(newValue);
     navigation(newValue);
   };
 
@@ -103,7 +103,7 @@ export default function Header(props: HeaderProps) {
           sx={{ justifyContent: "center", overflowX: "auto" }}
           className={"Menu-header"}
         >
-          <ColorTabs sections={sections} anchor={anchor} onhandleChange={handleChange}/>
+          <ColorTabs sections={sections} onhandleChange={handleChange}/>
         </Toolbar>
       )}
     </React.Fragment>

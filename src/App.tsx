@@ -3,12 +3,15 @@ import './App.css';
 import AppThemeProvider from './contexts/AppTheme';
 import Routes from './routes/Routes';
 import LanguageProvider from './contexts/Localisation';
+import MenuNavigationProvider from './contexts/MenuNavigation';
 
 function App() {
   return (
     <AppThemeProvider>
       <LanguageProvider>
-        <Routes />
+        <MenuNavigationProvider>
+          <Routes />
+        </MenuNavigationProvider>
       </LanguageProvider>
     </AppThemeProvider>
   );

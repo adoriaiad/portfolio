@@ -11,10 +11,13 @@ import portfolio from './../assets/img/home/home_portfolio.png' ;
 import books from './../assets/img/home/home_book.png';
 import comics from './../assets/img/home/home_comic.png';
 import { useNavigate } from 'react-router-dom';
+import { useMenuNavigation } from '../contexts/MenuNavigation';
 
 function Home() {
   const { t } = useTranslation();
   const navigation = useNavigate();
+  const menuNavigation = useMenuNavigation();
+
   const menuCards = [
     {
       image: portfolio,
@@ -32,6 +35,11 @@ function Home() {
       title: t('MENU.COMICS'),
     },
   ];
+
+  function onClickEventHandler(page: string){
+    menuNavigation.pageSelection(page);
+    navigation(page);
+  }
 
   return (
     <Grid
@@ -63,7 +71,7 @@ function Home() {
             }}
             key={index}
           >
-            <CardActionArea onClick={() => navigation(item.path)}>
+            <CardActionArea onClick={() => onClickEventHandler(item.path)}>
               <CardMedia
                 component="img"
                 image={item.image}

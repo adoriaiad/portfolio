@@ -17,18 +17,6 @@
   color: #332d2d;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .Menu-header {
-    flex-direction: column;
-  }
-}
-
 .App-header {
   display: flex;
   flex-direction: column;
@@ -37,6 +25,7 @@
   font-size: calc(10px + 2vmin);
   color: #332d2d;
 }
+
 .Logo-cursor {
   cursor: pointer;
 }
@@ -47,15 +36,6 @@
 
 .App-link {
   color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
 
 .Paper {
@@ -89,16 +69,11 @@
 }
 
 .MuiTextField-root > label {
- font-family: 'Yomogi';
+  font-family: 'Yomogi';
 }
 
 .MuiTextField-root > .MuiFormLabel-root.Mui-focused {
   font-family: 'Yomogi';
-}
-
-@font-face {
-  font-family: 'Yomogi';
-  src: local('Yomogi'), url(./assets/fonts/Yomogi-Regular.ttf) format('truetype');
 }
 
 .Home {
@@ -111,3 +86,33 @@
   align-content: center;
   align-self: center;
 }
+
+@font-face {
+  font-family: 'Yomogi';
+  src: local('Yomogi'), url(./assets/fonts/Yomogi-Regular.ttf) format('truetype');
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Menu-header {
+    flex-direction: column;
+  }
+  .Home {
+    background-image: none;
+  }
+}
+

@@ -128,7 +128,7 @@ function Portfolio() {
     <Grid
       container
       spacing={2}
-      style={{ display: 'flex', justifyContent: 'space-evenly' }}
+      style={{ display: 'flex', justifyContent: 'space-evenly', marginTop: '50px' }}
     >
       {gallery.map(item => (
         <Accordions

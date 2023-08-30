@@ -11,9 +11,12 @@ import PermIdentityOutlinedIcon from "@mui/icons-material/PermIdentityOutlined";
 import BrushIcon from '@mui/icons-material/Brush';
 import { MenuItemType } from "../../models/type";
 import { useTranslation } from "react-i18next";
+import { useMenuNavigation } from "../../contexts/MenuNavigation";
 
 function MainLayout() {
   const {t} = useTranslation();
+  const menuNavigation = useMenuNavigation();
+  const isHomePage = menuNavigation.selected === '/'? true : false;
   const sections: MenuItemType[] = [
     { title: "Home", url: "/", icon: <HomeOutlinedIcon /> },
     { title: t("MENU.PORTFOLIO"), url: "/portfolio", icon: <MenuBookOutlinedIcon /> },
@@ -32,7 +35,7 @@ function MainLayout() {
           <Outlet />
         </Container>
       </div>
-      <Footer description="" title="" />
+      {!isHomePage && <Footer description="" title="" />}
     </>
   );
 }
