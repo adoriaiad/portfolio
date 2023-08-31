@@ -8,6 +8,9 @@
     "COMICS": "Comics",
     "EVENTS": "Events"
   },
+  "COMICS": {
+    "TITLE": "Short italian comic strips"
+  },
   "BIO": {
     "WHO": "Who I am",
     "TEXT1": "As far as I can remember, I have always drawn, ever since I was a child. I used to fill sheets and sheets of drawings, copy my favorite characters, or create new ones.",

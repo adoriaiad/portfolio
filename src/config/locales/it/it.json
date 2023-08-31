@@ -8,6 +8,9 @@
     "COMICS": "Fumetti",
     "EVENTS": "Eventi"
   },
+  "COMICS": {
+    "TITLE": "Piccole storie a fumetti"
+  },
   "BIO": {
     "WHO": "Chi sono",
     "TEXT1": "Che io ricordi ho sempre disegnato, fin da piccola. Riempivo fogli e fogli di disegni, copiavo i miei personaggi preferiti o ne creavo nuovi.",

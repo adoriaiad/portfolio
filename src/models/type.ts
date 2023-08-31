@@ -28,5 +28,6 @@ export type GalleryItem = {
 export type ComicImageMenuType = {
   src: string;
   title: string;
+  description: string;
   path: string;
 }

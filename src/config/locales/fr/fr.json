@@ -8,6 +8,9 @@
       "COMICS": "Bande dessinée",
       "EVENTS": "Événements"
     },
+    "COMICS": {
+      "TITLE": "Courtes bandes dessinées italiennes"
+    },
     "BIO": {
       "WHO": "Qui suis-je?",
       "TEXT1": "Aussi loin que je me souvienne, j'ai toujours dessiné, depuis que j’étais une petite fille. Je remplissais des feuilles et des feuilles de dessins, copiant mes personnages préférés ou en créant de nouveaux.",
