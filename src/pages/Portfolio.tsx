@@ -24,10 +24,16 @@ import Gallery from '../components/Gallery';
 
 function Portfolio() {
   const { t } = useTranslation();
-  const [expanded, setExpanded] = React.useState<string | false>('01');
-  const handleChange =
-    (panel: string) => (event: React.SyntheticEvent, isExpanded: boolean) => {
-      setExpanded(isExpanded ? panel : false);
+  const [selectedMarkerIDs, setSelectedMarkerIDs] = React.useState<string[]>([]);
+  
+    const handleMarkerPressed = (id: string) => () => {
+      setSelectedMarkerIDs((prevState) =>
+        prevState.includes(id)
+          ? // If ID is already selected, remove it
+            prevState.filter((markerID) => markerID !== id)
+          : // If ID is not selected, add it
+            [...prevState, id]
+      );
     };
 
   const gallery: ImageGalleryType[] = [
@@ -124,6 +130,8 @@ function Portfolio() {
       ],
     },
   ];
+
+  
   return (
     <Grid
       container
@@ -133,12 +141,12 @@ function Portfolio() {
       {gallery.map(item => (
         <Accordions
           imgGallery={item}
-          expanded={expanded}
-          handleChange={handleChange}
+          handleChange={handleMarkerPressed}
           key={item.id}
+          selectedMarkerIDs={selectedMarkerIDs}
         />
       ))}
-      <Gallery expanded={expanded} handleChange={handleChange}/>
+      <Gallery handleClick={handleMarkerPressed} selectedMarkerIDs={selectedMarkerIDs}/>
     </Grid>
   );
 }

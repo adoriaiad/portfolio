@@ -16,7 +16,7 @@ import { useMenuNavigation } from "../../contexts/MenuNavigation";
 function MainLayout() {
   const {t} = useTranslation();
   const menuNavigation = useMenuNavigation();
-  const isHomePage = menuNavigation.selected === '/'? true : false;
+  const isContactPage = menuNavigation.selected === '/contact'? true : false;
   const sections: MenuItemType[] = [
     { title: "Home", url: "/", icon: <HomeOutlinedIcon /> },
     { title: t("MENU.PORTFOLIO"), url: "/portfolio", icon: <MenuBookOutlinedIcon /> },
@@ -35,7 +35,7 @@ function MainLayout() {
           <Outlet />
         </Container>
       </div>
-      {!isHomePage && <Footer description="" title="" />}
+      {isContactPage && <Footer description="" title="" />}
     </>
   );
 }

@@ -77,11 +77,8 @@
 }
 
 .Home {
-  background-image: url('../src/assets/img/homepage.png');
-  background-repeat: no-repeat;
-  background-size: 100%;
-  max-width: 663px;
-  max-height: 485px;
+  max-width: 95%;
+  max-height: 95%;
   display: flex;
   align-content: center;
   align-self: center;
@@ -110,9 +107,6 @@
 @media screen and (max-width: 600px) {
   .Menu-header {
     flex-direction: column;
-  }
-  .Home {
-    background-image: none;
   }
 }
 

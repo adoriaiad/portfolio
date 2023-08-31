@@ -4,6 +4,7 @@ import {
   AccordionSummary,
   Divider,
   Grid,
+  IconButton,
   Typography,
 } from '@mui/material';
 import isEmpty from 'lodash.isempty';
@@ -24,16 +25,15 @@ import b01 from './../assets/img/Bozze01.jpg';
 import b02 from './../assets/img/Bozze02.jpg';
 import { useTranslation } from 'react-i18next';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import ClearIcon from '@mui/icons-material/Clear';
 
 type GalleryProps = {
-  handleChange: (
-    panel: string
-  ) => (event: React.SyntheticEvent, isExpanded: boolean) => void;
-  expanded: string | boolean;
+  selectedMarkerIDs: string[];
+  handleClick: (id: string) => () => void;
 };
 
 function Gallery(props: GalleryProps) {
-  const { handleChange, expanded } = props;
+  const { handleClick, selectedMarkerIDs } = props;
   const { t } = useTranslation();
   const [selected, setSelected] = useState<GalleryItem>();
 
@@ -129,9 +129,9 @@ function Gallery(props: GalleryProps) {
     <div style={{ marginBottom: '10px', width: '1200px' }} key={`div-04`}>
       {selected && <ImageView src={selected.src} closeHandler={closePicture} />}
       <Accordion
-        expanded={expanded === '04'}
-        onChange={handleChange('04')}
-        key={`acc-04`}
+        expanded={selectedMarkerIDs.includes('04')}
+        onChange={handleClick('04')}
+        key={'04'}
       >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
@@ -240,6 +240,18 @@ function Gallery(props: GalleryProps) {
                   key={`g3-${index}`}
                 />
               ))}
+          </Grid>
+          <Grid
+            container
+            spacing={2}
+            style={{
+              display: 'flex',
+              alignItems: 'flex-end',
+              justifyContent: 'flex-end'
+            }}
+            key={`grid-back4`}
+          >
+            <IconButton key="04" color="primary" onClick={handleClick("04")}><ClearIcon /></IconButton>
           </Grid>
         </AccordionDetails>
       </Accordion>

@@ -6,23 +6,23 @@ import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { ImageGalleryType } from '../models/type';
 import Grid from '@mui/material/Grid';
+import ClearIcon from '@mui/icons-material/Clear';
+import { IconButton } from '@mui/material';
 
 type AccordionsProps = {
   imgGallery: ImageGalleryType;
-  handleChange: (
-    panel: string
-  ) => (event: React.SyntheticEvent, isExpanded: boolean) => void;
-  expanded: string | boolean;
+  handleChange:(id: string) => () => void;
+  selectedMarkerIDs: string[];
 };
 export default function Accordions(props: AccordionsProps) {
-  const { imgGallery, handleChange, expanded } = props;
+  const { imgGallery, handleChange, selectedMarkerIDs } = props;
 
   return (
     <div style={{ marginBottom: '10px', width:'1200px' }} key={`div-${imgGallery.id}`}>
       <Accordion
-        expanded={expanded === imgGallery.id}
+        expanded={selectedMarkerIDs.includes(imgGallery.id)}
         onChange={handleChange(imgGallery.id)}
-        key={`acc-${imgGallery.id}`}
+        key={imgGallery.id}
       >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
@@ -84,6 +84,18 @@ export default function Accordions(props: AccordionsProps) {
                 />
               </div>
             ))}
+          </Grid>
+          <Grid
+            container
+            spacing={2}
+            style={{
+              display: 'flex',
+              alignItems: 'flex-end',
+              justifyContent: 'flex-end'
+            }}
+            key={`grid-back${imgGallery.id}`}
+          >
+            <IconButton color="primary" onClick={handleChange(imgGallery.id)}><ClearIcon /></IconButton>
           </Grid>
         </AccordionDetails>
       </Accordion>
