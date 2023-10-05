@@ -1,6 +1,8 @@
 import { useTranslation } from "react-i18next";
 import { ImageGalleryType } from '../models/type';
 import p02 from './../assets/img/02.jpg';
+import p03 from './../assets/img/03.jpg';
+import p04 from './../assets/img/04.jpg';
 import p11 from './../assets/img/11.jpg';
 import blu from './../assets/img/blu.jpg';
 import scoiattolo from './../assets/img/scoiattolo.jpg';
@@ -17,6 +19,7 @@ import pag02 from './../assets/img/pagina02.jpg';
 import pag03 from './../assets/img/pagina03.jpg';
 import m01 from './../assets/img/mockup01.jpg';
 import m02 from './../assets/img/mockup02.jpg';
+import bimbo from './../assets/img/bimbo.jpg';
 
 export function usePortfolio(){
     const { t } = useTranslation();
@@ -35,6 +38,15 @@ export function usePortfolio(){
               alt: 'p11',
               description: t('PORTFOLIO.PROJECT1.IMAGES.DESCRIPTION2') || '',
             },
+            {
+              src: p03,
+              alt: 'p03'
+            },
+            {
+              src: p04,
+              alt: 'p04'
+            },
+
           ],
         },
         {
@@ -69,6 +81,10 @@ export function usePortfolio(){
             {
               src: orso,
               alt: 'orso',
+            },
+            {
+              src: bimbo,
+              alt: 'bimbo',
             },
           ],
         },

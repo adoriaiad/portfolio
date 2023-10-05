@@ -6,7 +6,7 @@ import { usePortfolio } from '../data/usePortfolio';
 
 function Portfolio() {
  const {gallery} = usePortfolio();
-  const [selectedMarkerIDs, setSelectedMarkerIDs] = React.useState<string[]>([]);
+  const [selectedMarkerIDs, setSelectedMarkerIDs] = React.useState<string[]>(['01']);
   
     const handleMarkerPressed = (id: string) => () => {
       setSelectedMarkerIDs((prevState) =>
