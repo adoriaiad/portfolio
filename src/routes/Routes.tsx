@@ -1,14 +1,14 @@
+import Typography from '@mui/material/Typography';
 import { RouteObject, useRoutes } from 'react-router-dom';
+import oops from '../../src/assets/comics/oops.png';
 import MainLayout from '../layouts/main/MainLayout';
 import Bio from '../pages/Bio';
+import Books from '../pages/Books';
+import Comics from '../pages/Comic';
 import Contact from '../pages/Contact';
 import DataProtection from '../pages/DataProtection';
 import Home from '../pages/Home';
 import Portfolio from '../pages/Portfolio';
-import Comics from '../pages/Comic';
-import Typography from '@mui/material/Typography';
-import joy from '../../src/assets/comics/gioia.png';
-import oops from '../../src/assets/comics/oops.png';
 
 const Routes = () => {
   return useRoutes([routes]);
@@ -31,22 +31,7 @@ const routes: RouteObject = {
     },
     {
       path: '/books',
-      element: (
-        <Typography
-          variant="h3"
-          color={'text.secondary'}
-          style={{
-            fontFamily: 'Yomogi',
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'space-around',
-            alignItems: 'center',
-          }}
-        >
-          <img src={joy} alt="" style={{ maxWidth: '400px' }} />
-          COMING SOON...
-        </Typography>
-      ),
+      element: <Books />,
     },
     {
       path: '/data',

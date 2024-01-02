@@ -110,5 +110,9 @@
   "ACTIONAREACARD": {
     "TECHNIQUE": "Technique"
   },
-  "DATAPROTECTION": "Data protection"
+  "DATAPROTECTION": "Data protection",
+  "BOOK": {
+    "COVER": "Cover's illustrations",
+    "BOOKS": "Books"
+  }
 }

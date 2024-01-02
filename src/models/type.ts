@@ -31,3 +31,8 @@ export type ComicImageMenuType = {
   description: string;
   path: string;
 }
+
+export type BookItemType = {
+  src: string;
+  description: string;
+}
