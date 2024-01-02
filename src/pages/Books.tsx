@@ -1,4 +1,4 @@
-import { Card, CardMedia, Grid, Typography } from '@mui/material';
+import { Grid, Typography } from '@mui/material';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { useBook } from '../data/useBook';

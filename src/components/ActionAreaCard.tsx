@@ -16,6 +16,7 @@ export default function ActionAreaCard(props: ActionAreaCardProps) {
   const { item, clickHandler } = props;
   return (
     <Card
+      className='ComicCard'
       sx={{ maxWidth: 235 }}
       style={{
         display: 'flex',

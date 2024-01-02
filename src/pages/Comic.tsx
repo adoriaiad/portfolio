@@ -51,6 +51,7 @@ function Comics() {
             {comicThumbs.map((item, index) => (
               <Card
                 sx={{ maxWidth: 120 }}
+                className='ComicCard'
                 style={{
                   display: 'flex',
                   alignItems: 'center',

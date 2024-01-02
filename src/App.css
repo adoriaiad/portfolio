@@ -88,14 +88,21 @@
 .BookItem {
   transform: translateX(0px) rotate(0deg);
   transition:all 0.5s;
-  position:absolute;
 }
 
 .BookItem:hover {
   transform: translateX(20px);
   transform: rotate(-10deg);
   transition:all 0.5s;
-  position:absolute;
+}
+
+.ComicCard {
+  transform: rotate(0deg);
+  transition:all 0.5s;
+}
+.ComicCard:hover {
+  transform: rotate(-8deg);
+  transition:all 0.5s;
 }
 
 @font-face {
