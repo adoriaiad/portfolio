@@ -9,6 +9,10 @@ import Contact from '../pages/Contact';
 import DataProtection from '../pages/DataProtection';
 import Home from '../pages/Home';
 import Portfolio from '../pages/Portfolio';
+import Progetti from '../pages/Progetti';
+import Personaggi from '../pages/Personaggi';
+import Studi from '../pages/Studi';
+import Illustrazioni from '../pages/Illustrazioni';
 
 const Routes = () => {
   return useRoutes([routes]);
@@ -28,6 +32,22 @@ const routes: RouteObject = {
     {
       path: '/portfolio',
       element: <Portfolio />,
+    },
+    {
+      path: '/projects',
+      element: <Progetti />,
+    },
+    {
+      path: '/chars',
+      element: <Personaggi />,
+    },
+    {
+      path: '/sketch',
+      element: <Studi />,
+    },
+    {
+      path: '/illustrations',
+      element: <Illustrazioni />,
     },
     {
       path: '/books',

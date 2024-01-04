@@ -42,8 +42,8 @@ function Books() {
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'flex-start',
-                margin: '10px',
-                padding: '2px',
+                margin: '0px',
+                padding: '0px',
                 width: '200px',
               }}
               src={item.src}

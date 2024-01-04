@@ -86,14 +86,18 @@
 }
 
 .BookItem {
+  padding: 15px;
   transform: translateX(0px) rotate(0deg);
   transition:all 0.5s;
+  box-shadow: none;
 }
 
 .BookItem:hover {
-  transform: translateX(20px);
-  transform: rotate(-10deg);
+  transform: translateX(10px);
+  transform: rotate(-8deg);
   transition:all 0.5s;
+  box-shadow: 5px 5px 2px #dbdad6;
+  cursor: pointer;
 }
 
 .ComicCard {
