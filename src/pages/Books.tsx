@@ -36,7 +36,7 @@ function Books() {
         }}
       >
         {books.map((item, index) => (
-          <div key={index} className="BookItem">
+          <div key={index} className="ComicCard">
             <img
               style={{
                 display: 'flex',
