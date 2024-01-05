@@ -1,52 +1,66 @@
+import { Button, Grid, Paper, Typography } from '@mui/material';
 import React from 'react';
-import { usePortfolio } from '../data/usePortfolio';
-import { Button, Grid, Typography } from '@mui/material';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
-import { useNavigate } from 'react-router-dom';
+import { ImageGalleryType } from '../models/type';
 
-function Personaggi() {
-  const { characters } = usePortfolio();
-  const navigation = useNavigate();
+type PortfolioContentProps = {
+  item: ImageGalleryType;
+  onClickEventHandler: () => void;
+};
+
+function PortfolioContent(props: PortfolioContentProps) {
+  const { item, onClickEventHandler } = props;
+
   return (
-    <Grid
-      container
-      spacing={2}
+    <Paper
+      elevation={4}
+      square
+      className="PortfolioPaper"
       style={{
         display: 'flex',
-        justifyContent: 'space-evenly',
-        marginTop: '50px',
+        justifyContent: 'center',
+        flexDirection: 'column',
+        padding: '20px',
       }}
     >
-      <div style={{ marginBottom: '10px', width: '1200px' }}>
+      <Grid
+        container
+        spacing={1}
+        style={{
+          display: 'flex',
+          justifyContent: 'center',
+        }}
+      >
         <Typography
           variant={'h5'}
           color={'text.secondary'}
           sx={{ flexShrink: 0 }}
           style={{ fontFamily: 'Yomogi' }}
-          key={`typ-${characters.id}`}
+          key={`typ-${item.id}`}
         >
-          {characters.title}
+          {item.title}
         </Typography>
         <Typography
           variant={'subtitle2'}
           color={'text.secondary'}
           style={{ fontFamily: 'Yomogi' }}
-          key={`subtitle2${characters.id}`}
+          key={`subtitle2${item.id}`}
         >
-          {characters.subtitle}
+          {item.subtitle}
         </Typography>
         <Grid
           container
-          spacing={2}
+          spacing={4}
           style={{
             display: 'flex',
-            justifyContent: 'space-evenly',
+            justifyContent: 'center',
             alignItems: 'flex-end',
+            margin: '0px'
           }}
-          key={`grid-${characters.id}`}
+          key={`grid-${item.id}`}
         >
-          {characters.images.map((img, index) => (
-            <div key={`${characters.id}-${index}`} style={{ margin: '0px' }}>
+          {item.images.map((img, index) => (
+            <div key={`${item.id}-${index}`}>
               {img.description && (
                 <Typography
                   variant={'body1'}
@@ -56,7 +70,7 @@ function Personaggi() {
                     maxWidth: '220px',
                     fontFamily: 'Yomogi',
                   }}
-                  key={`typ-${characters.id}-${index}`}
+                  key={`typ-${item.id}-${index}`}
                 >
                   {img.description}
                 </Typography>
@@ -66,7 +80,7 @@ function Personaggi() {
                 alt={img.alt}
                 width={'90%'}
                 style={{ margin: '20px', maxWidth: '450px' }}
-                key={`${characters.id}-${index}`}
+                key={`${item.id}-${index}`}
               />
             </div>
           ))}
@@ -74,13 +88,13 @@ function Personaggi() {
         <Button
           variant="outlined"
           startIcon={<ArrowBackIosIcon />}
-          onClick={() => navigation('/portfolio')}
+          onClick={() => onClickEventHandler()}
         >
           Back
         </Button>
-      </div>
-    </Grid>
+      </Grid>
+    </Paper>
   );
 }
 
-export default Personaggi;
+export default PortfolioContent;

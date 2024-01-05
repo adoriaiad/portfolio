@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { GalleryItem } from '../models/type';
 import { useGallery } from '../data/useGallery';
@@ -8,12 +8,19 @@ import isEmpty from 'lodash.isempty';
 import ActionAreaCard from '../components/ActionAreaCard';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import { useNavigate } from 'react-router-dom';
+import { useMenuNavigation } from '../contexts/MenuNavigation';
 
 function Illustrazioni() {
   const { t } = useTranslation();
   const navigation = useNavigate();
+  const menuNavigation = useMenuNavigation();
   const [selected, setSelected] = useState<GalleryItem>();
   const { gallery1, gallery2, gallery3 } = useGallery();
+
+  useEffect(() => {
+    menuNavigation.pageSelection('/portfolio');
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   function showPicture(item: GalleryItem) {
     setSelected(item);
