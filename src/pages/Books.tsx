@@ -7,6 +7,10 @@ function Books() {
   const { t } = useTranslation();
   const { books } = useBook();
 
+  function openExternalUrl(url: string | undefined) {
+    url && window.open(url, '_blank');
+  }
+
   return (
     <Grid
       style={{
@@ -25,31 +29,34 @@ function Books() {
       >
         {t('BOOK.COVER')}
       </Typography>
-      <Grid
-        container
-        spacing={2}
-        style={{
-          display: 'flex',
-          justifyContent: 'flex-start',
-          marginTop: '20px',
-          marginBottom: '10px',
-        }}
-      >
+      <Grid container spacing={2} className="BookCard">
         {books.map((item, index) => (
-          <div key={index} className="ComicCard">
-            <img
-              style={{
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'flex-start',
-                margin: '0px',
-                padding: '0px',
-                width: '200px',
-              }}
-              src={item.src}
+          <div className={'BookCard'}>
+            <div
               key={index}
-              alt=""
-            />
+              className="ComicCard"
+              onClick={() => openExternalUrl(item.externalUrl)}
+            >
+              <img
+                style={{
+                  width: '200px',
+                }}
+                src={item.src}
+                key={index}
+                alt=""
+              />
+            </div>
+            <div>
+              <Typography
+                variant={'body1'}
+                color={'text.secondary'}
+                sx={{ flexShrink: 0 }}
+                style={{ fontFamily: 'Yomogi' }}
+                key={index}
+              >
+                {item.description}
+              </Typography>
+            </div>
           </div>
         ))}
       </Grid>

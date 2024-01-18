@@ -107,6 +107,15 @@
 .ComicCard:hover {
   transform: rotate(-8deg);
   transition:all 0.5s;
+  cursor: pointer;
+}
+
+.BookCard {
+  display: flex;
+  max-width: 65%;
+  justify-content: space-around;
+  margin-top: 25px;
+  margin-bottom: 10px;
 }
 
 @font-face {
@@ -132,6 +141,9 @@
 @media screen and (max-width: 600px) {
   .Menu-header {
     flex-direction: column;
+  }
+  .BookCard {
+    max-width: 100%;
   }
 }
 

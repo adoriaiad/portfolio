@@ -113,6 +113,7 @@
     "DATAPROTECTION": "Protection des données",
     "BOOK": {
       "COVER": "Illustrations de couverture",
+      "COVERDESCRIPTION": "Création de l'image de couverture",
       "BOOKS": "Livres illustrés"
     }
   }
