@@ -102,8 +102,10 @@ function Comics() {
               marginBottom: '10px',
               alignItems: 'center',
             }}
-          >
-            <img src={selected.path} alt="" style={{ maxWidth: '800px' }} />
+          >{selected.paths.map((img) => (
+            <img src={img} alt="" style={{ maxWidth: '800px' }} />
+          ))}
+            
             <Button
               variant="outlined"
               startIcon={<ArrowBackIosIcon />}
