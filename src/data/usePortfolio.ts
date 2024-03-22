@@ -8,7 +8,6 @@ import blu from './../assets/img/blu.jpg';
 import scoiattolo from './../assets/img/scoiattolo.jpg';
 import riccio from './../assets/img/Riccio.jpg';
 import cinghialotta from './../assets/img/Cinghialotta.jpg';
-import gufo from './../assets/img/Gufo.jpg';
 import marmotta from './../assets/img/Marmotta.jpg';
 import orso from './../assets/img/orso.jpg';
 import bozza from './../assets/img/paginabozza.jpg';
@@ -17,9 +16,11 @@ import definitiva from './../assets/img/17.jpg';
 import pag01 from './../assets/img/pagina01.jpg';
 import pag02 from './../assets/img/pagina02.jpg';
 import pag03 from './../assets/img/pagina03.jpg';
-import m01 from './../assets/img/mockup01.jpg';
-import m02 from './../assets/img/mockup02.jpg';
 import bimbo from './../assets/img/bimbo.jpg';
+import calzino from './../assets/img/calzino.jpg';
+import calzinodoppia from './../assets/img/calzinodoppia.jpg';
+import pag04 from './../assets/img/pagina04.jpg';
+import pag05 from './../assets/img/pagina05.jpg';
 
 export function usePortfolio() {
   const { t } = useTranslation();
@@ -45,6 +46,10 @@ export function usePortfolio() {
         src: p04,
         alt: 'p04',
       },
+      {
+        src: calzinodoppia,
+        alt: 'Calzino doppia pagina',
+      },
     ],
   };
   const characters: ImageGalleryType = {
@@ -69,10 +74,6 @@ export function usePortfolio() {
         alt: 'cinghialotta',
       },
       {
-        src: gufo,
-        alt: 'gufo',
-      },
-      {
         src: marmotta,
         alt: 'marmotta',
       },
@@ -84,6 +85,10 @@ export function usePortfolio() {
         src: bimbo,
         alt: 'bimbo',
       },
+      {
+        src: calzino,
+        alt: 'calzino',
+      }
     ],
   };
   const sketches: ImageGalleryType = {
@@ -93,7 +98,7 @@ export function usePortfolio() {
       {
         src: bozza,
         alt: 'bozza',
-        description: t('PORTFOLIO.PROJECT3.IMAGES.DESCRIPTION1') || '',
+        //description: t('PORTFOLIO.PROJECT3.IMAGES.DESCRIPTION1') || '',
       },
       {
         src: sketch,
@@ -117,12 +122,12 @@ export function usePortfolio() {
         alt: 'pag03',
       },
       {
-        src: m01,
-        alt: 'm01',
+        src: pag04,
+        alt: 'pag04',
       },
       {
-        src: m02,
-        alt: 'm02',
+        src: pag05,
+        alt: 'pag05',
         //description: 'Il mockup',
       },
     ],

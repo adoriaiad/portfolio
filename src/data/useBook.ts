@@ -1,6 +1,6 @@
 import { BookItemType } from "../models/type";
 import cover01 from '../../src/assets/img/books/cover_01.png';
-import sentichemusica from '../../src/assets/img/books/sentichemusica.jpg';
+import sentichemusica from '../../src/assets/img/books/sentichemusica2.jpg';
 import { useTranslation } from "react-i18next";
 
 export function useBook(){
