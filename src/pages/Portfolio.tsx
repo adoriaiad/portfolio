@@ -2,13 +2,14 @@ import { Grid, Typography } from '@mui/material';
 import * as React from 'react';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
-import illImg from '../assets/img/miniature/illustrazioni.png';
+//import illImg from '../assets/img/miniature/illustrazioni.png';
 import progImg from '../assets/img/miniature/progetti.png';
 import sketchImg from '../assets/img/miniature/studi.png';
 import chartImg from '../assets/img/miniature/studio-personaggi.png';
 import { usePortfolio } from '../data/usePortfolio';
 import { ImageGalleryType } from '../models/type';
 import PortfolioContent from '../components/PortfolioContent';
+import { useGallery } from '../data/useGallery';
 
 const enum PortfolioContentEnum {
   projects = 'projects',
@@ -133,7 +134,7 @@ function Portfolio() {
           alt=""
         />
       </div>
-      <div
+      {/* <div
         className="BookItem"
         onClick={seletecPortfolioContent[PortfolioContentEnum.illustrations]}
       >
@@ -157,7 +158,7 @@ function Portfolio() {
           src={illImg}
           alt=""
         />
-      </div>
+      </div> */}
     </Grid>
   );
 

@@ -21,6 +21,13 @@ import calzino from './../assets/img/calzino.jpg';
 import calzinodoppia from './../assets/img/calzinodoppia.jpg';
 import pag04 from './../assets/img/pagina04.jpg';
 import pag05 from './../assets/img/pagina05.jpg';
+import bimba from './../assets/img/bimba.jpg';
+import bimbineve from './../assets/img/bimbineve.jpg';
+import dino from './../assets/img/dinorider.jpg';
+import drago from './../assets/img/drago.jpg';
+import gatto from './../assets/img/GattoStrega.jpg';
+import palloncini from './../assets/img/palloncini.jpg';
+import neve from './../assets/img/PupazzodiNeve.jpg';
 
 export function usePortfolio() {
   const { t } = useTranslation();
@@ -49,6 +56,34 @@ export function usePortfolio() {
       {
         src: calzinodoppia,
         alt: 'Calzino doppia pagina',
+      },
+      {
+        src: gatto,
+        alt: 'gatto',
+      },
+      {
+        src: neve,
+        alt: 'neve',
+      },
+      {
+        src: bimba,
+        alt: 'bimba',
+      },
+      {
+        src: dino,
+        alt: 'dino',      
+      },
+      {
+        src: palloncini,
+        alt: 'palloncini',      
+      },
+      {
+        src: drago,
+        alt: 'drago',
+      },
+      {
+        src: bimbineve,
+        alt: 'bimbineve',       
       },
     ],
   };
