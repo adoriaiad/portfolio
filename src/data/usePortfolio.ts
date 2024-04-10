@@ -28,6 +28,8 @@ import drago from './../assets/img/drago.jpg';
 import gatto from './../assets/img/GattoStrega.jpg';
 import palloncini from './../assets/img/palloncini.jpg';
 import neve from './../assets/img/PupazzodiNeve.jpg';
+import volpe from './../assets/img/volpeviolinista.jpg';
+import settembre from './../assets/img/settembre.jpg';
 
 export function usePortfolio() {
   const { t } = useTranslation();
@@ -84,6 +86,14 @@ export function usePortfolio() {
       {
         src: bimbineve,
         alt: 'bimbineve',       
+      },
+      {
+        src: volpe,
+        alt: 'volpe',      
+      },
+      {
+        src: settembre,
+        alt: 'settembre',     
       },
     ],
   };
