@@ -25,7 +25,7 @@ import bimba from './../assets/img/bimba.jpg';
 import bimbineve from './../assets/img/bimbineve.jpg';
 import dino from './../assets/img/dinorider.jpg';
 import drago from './../assets/img/drago.jpg';
-import gatto from './../assets/img/GattoStrega.jpg';
+import edward from './../assets/img/edward.jpg';
 import palloncini from './../assets/img/palloncini.jpg';
 import neve from './../assets/img/PupazzodiNeve.jpg';
 import volpe from './../assets/img/volpeviolinista.jpg';
@@ -60,8 +60,8 @@ export function usePortfolio() {
         alt: 'Calzino doppia pagina',
       },
       {
-        src: gatto,
-        alt: 'gatto',
+        src: edward,
+        alt: 'Edward',
       },
       {
         src: neve,

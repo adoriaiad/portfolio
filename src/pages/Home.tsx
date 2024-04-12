@@ -1,7 +1,7 @@
 import React from 'react';
 import { Grid } from '@mui/material';
 
-import home from './../assets/img/homepage.png';
+import home from './../assets/img/homepage2.png';
 
 function Home() {
   return (
