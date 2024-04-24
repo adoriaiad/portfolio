@@ -1,4 +1,4 @@
-import { Typography } from '@mui/material';
+import { Link, Typography } from '@mui/material';
 import Grid from '@mui/material/Grid';
 import lita from './../assets/img/lita_p.png';
 import { useTranslation } from 'react-i18next';
@@ -31,9 +31,9 @@ function Bio() {
           <br />
           {t('BIO.TEXT3')}
           <br />
-          {t('BIO.TEXT4')}
+          {`${t('BIO.TEXT4')} `}<Link rel="stylesheet" href='https://www.kalaillustrations.com/' target='_blank'>{t('BIO.LINK')}</Link>{` ${t('BIO.TEXT5')}`}
           <br />
-          {t('BIO.TEXT5')}
+          {t('BIO.TEXT6')}
         </Typography>
       </Grid>
     </Grid>
