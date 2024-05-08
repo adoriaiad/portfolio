@@ -7,32 +7,72 @@ function Bio() {
   const { t } = useTranslation();
   return (
     <Grid container spacing={0} className="App-header">
-      <Grid item xs={8} md={3}>
-        <img src={lita} alt="logo" width={'90%'} style={{ margin: '20px' }} />
-      </Grid>
-      <Grid item xs={12} md={9}>
+      <Grid item xs={12} md={12}>
         <Typography
           variant="h4"
           color="text.secondary"
-          align="justify"
+          align="center"
           style={{ marginLeft: '60px', fontFamily: 'Yomogi' }}
         >
           {t('BIO.WHO')}
         </Typography>
-        <Typography
-          //variant="body1"
+      </Grid>
+      <Grid container spacing={0} style={{marginRight: '35px', marginLeft: '35px'}}>
+        <Grid item xs={12} md={3}>
+          <img src={lita} alt="logo" width={'82%'} style={{ marginTop: '60px' }} />
+        </Grid>
+        <Grid item xs={12} md={9}>
+          <Typography
+            variant="body1"
+            color="text.secondary"
+            align="justify"
+            style={{ marginTop: '60px', fontFamily: 'Yomogi' }}
+          >
+            {t('BIO.TEXT1')}
+          </Typography>
+          <Typography
+            variant="body1"
+            color="text.secondary"
+            align="justify"
+            style={{ marginTop: '15px', fontFamily: 'Yomogi' }}
+          >
+            {t('BIO.TEXT2')}
+          </Typography>
+          <Typography
+          variant="body1"
           color="text.secondary"
           align="justify"
-          style={{ margin: '60px', fontFamily: 'Yomogi'  }}
+          style={{ marginTop: '15px', fontFamily: 'Yomogi' }}
         >
-          {t('BIO.TEXT1')}
-          <br />
-          {t('BIO.TEXT2')}
-          <br />
           {t('BIO.TEXT3')}
-          <br />
-          {`${t('BIO.TEXT4')} `}<Link rel="stylesheet" href='https://www.kalaillustrations.com/' target='_blank'>{t('BIO.LINK')}</Link>{` ${t('BIO.TEXT5')}`}
-          <br />
+        </Typography>
+        </Grid>
+      </Grid>
+
+      <Grid item xs={12} md={12} style={{marginLeft: '35px', marginRight: '35px'}}>
+        
+        <Typography
+          variant="body1"
+          color="text.secondary"
+          align="justify"
+          style={{ marginTop: '15px', fontFamily: 'Yomogi' }}
+        >
+          {`${t('BIO.TEXT4')} `}
+          <Link
+            rel="stylesheet"
+            href="https://www.kalaillustrations.com/"
+            target="_blank"
+          >
+            {t('BIO.LINK')}
+          </Link>
+          {` ${t('BIO.TEXT5')}`}
+        </Typography>
+        <Typography
+          variant="body1"
+          color="text.secondary"
+          align="justify"
+          style={{ marginTop: '15px', fontFamily: 'Yomogi' }}
+        >
           {t('BIO.TEXT6')}
         </Typography>
       </Grid>
