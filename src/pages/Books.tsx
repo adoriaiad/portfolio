@@ -29,7 +29,12 @@ function Books() {
       >
         {t('BOOK.BOOKS')}
       </Typography>
-      <Grid container spacing={2} className="BookCard" style={{flexWrap: 'nowrap'}}>
+      <Grid
+        container
+        spacing={2}
+        className="BookCard"
+        style={{ flexWrap: 'nowrap', alignItems: 'flex-start' }}
+      >
         {books.map((item, index) => (
           <div className={'BookCard'}>
             <div
@@ -51,7 +56,7 @@ function Books() {
                 variant={'body1'}
                 color={'text.secondary'}
                 sx={{ flexShrink: 0 }}
-                style={{ fontFamily: 'Yomogi', fontWeight: 'bold'}}
+                style={{ fontFamily: 'Yomogi', fontWeight: 'bold' }}
                 key={index}
               >
                 {item.description}
@@ -78,7 +83,12 @@ function Books() {
       >
         {t('BOOK.COVER')}
       </Typography>
-      <Grid container spacing={2} className="BookCard" style={{flexWrap: 'nowrap'}}>
+      <Grid
+        container
+        spacing={2}
+        className="BookCard"
+        style={{ flexWrap: 'nowrap', alignItems: 'flex-start' }}
+      >
         {booksCover.map((item, index) => (
           <div className={'BookCard'}>
             <div
