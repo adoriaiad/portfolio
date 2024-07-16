@@ -37,7 +37,7 @@ function Comics() {
           >
             {t('COMICS.TITLE')}
           </Typography>
-          <img src={me} alt="" style={{ maxWidth: '600px' }} />
+          <img src={me} alt="" style={{ maxWidth: '400px' }} />
           <Grid
             container
             spacing={2}

@@ -2,12 +2,13 @@ import { Link, Typography } from '@mui/material';
 import Grid from '@mui/material/Grid';
 import lita from './../assets/img/lita_p.png';
 import { useTranslation } from 'react-i18next';
+import run from './../assets/comics/run.png';
 
 function Bio() {
   const { t } = useTranslation();
   return (
     <Grid container spacing={0} className="App-header">
-      <Grid item xs={12} md={12}>
+      <Grid item xs={12} md={12} style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-end' }}>
         <Typography
           variant="h4"
           color="text.secondary"
@@ -16,6 +17,7 @@ function Bio() {
         >
           {t('BIO.WHO')}
         </Typography>
+        <img src={run} alt="" style={{ maxWidth: '200px', alignSelf: 'flex-end', marginRight: '55px'}} />
       </Grid>
       <Grid container spacing={0} style={{marginRight: '35px', marginLeft: '35px'}}>
         <Grid item xs={12} md={3}>

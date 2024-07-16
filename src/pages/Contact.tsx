@@ -6,6 +6,7 @@ import isEmpty from 'lodash.isempty';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { object, string } from 'yup';
+import bici from './../assets/comics/bici.png';
 
 type ContactTypeForm = {
   name: string;
@@ -54,8 +55,9 @@ function Contact() {
       <Grid
         container
         spacing={2}
-        style={{ display: 'flex', justifyContent: 'center' }}
+        style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column' }}
       >
+        <img src={bici} alt="" style={{ maxWidth: '200px', alignSelf: 'flex-end', marginRight: '55px'}} />
         <Paper
           elevation={4}
           square
