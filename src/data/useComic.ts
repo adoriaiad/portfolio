@@ -8,6 +8,7 @@ import c07 from './../assets/comics/thumbs/20201220.jpg';
 import c08 from './../assets/comics/thumbs/20210126.jpg';
 import c09 from './../assets/comics/thumbs/20210130.jpg';
 import c10 from './../assets/comics/thumbs/20210308.jpg';
+import c11 from './../assets/comics/thumbs/dutch.jpg';
 import meditazione_1 from './../assets/comics/meditazione/meditazione_1.jpg';
 import meditazione_2 from './../assets/comics/meditazione/meditazione_2.jpg';
 import meditazione_3 from './../assets/comics/meditazione/meditazione_3.jpg';
@@ -49,6 +50,10 @@ import raimbow_1 from './../assets/comics/raimbow/raimbow_1.jpg';
 import raimbow_2 from './../assets/comics/raimbow/raimbow_2.jpg';
 import raimbow_3 from './../assets/comics/raimbow/raimbow_3.jpg';
 import raimbow_4 from './../assets/comics/raimbow/raimbow_4.jpg';
+import belgianlife_1 from './../assets/comics/belgianlife/dutch_0.jpg';
+import belgianlife_2 from './../assets/comics/belgianlife/dutch_1.jpg';
+import belgianlife_3 from './../assets/comics/belgianlife/dutch_2.jpg';
+import belgianlife_4 from './../assets/comics/belgianlife/dutch_3.jpg';
 
 import { ComicImageMenuType } from '../models/type';
 
@@ -131,6 +136,12 @@ export function useComic() {
       description: 'Esperimenti arcobalenici',
       paths: [raimbow_1, raimbow_2, raimbow_3, raimbow_4],
     },
+    {
+      src: c11,
+      title: 'La mia vita in Belgio',
+      description: 'Non parlo fiammingo...',
+      paths: [belgianlife_1, belgianlife_2, belgianlife_3, belgianlife_4],
+    }
   ];
   return { comicThumbs };
 }
