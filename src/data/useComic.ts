@@ -9,6 +9,7 @@ import c08 from './../assets/comics/thumbs/20210126.jpg';
 import c09 from './../assets/comics/thumbs/20210130.jpg';
 import c10 from './../assets/comics/thumbs/20210308.jpg';
 import c11 from './../assets/comics/thumbs/dutch.jpg';
+import c12 from './../assets/comics/thumbs/smarthworking.jpg';
 import meditazione_1 from './../assets/comics/meditazione/meditazione_1.jpg';
 import meditazione_2 from './../assets/comics/meditazione/meditazione_2.jpg';
 import meditazione_3 from './../assets/comics/meditazione/meditazione_3.jpg';
@@ -54,6 +55,10 @@ import belgianlife_1 from './../assets/comics/belgianlife/dutch_0.jpg';
 import belgianlife_2 from './../assets/comics/belgianlife/dutch_1.jpg';
 import belgianlife_3 from './../assets/comics/belgianlife/dutch_2.jpg';
 import belgianlife_4 from './../assets/comics/belgianlife/dutch_3.jpg';
+import smart_1 from './../assets/comics/smartworking/smarthworking_1.jpg';
+import smart_2 from './../assets/comics/smartworking/smarthworking_2.jpg';
+import smart_3 from './../assets/comics/smartworking/smarthworking_3.jpg';
+import smart_4 from './../assets/comics/smartworking/smarthworking_4.jpg';
 
 import { ComicImageMenuType } from '../models/type';
 
@@ -141,6 +146,12 @@ export function useComic() {
       title: 'La mia vita in Belgio',
       description: 'Non parlo fiammingo...',
       paths: [belgianlife_1, belgianlife_2, belgianlife_3, belgianlife_4],
+    },
+    {
+      src: c12,
+      title: 'Smart working',
+      description: 'Ooops...',
+      paths: [smart_1, smart_2, smart_3, smart_4],
     }
   ];
   return { comicThumbs };
