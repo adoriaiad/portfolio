@@ -30,6 +30,8 @@ import palloncini from './../assets/img/palloncini.jpg';
 import neve from './../assets/img/PupazzodiNeve.jpg';
 import volpe from './../assets/img/volpeviolinista.jpg';
 import settembre from './../assets/img/settembre.jpg';
+import marilena from './../assets/img/marilena.jpg';
+import fabio from './../assets/img/fabio.jpg';
 
 export function usePortfolio() {
   const { t } = useTranslation();
@@ -133,6 +135,14 @@ export function usePortfolio() {
       {
         src: calzino,
         alt: 'calzino',
+      },
+      {
+        src: marilena,
+        alt: 'studio personaggio',
+      },
+      {
+        src: fabio,
+        alt: 'studio personaggio',
       }
     ],
   };
