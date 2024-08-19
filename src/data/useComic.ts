@@ -13,6 +13,7 @@ import c12 from './../assets/comics/thumbs/smarthworking.jpg';
 import c13 from './../assets/comics/thumbs/shopping.jpg';
 import c14 from './../assets/comics/thumbs/spiaggia.jpg';
 import c15 from './../assets/comics/thumbs/dieta_3.jpg';
+import c16 from './../assets/comics/thumbs/ricette.jpg';
 import meditazione_1 from './../assets/comics/meditazione/meditazione_1.jpg';
 import meditazione_2 from './../assets/comics/meditazione/meditazione_2.jpg';
 import meditazione_3 from './../assets/comics/meditazione/meditazione_3.jpg';
@@ -76,6 +77,10 @@ import dieta_1 from './../assets/comics/dieta1/dieta3_1.jpg';
 import dieta_2 from './../assets/comics/dieta1/dieta3_2.jpg';
 import dieta_3 from './../assets/comics/dieta1/dieta3_3.jpg';
 import dieta_4 from './../assets/comics/dieta1/dieta3_4.jpg';
+import ricette_1 from './../assets/comics/dieta2/ricette_1.jpg';
+import ricette_2 from './../assets/comics/dieta2/ricette_2.jpg';
+import ricette_3 from './../assets/comics/dieta2/ricette_3.jpg';
+import ricette_4 from './../assets/comics/dieta2/ricette_4.jpg';
 
 import { ComicImageMenuType } from '../models/type';
 
@@ -194,6 +199,12 @@ export function useComic() {
       title: 'Dieta - parte 1',
       description: 'Dieta sì, ma non troppo',
       paths: [dieta_1, dieta_2, dieta_3, dieta_4],
+    },
+    {
+      src: c16,
+      title: 'Dieta - parte 2',
+      description: 'Ricettine dietetiche?',
+      paths: [ricette_1, ricette_2, ricette_3, ricette_4],
     },
   ];
   return { comicThumbs };
