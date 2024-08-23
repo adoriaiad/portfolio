@@ -32,6 +32,7 @@ import volpe from './../assets/img/volpeviolinista.jpg';
 import settembre from './../assets/img/settembre.jpg';
 import marilena from './../assets/img/marilena.jpg';
 import fabio from './../assets/img/fabio.jpg';
+import p01 from './../assets/img/01.jpg';
 
 export function usePortfolio() {
   const { t } = useTranslation();
@@ -48,6 +49,10 @@ export function usePortfolio() {
         src: p11,
         alt: 'p11',
         description: t('PORTFOLIO.PROJECT1.IMAGES.DESCRIPTION2') || '',
+      },
+      {
+        src: p01,
+        alt: 'p01',
       },
       {
         src: p03,
