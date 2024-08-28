@@ -114,8 +114,11 @@
   },
   "DATAPROTECTION": "Protezione dei dati",
   "BOOK": {
-    "COVER": "Illustrazioni cover",
+    "COVER": "Immagini di copertina",
     "COVERDESCRIPTION": "Realizzazione dell'immagine di copertina",
-    "BOOKS": "Libri illustrati"
+    "BOOKS": "Libri illustrati",
+    "AUTHOR": "Scritto da ",
+    "ILLUSTRATOR" : "Illustrato da ",
+    "AUTH_ILL": "Scritto e illustrato da "
   }
 }

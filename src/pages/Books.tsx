@@ -44,7 +44,8 @@ function Books() {
             >
               <img
                 style={{
-                  width: '150px',
+                  width: '250px',
+                  padding: '4px'
                 }}
                 src={item.src}
                 key={index}
@@ -53,7 +54,7 @@ function Books() {
             </div>
             <div>
               <Typography
-                variant={'body1'}
+                variant={'body2'}
                 color={'text.secondary'}
                 sx={{ flexShrink: 0 }}
                 style={{ fontFamily: 'Yomogi', fontWeight: 'bold' }}
@@ -61,6 +62,28 @@ function Books() {
               >
                 {item.description}
               </Typography>
+              <Typography
+                variant={'body2'}
+                color={'text.secondary'}
+                sx={{ flexShrink: 0 }}
+                style={{ fontFamily: 'Yomogi' }}
+                key={index}
+              >
+                {item.author
+                  ? `${t('BOOK.AUTHOR')} ${item.author}`
+                  : `${t('BOOK.AUTH_ILL')} ${item.illustrator}`}
+              </Typography>
+              {item.author && (
+                <Typography
+                  variant={'body2'}
+                  color={'text.secondary'}
+                  sx={{ flexShrink: 0 }}
+                  style={{ fontFamily: 'Yomogi' }}
+                  key={index}
+                >
+                  {`${t('BOOK.ILLUSTRATOR')} ${item.illustrator}`}
+                </Typography>
+              )}
               <Typography
                 variant={'body2'}
                 color={'text.secondary'}
@@ -98,7 +121,7 @@ function Books() {
             >
               <img
                 style={{
-                  width: '150px',
+                  width: '250px',
                   marginRight: '10px',
                 }}
                 src={item.src}
@@ -116,6 +139,16 @@ function Books() {
               >
                 {item.description}
               </Typography>
+              <Typography
+                variant={'body2'}
+                color={'text.secondary'}
+                sx={{ flexShrink: 0 }}
+                style={{ fontFamily: 'Yomogi' }}
+                key={index}
+              >
+                {`${t('BOOK.AUTHOR')} ${item.author}`}
+              </Typography>
+              
               <Typography
                 variant={'body2'}
                 color={'text.secondary'}

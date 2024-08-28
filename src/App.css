@@ -112,12 +112,12 @@
 
 .BookCard {
   display: flex;
-  flex-direction: column;
-  max-width: 150px;
+  flex-direction: row;
+  max-width: 600px;
   justify-content: space-around;
   margin-top: 25px;
   margin-bottom: 10px;
-  align-items: center;
+  align-items: flex-start;
   margin-right: 10px;
 }
 

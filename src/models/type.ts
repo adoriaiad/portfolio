@@ -36,5 +36,7 @@ export type BookItemType = {
   src: string;
   description: string;
   edition: string;
+  illustrator: string;
+  author?: string;
   externalUrl?: string;
 }

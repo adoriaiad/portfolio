@@ -116,6 +116,9 @@
   "BOOK": {
     "COVER": "Cover's illustrations",
     "COVERDESCRIPTION": "Cover image creation",
-    "BOOKS": "Books"
+    "BOOKS": "Books",
+    "AUTHOR": "Written by ",
+    "ILLUSTRATOR" : "Illustrated by ",
+    "AUTH_ILL": "Written and illustrated by "
   }
 }

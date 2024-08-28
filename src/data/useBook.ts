@@ -9,12 +9,16 @@ export function useBook(){
             src: cover01,
             description: "La passione LEGO® per principianti",
             edition: "Ed. libri SANDIT",
+            illustrator: "Angelita Doria",
+            author: "Francesco Frangioja",
             externalUrl: "https://www.sanditlibri.it/la-passione-legor-per-principianti.html"
         },
         {
             src: cover02,
             description: "I robottoni giapponesi in mattoncini LEGO®",
             edition: "Ed. libri SANDIT",
+            illustrator: "Angelita Doria",
+            author: "Francesco Frangioja",
             externalUrl: "https://www.sanditlibri.it/i-robottoni-giapponesi-in-mattoncini-legor.html"
         },
     ];
@@ -24,6 +28,7 @@ export function useBook(){
             src: sentichemusica,
             description: "Senti che Musica!",
             edition: "Ed. Splen edizioni",
+            illustrator: "Angelita Doria",
             externalUrl: "https://splen.it/prodotto/senti-che-musica"
         }
     ];
