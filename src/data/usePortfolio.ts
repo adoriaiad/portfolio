@@ -33,6 +33,7 @@ import settembre from './../assets/img/settembre.jpg';
 import marilena from './../assets/img/marilena.jpg';
 import fabio from './../assets/img/fabio.jpg';
 import p01 from './../assets/img/01.jpg';
+import uku from './../assets/img/uku.jpg';
 
 export function usePortfolio() {
   const { t } = useTranslation();
@@ -148,6 +149,10 @@ export function usePortfolio() {
       {
         src: fabio,
         alt: 'studio personaggio',
+      },
+      {
+        src: uku,
+        alt: 'uku'
       }
     ],
   };
