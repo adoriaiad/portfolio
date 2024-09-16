@@ -1,6 +1,6 @@
 import { Link, Typography } from '@mui/material';
 import Grid from '@mui/material/Grid';
-import lita from './../assets/img/lita_p.png';
+import lita from './../assets/img/lita_p2.png';
 import { useTranslation } from 'react-i18next';
 import run from './../assets/comics/run.png';
 

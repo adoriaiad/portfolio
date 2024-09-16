@@ -3,7 +3,6 @@ import React from "react";
 import { Outlet } from "react-router-dom";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
-import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import MenuBookOutlinedIcon from "@mui/icons-material/MenuBookOutlined";
 import CollectionsOutlinedIcon from "@mui/icons-material/CollectionsOutlined";
@@ -18,7 +17,7 @@ function MainLayout() {
   const menuNavigation = useMenuNavigation();
   const isContactPage = menuNavigation.selected === '/contact'? true : false;
   const sections: MenuItemType[] = [
-    { title: "Home", url: "/", icon: <HomeOutlinedIcon /> },
+    //{ title: "Home", url: "/", icon: <HomeOutlinedIcon /> },
     { title: t("MENU.PORTFOLIO"), url: "/portfolio", icon: <MenuBookOutlinedIcon /> },
     { title:  t("MENU.BOOKS"), url: "/books", icon: <CollectionsOutlinedIcon /> },
     { title:  t("MENU.COMICS"), url: "/comics", icon: <BrushIcon /> },

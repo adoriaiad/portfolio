@@ -15,14 +15,14 @@ function Books() {
     <Grid
       style={{
         display: 'flex',
-        flexWrap: 'nowrap',
+        //flexWrap: 'nowrap',
         flexDirection: 'column',
         alignItems: 'center',
         marginTop: '40px',
       }}
     >
       <Typography
-        variant={'h5'}
+        variant={'h4'}
         color={'text.secondary'}
         sx={{ flexShrink: 0 }}
         style={{ fontFamily: 'Yomogi' }}
@@ -33,12 +33,12 @@ function Books() {
         container
         spacing={2}
         className="BookCard"
-        style={{ flexWrap: 'nowrap', alignItems: 'flex-start' }}
+        style={{ alignItems: 'flex-start' }}
       >
         {books.map((item, index) => (
-          <div className={'BookCard'}>
+          <div className={'BookCard'} key={index}>
             <div
-              key={index}
+              key={`img-${index}`}
               className="ComicCard"
               onClick={() => openExternalUrl(item.externalUrl)}
             >
@@ -52,13 +52,13 @@ function Books() {
                 alt=""
               />
             </div>
-            <div>
+            <div key={`txt-${index}`} style={{maxWidth: '250px',}}>
               <Typography
                 variant={'body2'}
                 color={'text.secondary'}
                 sx={{ flexShrink: 0 }}
                 style={{ fontFamily: 'Yomogi', fontWeight: 'bold' }}
-                key={index}
+                key={`desc-${index}`}
               >
                 {item.description}
               </Typography>
@@ -67,7 +67,7 @@ function Books() {
                 color={'text.secondary'}
                 sx={{ flexShrink: 0 }}
                 style={{ fontFamily: 'Yomogi' }}
-                key={index}
+                key={`auth-${index}`}
               >
                 {item.author
                   ? `${t('BOOK.AUTHOR')} ${item.author}`
@@ -79,7 +79,7 @@ function Books() {
                   color={'text.secondary'}
                   sx={{ flexShrink: 0 }}
                   style={{ fontFamily: 'Yomogi' }}
-                  key={index}
+                  key={`ill-${index}`}
                 >
                   {`${t('BOOK.ILLUSTRATOR')} ${item.illustrator}`}
                 </Typography>
@@ -89,7 +89,7 @@ function Books() {
                 color={'text.secondary'}
                 sx={{ flexShrink: 0 }}
                 style={{ fontFamily: 'Yomogi' }}
-                key={index}
+                key={`ed-${index}`}
               >
                 {item.edition}
               </Typography>
@@ -99,7 +99,7 @@ function Books() {
       </Grid>
 
       <Typography
-        variant={'h5'}
+        variant={'h4'}
         color={'text.secondary'}
         sx={{ flexShrink: 0 }}
         style={{ fontFamily: 'Yomogi' }}
@@ -110,12 +110,12 @@ function Books() {
         container
         spacing={2}
         className="BookCard"
-        style={{ flexWrap: 'nowrap', alignItems: 'flex-start' }}
+        style={{ alignItems: 'flex-start' }}
       >
         {booksCover.map((item, index) => (
-          <div className={'BookCard'}>
+          <div className={'BookCard'} key={`cover-${index}`}>
             <div
-              key={index}
+              key={`img-${index}`}
               className="ComicCard"
               onClick={() => openExternalUrl(item.externalUrl)}
             >
@@ -129,13 +129,13 @@ function Books() {
                 alt=""
               />
             </div>
-            <div>
+            <div key={`txt-${index}`} style={{maxWidth: '250px',}}>
               <Typography
                 variant={'body1'}
                 color={'text.secondary'}
                 sx={{ flexShrink: 0 }}
                 style={{ fontFamily: 'Yomogi', fontWeight: 'bold' }}
-                key={index}
+                key={`txt-${index}`}
               >
                 {item.description}
               </Typography>
@@ -144,7 +144,7 @@ function Books() {
                 color={'text.secondary'}
                 sx={{ flexShrink: 0 }}
                 style={{ fontFamily: 'Yomogi' }}
-                key={index}
+                key={`auth-${index}`}
               >
                 {`${t('BOOK.AUTHOR')} ${item.author}`}
               </Typography>
@@ -154,7 +154,7 @@ function Books() {
                 color={'text.secondary'}
                 sx={{ flexShrink: 0 }}
                 style={{ fontFamily: 'Yomogi' }}
-                key={index}
+                key={`ed-${index}`}
               >
                 {item.edition}
               </Typography>

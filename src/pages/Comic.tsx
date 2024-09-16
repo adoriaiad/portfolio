@@ -8,12 +8,10 @@ import CardMedia from '@mui/material/CardMedia';
 import isEmpty from 'lodash.isempty';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import { Button } from '@mui/material';
-import { useTranslation } from 'react-i18next';
 import { useComic } from '../data/useComic';
 import { ComicImageMenuType } from '../models/type';
 
 function Comics() {
-  const { t } = useTranslation();
   const { comicThumbs } = useComic();
   const [selected, setSelected] = useState<ComicImageMenuType>();
 
@@ -29,14 +27,6 @@ function Comics() {
     >
       {isEmpty(selected) && (
         <>
-          <Typography
-            variant={'h5'}
-            color={'text.secondary'}
-            sx={{ flexShrink: 0 }}
-            style={{ fontFamily: 'Yomogi' }}
-          >
-            {t('COMICS.TITLE')}
-          </Typography>
           <img src={me} alt="" style={{ maxWidth: '400px' }} />
           <Grid
             container
