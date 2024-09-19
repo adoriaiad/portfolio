@@ -14,6 +14,8 @@ import c13 from './../assets/comics/thumbs/shopping.jpg';
 import c14 from './../assets/comics/thumbs/spiaggia.jpg';
 import c15 from './../assets/comics/thumbs/dieta_3.jpg';
 import c16 from './../assets/comics/thumbs/ricette.jpg';
+import c17 from './../assets/comics/thumbs/cane.jpg';
+import c18 from './../assets/comics/thumbs/piove.jpg';
 import meditazione_1 from './../assets/comics/meditazione/meditazione_1.jpg';
 import meditazione_2 from './../assets/comics/meditazione/meditazione_2.jpg';
 import meditazione_3 from './../assets/comics/meditazione/meditazione_3.jpg';
@@ -81,6 +83,14 @@ import ricette_1 from './../assets/comics/dieta2/ricette_1.jpg';
 import ricette_2 from './../assets/comics/dieta2/ricette_2.jpg';
 import ricette_3 from './../assets/comics/dieta2/ricette_3.jpg';
 import ricette_4 from './../assets/comics/dieta2/ricette_4.jpg';
+import cane_1 from './../assets/comics/cane/cane_1.jpg';
+import cane_2 from './../assets/comics/cane/cane_2.jpg';
+import cane_3 from './../assets/comics/cane/cane_3.jpg';
+import cane_4 from './../assets/comics/cane/cane_4.jpg';
+import piove_1 from './../assets/comics/piove/piove-in-belgio_1.jpg';
+import piove_2 from './../assets/comics/piove/piove-in-belgio_2.jpg';
+import piove_3 from './../assets/comics/piove/piove-in-belgio_3.jpg';
+import piove_4 from './../assets/comics/piove/piove-in-belgio_4.jpg';
 
 import { ComicImageMenuType } from '../models/type';
 
@@ -205,6 +215,18 @@ export function useComic() {
       title: 'Dieta - parte 2',
       description: 'Ricettine dietetiche?',
       paths: [ricette_1, ricette_2, ricette_3, ricette_4],
+    },
+    {
+      src: c17,
+      title: '26 agosto - giornata mondiale del cane',
+      description: '26 agosto - giornata mondiale del cane',
+      paths: [cane_1, cane_2, cane_3, cane_4],
+    },
+    {
+      src: c18,
+      title: 'È settembre...',
+      description: '...ma vivi in Belgio',
+      paths: [piove_1, piove_2, piove_3, piove_4],
     },
   ];
   return { comicThumbs };
