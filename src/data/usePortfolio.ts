@@ -34,6 +34,7 @@ import marilena from './../assets/img/marilena.jpg';
 import fabio from './../assets/img/fabio.jpg';
 import p01 from './../assets/img/01.jpg';
 import uku from './../assets/img/uku.jpg';
+import autunno from './../assets/img/autunno.jpg';
 
 export function usePortfolio() {
   const { t } = useTranslation();
@@ -62,6 +63,10 @@ export function usePortfolio() {
       {
         src: p04,
         alt: 'p04',
+      },
+      {
+        src: autunno,
+        alt: 'autunno',
       },
       {
         src: calzinodoppia,
