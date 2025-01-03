@@ -2,7 +2,7 @@ import { BookItemType } from "../models/type";
 import cover01 from '../../src/assets/img/books/cover_01.png';
 import cover02 from '../../src/assets/img/books/cover_02.png';
 import sentichemusica from '../../src/assets/img/books/sentichemusica2.jpg';
-//import aspassotraipianeti from '../../src/assets/img/books/aspassotraipianeti.png';
+import aspassotraipianeti from '../../src/assets/img/books/aspassotraipianeti.png';
 
 export function useBook(){
     const booksCover: BookItemType[] = [
@@ -31,14 +31,15 @@ export function useBook(){
             edition: "Ed. Splen edizioni - 2024",
             illustrator: "Angelita Doria",
             externalUrl: "https://splen.it/prodotto/senti-che-musica"
-        }//,
-        ////{
-        ////    src: aspassotraipianeti,
-        ////    description: "A spasso tra i pianeti",
-        ////    edition: "Ed. Splen edizioni",
-        ////    author: "Clelia Lombardo",
-        ////    illustrator: "Angelita Doria"
-        //}
+        },
+        {
+            src: aspassotraipianeti,
+            description: "A spasso tra i pianeti",
+            edition: "Ed. Splen edizioni - prossima uscita",
+            author: "Clelia Lombardo",
+            illustrator: "Angelita Doria",
+            externalUrl: "https://splen.it/?prossime-uscite=a-spasso-tra-i-pianeti"
+        }
     ];
 
     return {booksCover, books};
