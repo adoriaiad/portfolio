@@ -16,6 +16,7 @@ import c15 from './../assets/comics/thumbs/dieta_3.jpg';
 import c16 from './../assets/comics/thumbs/ricette.jpg';
 import c17 from './../assets/comics/thumbs/cane.jpg';
 import c18 from './../assets/comics/thumbs/piove.jpg';
+import c19 from './../assets/comics/thumbs/film.jpg';
 import meditazione_1 from './../assets/comics/meditazione/meditazione_1.jpg';
 import meditazione_2 from './../assets/comics/meditazione/meditazione_2.jpg';
 import meditazione_3 from './../assets/comics/meditazione/meditazione_3.jpg';
@@ -91,6 +92,10 @@ import piove_1 from './../assets/comics/piove/piove-in-belgio_1.jpg';
 import piove_2 from './../assets/comics/piove/piove-in-belgio_2.jpg';
 import piove_3 from './../assets/comics/piove/piove-in-belgio_3.jpg';
 import piove_4 from './../assets/comics/piove/piove-in-belgio_4.jpg';
+import film_1 from './../assets/comics/film/film_1.jpg';
+import film_2 from './../assets/comics/film/film_2.jpg';
+import film_3 from './../assets/comics/film/film_3.jpg';
+import film_4 from './../assets/comics/film/film_4.jpg';
 
 import { ComicImageMenuType } from '../models/type';
 
@@ -227,6 +232,12 @@ export function useComic() {
       title: 'È settembre...',
       description: '...ma vivi in Belgio',
       paths: [piove_1, piove_2, piove_3, piove_4],
+    },
+    {
+      src: c19,
+      title: 'Effetto divano',
+      description: '',
+      paths: [film_1, film_2, film_3, film_4],
     },
   ];
   return { comicThumbs };
