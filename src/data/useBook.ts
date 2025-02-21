@@ -35,10 +35,10 @@ export function useBook(){
         {
             src: aspassotraipianeti,
             description: "A spasso tra i pianeti",
-            edition: "Ed. Splen edizioni - prossima uscita",
+            edition: "Ed. Splen edizioni - 2025",
             author: "Clelia Lombardo",
             illustrator: "Angelita Doria",
-            externalUrl: "https://splen.it/?prossime-uscite=a-spasso-tra-i-pianeti"
+            externalUrl: "https://splen.it/prodotto/a-spasso-tra-i-pianeti"
         }
     ];
 
