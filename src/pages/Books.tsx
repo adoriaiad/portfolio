@@ -44,7 +44,7 @@ function Books() {
             >
               <img
                 style={{
-                  width: '250px',
+                  width: '200px',
                   padding: '4px'
                 }}
                 src={item.src}
@@ -52,7 +52,7 @@ function Books() {
                 alt=""
               />
             </div>
-            <div key={`txt-${index}`} style={{maxWidth: '250px',}}>
+            <div key={`txt-${index}`} style={{maxWidth: '200px',}}>
               <Typography
                 variant={'body2'}
                 color={'text.secondary'}
@@ -121,7 +121,7 @@ function Books() {
             >
               <img
                 style={{
-                  width: '250px',
+                  width: '150px',
                   marginRight: '10px',
                 }}
                 src={item.src}
@@ -129,7 +129,7 @@ function Books() {
                 alt=""
               />
             </div>
-            <div key={`txt-${index}`} style={{maxWidth: '250px',}}>
+            <div key={`txt-${index}`} style={{maxWidth: '150px',}}>
               <Typography
                 variant={'body1'}
                 color={'text.secondary'}
