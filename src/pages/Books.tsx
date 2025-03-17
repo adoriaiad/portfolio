@@ -21,14 +21,6 @@ function Books() {
         marginTop: '40px',
       }}
     >
-      <Typography
-        variant={'h4'}
-        color={'text.secondary'}
-        sx={{ flexShrink: 0 }}
-        style={{ fontFamily: 'Yomogi' }}
-      >
-        {t('BOOK.BOOKS')}
-      </Typography>
       <Grid
         container
         spacing={2}

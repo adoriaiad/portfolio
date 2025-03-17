@@ -1,6 +1,5 @@
-import { Button, Grid, Paper, Typography } from '@mui/material';
+import { Grid, Paper, Typography } from '@mui/material';
 import React from 'react';
-import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import { ImageGalleryType } from '../models/type';
 
 type PortfolioContentProps = {
@@ -9,7 +8,7 @@ type PortfolioContentProps = {
 };
 
 function PortfolioContent(props: PortfolioContentProps) {
-  const { item, onClickEventHandler } = props;
+  const { item } = props;
 
   return (
     <Paper
@@ -31,7 +30,7 @@ function PortfolioContent(props: PortfolioContentProps) {
           justifyContent: 'center',
         }}
       >
-        <Typography
+        {/* <Typography
           variant={'h5'}
           color={'text.secondary'}
           sx={{ flexShrink: 0 }}
@@ -47,7 +46,7 @@ function PortfolioContent(props: PortfolioContentProps) {
           key={`subtitle2${item.id}`}
         >
           {item.subtitle}
-        </Typography>
+        </Typography> */}
         <Grid
           container
           spacing={4}
@@ -85,13 +84,13 @@ function PortfolioContent(props: PortfolioContentProps) {
             </div>
           ))}
         </Grid>
-        <Button
+        {/* <Button
           variant="outlined"
           startIcon={<ArrowBackIosIcon />}
           onClick={() => onClickEventHandler()}
         >
           Back
-        </Button>
+        </Button> */}
       </Grid>
     </Paper>
   );

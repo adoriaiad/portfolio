@@ -9,7 +9,6 @@ import chartImg from '../assets/img/miniature/studio-personaggi.png';
 import { usePortfolio } from '../data/usePortfolio';
 import { ImageGalleryType } from '../models/type';
 import PortfolioContent from '../components/PortfolioContent';
-import { useGallery } from '../data/useGallery';
 
 const enum PortfolioContentEnum {
   projects = 'projects',
@@ -20,7 +19,7 @@ const enum PortfolioContentEnum {
 
 function Portfolio() {
   const { t } = useTranslation();
-  const navigation = useNavigate();
+  //const navigation = useNavigate();
   const { projects, characters, sketches } = usePortfolio();
   const [selected, setSelected] = React.useState<ImageGalleryType>();
 
@@ -36,18 +35,23 @@ function Portfolio() {
     sketches: () => {
       setSelected(sketches);
     },
-    illustrations: event => {
-      handleChange(event, '/illustrations');
-    },
+    //illustrations: event => {
+    //  handleChange(event, '/illustrations');
+    //},
   };
 
-  const handleChange = (event: React.SyntheticEvent, newValue: string) => {
-    navigation(newValue);
-  };
+  //const handleChange = (event: React.SyntheticEvent, newValue: string) => {
+  //  navigation(newValue);
+  //};
 
   function onClicEventHandler() {
     setSelected(undefined);
   }
+
+  React.useEffect(() => {
+    setSelected(projects);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const griglia = (
     <Grid

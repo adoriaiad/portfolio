@@ -18,7 +18,7 @@ function MainLayout() {
   const isContactPage = menuNavigation.selected === '/contact'? true : false;
   const sections: MenuItemType[] = [
     //{ title: "Home", url: "/", icon: <HomeOutlinedIcon /> },
-    { title: t("MENU.PORTFOLIO"), url: "/portfolio", icon: <MenuBookOutlinedIcon /> },
+    { title: t("MENU.GALLERY"), url: "/portfolio", icon: <MenuBookOutlinedIcon /> },
     { title:  t("MENU.BOOKS"), url: "/books", icon: <CollectionsOutlinedIcon /> },
     { title:  t("MENU.COMICS"), url: "/comics", icon: <BrushIcon /> },
     { title: "Bio", url: "/bio", icon: <PermIdentityOutlinedIcon /> },
