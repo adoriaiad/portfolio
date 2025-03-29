@@ -14,6 +14,7 @@ function Musica(){
         spacing={2}
         style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column' }}
       >
+        <Button onClick={() => playAudio('/audio/00-soundtrack.mp3')}>MUSICA</Button>
         <Button onClick={() => playAudio('/audio/01-violino.mp3')}>VIOLINO</Button>
         <Button onClick={() => playAudio('/audio/02-tromba.mp3')}>TROMBETTA</Button>
         <Button onClick={() => playAudio('/audio/03-flauto.mp3')}>FLAUTO</Button>
