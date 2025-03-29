@@ -10,6 +10,7 @@ import DataProtection from '../pages/DataProtection';
 import Home from '../pages/Home';
 import Portfolio from '../pages/Portfolio';
 import Illustrazioni from '../pages/Illustrazioni';
+import Musica from '../pages/Musica';
 
 const Routes = () => {
   return useRoutes([routes]);
@@ -68,6 +69,10 @@ const routes: RouteObject = {
           ⚠ OOPS... Page not found! ⚠
         </Typography>
       ) 
+    },
+    {
+      path: "/music",
+      element: <Musica />,
     },
   ],
 };
