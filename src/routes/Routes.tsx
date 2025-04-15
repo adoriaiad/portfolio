@@ -11,6 +11,7 @@ import Home from '../pages/Home';
 import Portfolio from '../pages/Portfolio';
 import Illustrazioni from '../pages/Illustrazioni';
 import Musica from '../pages/Musica';
+import SenticheMusica from '../pages/sentichemusica/sentichemusica';
 
 const Routes = () => {
   return useRoutes([routes]);
@@ -73,6 +74,10 @@ const routes: RouteObject = {
     {
       path: "/music",
       element: <Musica />,
+    },
+    {
+      path: "/sentichemusica",
+      element: <SenticheMusica />,
     },
   ],
 };

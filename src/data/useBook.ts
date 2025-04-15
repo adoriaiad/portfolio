@@ -12,7 +12,7 @@ export function useBook(){
             edition: "Ed. libri SANDIT - 2023",
             illustrator: "Angelita Doria",
             author: "Francesco Frangioja",
-            externalUrl: "https://www.sanditlibri.it/la-passione-legor-per-principianti.html"
+            externalUrl: "#"
         },
         {
             src: cover02,
@@ -20,7 +20,7 @@ export function useBook(){
             edition: "Ed. libri SANDIT - 2024",
             illustrator: "Angelita Doria",
             author: "Francesco Frangioja",
-            externalUrl: "https://www.sanditlibri.it/i-robottoni-giapponesi-in-mattoncini-legor.html"
+            externalUrl: "#"
         },
     ];
 
@@ -30,7 +30,7 @@ export function useBook(){
             description: "Senti che Musica!",
             edition: "Ed. Splen edizioni - 2024",
             illustrator: "Angelita Doria",
-            externalUrl: "https://splen.it/prodotto/senti-che-musica"
+            externalUrl: "/sentichemusica"
         },
         {
             src: aspassotraipianeti,
@@ -38,7 +38,7 @@ export function useBook(){
             edition: "Ed. Splen edizioni - 2025",
             author: "Clelia Lombardo",
             illustrator: "Angelita Doria",
-            externalUrl: "https://splen.it/prodotto/a-spasso-tra-i-pianeti"
+            externalUrl: "#"
         }
     ];
 

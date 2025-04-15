@@ -1,7 +1,6 @@
 import { Grid, Typography } from '@mui/material';
 import * as React from 'react';
 import { useTranslation } from 'react-i18next';
-import { useNavigate } from 'react-router-dom';
 //import illImg from '../assets/img/miniature/illustrazioni.png';
 import progImg from '../assets/img/miniature/progetti.png';
 import sketchImg from '../assets/img/miniature/studi.png';

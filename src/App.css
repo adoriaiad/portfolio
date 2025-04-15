@@ -110,6 +110,15 @@
   margin-right: 10px;
 }
 
+.book-image {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 10px;
+  padding: 2px;
+  max-width: 800px;
+}
+
 @font-face {
   font-family: 'Yomogi';
   src: local('Yomogi'), url(./assets/fonts/Yomogi-Regular.ttf) format('truetype');
@@ -136,6 +145,19 @@
   }
   .BookCard {
     max-width: 100%;
+  }
+  .book-image {
+    max-width: 600px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .book-image {
+    max-width: 400px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .book-image {
+    max-width: 350px;
   }
 }
 

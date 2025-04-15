@@ -2,13 +2,21 @@ import { Grid, Typography } from '@mui/material';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { useBook } from '../data/useBook';
+import { useNavigate } from 'react-router-dom';
 
 function Books() {
   const { t } = useTranslation();
   const { booksCover, books } = useBook();
+  const navigation = useNavigate();
 
   function openExternalUrl(url: string | undefined) {
     url && window.open(url, '_blank');
+  }
+
+  function openInternalUrl(path: string | undefined){
+    if(path) {
+      navigation(path);
+    }
   }
 
   return (
@@ -32,7 +40,7 @@ function Books() {
             <div
               key={`img-${index}`}
               className="ComicCard"
-              onClick={() => openExternalUrl(item.externalUrl)}
+              onClick={() => openInternalUrl(item.externalUrl)}
             >
               <img
                 style={{
