@@ -9,10 +9,6 @@ function Books() {
   const { booksCover, books } = useBook();
   const navigation = useNavigate();
 
-  function openExternalUrl(url: string | undefined) {
-    url && window.open(url, '_blank');
-  }
-
   function openInternalUrl(path: string | undefined){
     if(path) {
       navigation(path);
@@ -117,7 +113,7 @@ function Books() {
             <div
               key={`img-${index}`}
               className="ComicCard"
-              onClick={() => openExternalUrl(item.externalUrl)}
+              onClick={() => openInternalUrl(item.externalUrl)}
             >
               <img
                 style={{
