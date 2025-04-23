@@ -2,12 +2,12 @@ import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import { useNavigate } from 'react-router-dom';
-import tavola1 from './../../assets/img/books/01.jpg';
-import tavola2 from './../../assets/img/books/02.jpg';
-import tavola3 from './../../assets/img/books/03.jpg';
-import tavola4 from './../../assets/img/books/04.jpg';
-import bozze from './../../assets/img/books/bozze.jpg';
-import personaggi from './../../assets/img/books/personaggi.jpg';
+import tavola1 from './../../assets/img/books/sentichemusica/01.jpg';
+import tavola2 from './../../assets/img/books/sentichemusica/02.jpg';
+import tavola3 from './../../assets/img/books/sentichemusica/03.jpg';
+import tavola4 from './../../assets/img/books/sentichemusica/04.jpg';
+import bozze from './../../assets/img/books/sentichemusica/bozze.jpg';
+import personaggi from './../../assets/img/books/sentichemusica/personaggi.jpg';
 
 function SenticheMusica() {
   const navigation = useNavigate();

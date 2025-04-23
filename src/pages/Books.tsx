@@ -44,7 +44,7 @@ function Books() {
             >
               <img
                 style={{
-                  width: '200px',
+                  height: '200px',
                   padding: '4px'
                 }}
                 src={item.src}
@@ -121,7 +121,7 @@ function Books() {
             >
               <img
                 style={{
-                  width: '150px',
+                  height: '200px',
                   marginRight: '10px',
                 }}
                 src={item.src}

@@ -12,6 +12,7 @@ import Portfolio from '../pages/Portfolio';
 import Illustrazioni from '../pages/Illustrazioni';
 import Musica from '../pages/Musica';
 import SenticheMusica from '../pages/sentichemusica/sentichemusica';
+import ASpassoTraIPianeti from '../pages/aspassotraipianeti/AspassoTraIPianeti';
 
 const Routes = () => {
   return useRoutes([routes]);
@@ -78,6 +79,10 @@ const routes: RouteObject = {
     {
       path: "/sentichemusica",
       element: <SenticheMusica />,
+    },
+    {
+      path: "/aspassotraipianeti",
+      element: <ASpassoTraIPianeti />,
     },
   ],
 };

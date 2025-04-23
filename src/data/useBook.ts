@@ -38,7 +38,7 @@ export function useBook(){
             edition: "Ed. Splen edizioni - 2025",
             author: "Clelia Lombardo",
             illustrator: "Angelita Doria",
-            externalUrl: "#"
+            externalUrl: "/aspassotraipianeti"
         }
     ];
 
