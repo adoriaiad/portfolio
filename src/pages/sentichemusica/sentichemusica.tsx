@@ -8,6 +8,7 @@ import tavola3 from './../../assets/img/books/sentichemusica/03.jpg';
 import tavola4 from './../../assets/img/books/sentichemusica/04.jpg';
 import bozze from './../../assets/img/books/sentichemusica/bozze.jpg';
 import personaggi from './../../assets/img/books/sentichemusica/personaggi.jpg';
+import SentiCheMusicaYoutube from '../../components/SentiCheMusicaYouTube';
 
 function SenticheMusica() {
   const navigation = useNavigate();
@@ -51,6 +52,7 @@ function SenticheMusica() {
         src={tavola4}
         alt=""
       />
+      <SentiCheMusicaYoutube />
       <Button
         variant="outlined"
         startIcon={<ArrowBackIosIcon />}
