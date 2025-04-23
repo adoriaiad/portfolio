@@ -13,6 +13,8 @@ import Illustrazioni from '../pages/Illustrazioni';
 import Musica from '../pages/Musica';
 import SenticheMusica from '../pages/sentichemusica/sentichemusica';
 import ASpassoTraIPianeti from '../pages/aspassotraipianeti/AspassoTraIPianeti';
+import PassioneLego from '../pages/passionelego/PassioneLego';
+import Robot from '../pages/robottoni/Robot';
 
 const Routes = () => {
   return useRoutes([routes]);
@@ -83,6 +85,14 @@ const routes: RouteObject = {
     {
       path: "/aspassotraipianeti",
       element: <ASpassoTraIPianeti />,
+    },
+    {
+      path: "/passionelego",
+      element: <PassioneLego />,
+    },
+    {
+      path: "/robot",
+      element: <Robot />,
     },
   ],
 };

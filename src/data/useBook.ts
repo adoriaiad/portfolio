@@ -12,7 +12,7 @@ export function useBook(){
             edition: "Ed. libri SANDIT - 2023",
             illustrator: "Angelita Doria",
             author: "Francesco Frangioja",
-            externalUrl: "#"
+            externalUrl: "/passionelego"
         },
         {
             src: cover02,
@@ -20,7 +20,7 @@ export function useBook(){
             edition: "Ed. libri SANDIT - 2024",
             illustrator: "Angelita Doria",
             author: "Francesco Frangioja",
-            externalUrl: "#"
+            externalUrl: "/robot"
         },
     ];
 
