@@ -8,15 +8,14 @@ function SentiCheMusicaYoutube() {
   }
 
   const opts: YouTubeProps['opts'] = {
-    height: '390',
-    width: '640',
+    className : 'youtubeVideoProps',
     playerVars: {
       autoplay: 1,
       controls: 1
     },
   };
 
-  return <YouTube videoId="1QBYwRxQTA8" opts={opts} onReady={onPlayerReady} style={{display: 'flex', justifyContent: 'center', marginBottom: '20px'}}/>;
+  return <YouTube className="youtubeVideo" videoId="1QBYwRxQTA8" opts={opts} onReady={onPlayerReady} />;
 }
 
 export default SentiCheMusicaYoutube;
