@@ -19,7 +19,7 @@ function SenticheMusica() {
       style={{
         display: 'flex',
         alignContent: 'center',
-        flexDirection: 'column',
+        justifyContent: 'center'
       }}
     >
       <img
