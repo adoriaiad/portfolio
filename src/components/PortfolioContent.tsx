@@ -3,12 +3,12 @@ import React from 'react';
 import { ImageGalleryType } from '../models/type';
 
 type PortfolioContentProps = {
-  item: ImageGalleryType;
-  onClickEventHandler: () => void;
+  item_sx: ImageGalleryType;
+  item_dx: ImageGalleryType;
 };
 
 function PortfolioContent(props: PortfolioContentProps) {
-  const { item } = props;
+  const { item_sx, item_dx } = props;
 
   return (
     <Paper
@@ -28,69 +28,50 @@ function PortfolioContent(props: PortfolioContentProps) {
         style={{
           display: 'flex',
           justifyContent: 'center',
+          flexDirection: 'column'
         }}
       >
-        {/* <Typography
-          variant={'h5'}
-          color={'text.secondary'}
-          sx={{ flexShrink: 0 }}
-          style={{ fontFamily: 'Yomogi' }}
-          key={`typ-${item.id}`}
-        >
-          {item.title}
-        </Typography>
-        <Typography
-          variant={'subtitle2'}
-          color={'text.secondary'}
-          style={{ fontFamily: 'Yomogi' }}
-          key={`subtitle2${item.id}`}
-        >
-          {item.subtitle}
-        </Typography> */}
+        <Grid
+        container
+        spacing={4}
+        style={{
+          display: 'flex',
+          justifyContent: 'center',
+          margin: '0px'
+        }}>
+          {item_sx.images.map((img, index) => (
+            <Grid key={`${item_sx.id}-${index}`}>
+              <img
+                src={img.src}
+                alt={img.alt}
+                width={'90%'}
+                style={{ margin: '20px', maxWidth: '450px' }}
+                key={`${item_sx.id}-${index}`}
+              />
+            </Grid>
+          ))}
+        </Grid>
         <Grid
           container
           spacing={4}
           style={{
             display: 'flex',
             justifyContent: 'center',
-            alignItems: 'flex-end',
             margin: '0px'
           }}
-          key={`grid-${item.id}`}
         >
-          {item.images.map((img, index) => (
-            <div key={`${item.id}-${index}`}>
-              {img.description && (
-                <Typography
-                  variant={'body1'}
-                  color={'text.secondary'}
-                  style={{
-                    margin: '60px',
-                    maxWidth: '220px',
-                    fontFamily: 'Yomogi',
-                  }}
-                  key={`typ-${item.id}-${index}`}
-                >
-                  {img.description}
-                </Typography>
-              )}
+          {item_dx.images.map((img, index) => (
+            <Grid key={`${item_dx.id}-${index}`}>
               <img
                 src={img.src}
                 alt={img.alt}
                 width={'90%'}
                 style={{ margin: '20px', maxWidth: '450px' }}
-                key={`${item.id}-${index}`}
+                key={`${item_dx.id}-${index}`}
               />
-            </div>
+            </Grid>
           ))}
         </Grid>
-        {/* <Button
-          variant="outlined"
-          startIcon={<ArrowBackIosIcon />}
-          onClick={() => onClickEventHandler()}
-        >
-          Back
-        </Button> */}
       </Grid>
     </Paper>
   );
