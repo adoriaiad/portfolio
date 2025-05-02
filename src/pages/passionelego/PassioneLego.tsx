@@ -3,6 +3,7 @@ import Grid from '@mui/material/Grid';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import { useNavigate } from 'react-router-dom';
 import tavola1 from './../../assets/img/books/cover/01.jpg';
+import bozza from './../../assets/img/books/cover/01-bozza.jpg';
 
 function PassioneLego() {
     const navigation = useNavigate();
@@ -19,6 +20,11 @@ function PassioneLego() {
         <img
           className="book-image"
           src={tavola1}
+          alt=""
+        />
+        <img
+          className="book-image"
+          src={bozza}
           alt=""
         />
         <Button
