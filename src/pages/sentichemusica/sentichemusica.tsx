@@ -24,17 +24,17 @@ function SenticheMusica() {
     >
       <img
         className="book-image"
-        src={tavola1}
-        alt=""
-      />
-      <img
-        className="book-image"
-        src={bozze}
-        alt=""
-      />
-      <img
-        className="book-image"
         src={personaggi}
+        alt=""
+      />
+        <img
+          className="book-image"
+          src={bozze}
+          alt=""
+        />
+      <img
+        className="book-image"
+        src={tavola1}
         alt=""
       />
       <img
