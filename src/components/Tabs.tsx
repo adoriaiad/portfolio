@@ -13,9 +13,7 @@ type ColorTabsProps = {
 export default function ColorTabs(props: ColorTabsProps) {
   const { sections, onhandleChange } = props;
   const menuNavigation = useMenuNavigation();
-  /* const [value, setValue] = React.useState(anchor);
-  const navigation = useNavigate();
- */
+
   return (
     <Box>
       <Tabs
