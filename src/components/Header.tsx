@@ -93,7 +93,7 @@ export default function Header(props: HeaderProps) {
         className={"App-header"}
         onClick={goTo[GoToEnum.home]}
       >
-        <img src={logo} alt="logo" height={"200px"} className="Logo-cursor"/>
+        <img src={logo} alt="logo" className="Logo-cursor"/>
       </Toolbar>
       {matches && <Menu sections={sections} />}
       {!matches && (

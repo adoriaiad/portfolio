@@ -28,6 +28,7 @@
 
 .Logo-cursor {
   cursor: pointer;
+  width: 50%;
 }
 
 .App-bgcolor {
@@ -179,15 +180,24 @@
   .book-image {
     max-width: 600px;
   }
+  .Logo-cursor {
+    width: 90%;
+  }
 }
 @media screen and (max-width: 400px) {
   .book-image {
     max-width: 400px;
   }
+  .Logo-cursor {
+    width: 90%;
+  }
 }
 @media screen and (max-width: 350px) {
   .book-image {
     max-width: 350px;
+  }
+  .Logo-cursor {
+    width: 100%;
   }
 }
 
