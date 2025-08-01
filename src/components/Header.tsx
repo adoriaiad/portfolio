@@ -10,7 +10,7 @@ import * as React from "react";
 import { useNavigate } from "react-router-dom";
 import { useMenuNavigation } from "../contexts/MenuNavigation";
 import { MenuItemType } from "../models/type";
-import logo from "./../assets/img/_logo.png";
+import logo from "./../assets/img/_logo2.png";
 import LangDropdown from "./LangDropdown";
 import Menu from "./Menu";
 import ColorTabs from "./Tabs";
