@@ -6,7 +6,8 @@
     "PORTFOLIO": "Portfolio",
     "BOOKS": "Publications",
     "COMICS": "Comics",
-    "EVENTS": "Events"
+    "EVENTS": "Events",
+    "DISCOVER": "See more"
   },
   "COMICS": {
     "TITLE": "Short italian comic strips"
