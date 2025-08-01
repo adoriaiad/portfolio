@@ -8,37 +8,23 @@ import tavola2 from './../../assets/img/books/aspassotraipianeti/02.jpg';
 import tavola3 from './../../assets/img/books/aspassotraipianeti/03.jpg';
 
 function ASpassoTraIPianeti() {
-    const navigation = useNavigate();
-    return (
-      <Grid
-        container
-        spacing={2}
-        style={{
-          display: 'flex',
-          alignContent: 'center',
-          flexDirection: 'column',
-        }}
-      >
-        <img
-          className="book-image"
-          src={studi}
-          alt=""
-        />
-        <img
-          className="book-image"
-          src={tavola1}
-          alt=""
-        />
-        <img
-          className="book-image"
-          src={tavola2}
-          alt=""
-        />
-        <img
-          className="book-image"
-          src={tavola3}
-          alt=""
-        />
+  const navigation = useNavigate();
+  return (
+    <Grid
+      container
+      spacing={2}
+      style={{
+        display: 'flex',
+        alignContent: 'center',
+        flexDirection: 'column',
+        alignItems:'center',
+      }}
+    >
+      <img className="book-image" src={studi} alt="" />
+      <img className="book-image" src={tavola1} alt="" />
+      <img className="book-image" src={tavola2} alt="" />
+      <img className="book-image" src={tavola3} alt="" />
+      <Grid>
         <Button
           variant="outlined"
           startIcon={<ArrowBackIosIcon />}
@@ -47,7 +33,8 @@ function ASpassoTraIPianeti() {
           Back
         </Button>
       </Grid>
-    );
+    </Grid>
+  );
 }
 
 export default ASpassoTraIPianeti;

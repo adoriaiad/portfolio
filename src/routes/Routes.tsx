@@ -14,6 +14,7 @@ import SenticheMusica from '../pages/sentichemusica/sentichemusica';
 import ASpassoTraIPianeti from '../pages/aspassotraipianeti/AspassoTraIPianeti';
 import PassioneLego from '../pages/passionelego/PassioneLego';
 import Robot from '../pages/robottoni/Robot';
+import FormulaUno from '../pages/formulauno/FormulaUno';
 
 const Routes = () => {
   return useRoutes([routes]);
@@ -88,6 +89,10 @@ const routes: RouteObject = {
     {
       path: "/robot",
       element: <Robot />,
+    },
+    {
+      path: "/formulauno",
+      element: <FormulaUno />,
     },
   ],
 };

@@ -6,36 +6,31 @@ import tavola1 from './../../assets/img/books/cover/01.jpg';
 import bozza from './../../assets/img/books/cover/01-bozza.jpg';
 
 function PassioneLego() {
-    const navigation = useNavigate();
-    return (
-      <Grid
-        container
-        spacing={2}
-        style={{
-          display: 'flex',
-          alignContent: 'center',
-          flexDirection: 'column',
-        }}
+  const navigation = useNavigate();
+  return (
+    <Grid
+      container
+      spacing={2}
+      style={{
+        display: 'flex',
+        alignContent: 'center',
+        flexDirection: 'column',
+        alignItems: 'center',
+      }}
+    >
+      <img className="book-image" src={tavola1} alt="" />
+      <img className="book-image" src={bozza} alt="" />
+      <Grid>
+      <Button
+        variant="outlined"
+        startIcon={<ArrowBackIosIcon />}
+        onClick={() => navigation('/books')}
       >
-        <img
-          className="book-image"
-          src={tavola1}
-          alt=""
-        />
-        <img
-          className="book-image"
-          src={bozza}
-          alt=""
-        />
-        <Button
-          variant="outlined"
-          startIcon={<ArrowBackIosIcon />}
-          onClick={() => navigation('/books')}
-        >
-          Back
-        </Button>
-      </Grid>
-    );
+        Back
+      </Button>
+    </Grid>
+    </Grid>
+  );
 }
 
 export default PassioneLego;

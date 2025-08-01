@@ -15,51 +15,29 @@ function SenticheMusica() {
   return (
     <Grid
       container
-      spacing={2}
       style={{
         display: 'flex',
         alignContent: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
+        alignItems: 'center',
       }}
     >
-      <img
-        className="book-image"
-        src={personaggi}
-        alt=""
-      />
-        <img
-          className="book-image"
-          src={bozze}
-          alt=""
-        />
-      <img
-        className="book-image"
-        src={tavola1}
-        alt=""
-      />
-      <img
-        className="book-image"
-        src={tavola2}
-        alt=""
-      />
-      <img
-        className="book-image"
-        src={tavola3}
-        alt=""
-      />
-      <img
-        className="book-image"
-        src={tavola4}
-        alt=""
-      />
+      <img className="book-image" src={personaggi} alt="" />
+      <img className="book-image" src={bozze} alt="" />
+      <img className="book-image" src={tavola1} alt="" />
+      <img className="book-image" src={tavola2} alt="" />
+      <img className="book-image" src={tavola3} alt="" />
+      <img className="book-image" src={tavola4} alt="" />
       <SentiCheMusicaYoutube />
-      <Button
-        variant="outlined"
-        startIcon={<ArrowBackIosIcon />}
-        onClick={() => navigation('/books')}
-      >
-        Back
-      </Button>
+      <Grid>
+        <Button
+          variant="outlined"
+          startIcon={<ArrowBackIosIcon />}
+          onClick={() => navigation('/books')}
+        >
+          Back
+        </Button>
+      </Grid>
     </Grid>
   );
 }

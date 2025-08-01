@@ -1,54 +1,55 @@
-import { BookItemType } from "../models/type";
+import { BookItemType } from '../models/type';
 import cover01 from '../../src/assets/img/books/cover_01.png';
 import cover02 from '../../src/assets/img/books/cover_02.png';
 import cover03 from '../../src/assets/img/books/cover_03.png';
 import sentichemusica from '../../src/assets/img/books/sentichemusica.png';
 import aspassotraipianeti from '../../src/assets/img/books/aspassotraipianeti.png';
 
-export function useBook(){
-    const booksCover: BookItemType[] = [
-        {
-            src: cover01,
-            description: "La passione LEGO® per principianti",
-            edition: "Ed. libri SANDIT - 2023",
-            illustrator: "Angelita Doria",
-            author: "Francesco Frangioja",
-            externalUrl: "/passionelego"
-        },
-        {
-            src: cover02,
-            description: "I robottoni giapponesi in mattoncini LEGO®",
-            edition: "Ed. libri SANDIT - 2024",
-            illustrator: "Angelita Doria",
-            author: "Francesco Frangioja",
-            externalUrl: "/robot"
-        },
-        {
-            src: cover03,
-            description: "La Formula 1 con i LEGO®",
-            edition: "Ed. libri SANDIT - 2025",
-            illustrator: "Angelita Doria",
-            author: "Francesco Frangioja"
-        },
-    ];
+export function useBook() {
+  const booksCover: BookItemType[] = [
+    {
+      src: cover01,
+      description: 'La passione LEGO® per principianti',
+      edition: 'Ed. libri SANDIT - 2023',
+      illustrator: 'Angelita Doria',
+      author: 'Francesco Frangioja',
+      externalUrl: '/passionelego',
+    },
+    {
+      src: cover02,
+      description: 'I robottoni giapponesi in mattoncini LEGO®',
+      edition: 'Ed. libri SANDIT - 2024',
+      illustrator: 'Angelita Doria',
+      author: 'Francesco Frangioja',
+      externalUrl: '/robot',
+    },
+    {
+      src: cover03,
+      description: 'La Formula 1 con i LEGO®',
+      edition: 'Ed. libri SANDIT - 2025',
+      illustrator: 'Angelita Doria',
+      author: 'Francesco Frangioja',
+      externalUrl: '/formulauno',
+    },
+  ];
 
-    const books: BookItemType[] = [
-        {
-            src: sentichemusica,
-            description: "Senti che Musica!",
-            edition: "Ed. Splen edizioni - 2024",
-            illustrator: "Angelita Doria",
-            externalUrl: "/sentichemusica"
-        },
-        {
-            src: aspassotraipianeti,
-            description: "A spasso tra i pianeti",
-            edition: "Ed. Splen edizioni - 2025",
-            author: "Clelia Lombardo",
-            illustrator: "Angelita Doria",
-            externalUrl: "/aspassotraipianeti"
-        }
-    ];
+  const books: BookItemType[] = [
+    {
+      src: sentichemusica,
+      description: 'Senti che Musica!',
+      edition: 'Ed. Splen edizioni - 2024',
+      illustrator: 'Angelita Doria',
+      externalUrl: '/sentichemusica',
+    },
+    {
+      src: aspassotraipianeti,
+      description: 'A spasso tra i pianeti',
+      edition: 'Ed. Splen edizioni - 2025',
+      author: 'Clelia Lombardo',
+      illustrator: 'Angelita Doria',
+      externalUrl: '/aspassotraipianeti',
+    },
+  ];
 
-    return {booksCover, books};
+  return { booksCover, books };
 }
