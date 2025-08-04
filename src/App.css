@@ -147,7 +147,18 @@
 .youtubeVideoProps {
   width: 640px;
   height: 360px;
-  padding: 0;
+  margin-bottom: 10px;
+}
+
+.Musicbtn {
+  width: 400px;
+  min-width: 250px;
+  margin-bottom: 20px;
+}
+.Musicbtn:hover{
+  background-color: #a39d9d;
+  font-style: italic;
+  cursor: pointer;
 }
 
 @font-face {
