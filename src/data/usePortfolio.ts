@@ -16,13 +16,18 @@ import volpe from './../assets/img/volpeviolinista.jpg';
 import settembre from './../assets/img/settembre.jpg';
 import p01 from './../assets/img/01.jpg';
 import autunno from './../assets/img/autunno.jpg';
+import nuvole from './../assets/img/nuvole.jpg';
 
 export function usePortfolio() {
   const { t } = useTranslation();
-  const projects_sx: ImageGalleryType = {
+  const items: ImageGalleryType = {
     id: '01',
     title: t('PORTFOLIO.PROJECT1.TITLE'),
     images: [
+      {
+        src: nuvole,
+        alt: 'nuvole',
+      },
       {
         src: p02,
         alt: 'p02',
@@ -51,18 +56,7 @@ export function usePortfolio() {
         src: drago,
         alt: 'drago',
       },
-      {
-        src: volpe,
-        alt: 'volpe',
-      },
-    ],
-  };
-
-  const projects_dx: ImageGalleryType = {
-    id: '01',
-    title: t('PORTFOLIO.PROJECT1.TITLE'),
-    images: [
-      {
+       {
         src: p11,
         alt: 'p11',
       },
@@ -94,8 +88,12 @@ export function usePortfolio() {
         src: settembre,
         alt: 'settembre',
       },
+      {
+        src: volpe,
+        alt: 'volpe',
+      },
     ],
   };
 
-  return { projects_sx, projects_dx };
+  return { items };
 }

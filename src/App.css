@@ -212,3 +212,15 @@
   }
 }
 
+/* CAROUSEL */
+
+.carousel-root {
+  max-width: 800px !important;
+  width: 100% !important;
+  height: auto !important;
+}
+
+.carousel .thumbs-wrapper {
+    overflow: auto !important;
+}
+
