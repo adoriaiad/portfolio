@@ -15,6 +15,7 @@ import ASpassoTraIPianeti from '../pages/aspassotraipianeti/AspassoTraIPianeti';
 import PassioneLego from '../pages/passionelego/PassioneLego';
 import Robot from '../pages/robottoni/Robot';
 import FormulaUno from '../pages/formulauno/FormulaUno';
+import AniceRex from '../pages/anicerex/anicerex';
 
 const Routes = () => {
   return useRoutes([routes]);
@@ -81,6 +82,10 @@ const routes: RouteObject = {
     {
       path: "/aspassotraipianeti",
       element: <ASpassoTraIPianeti />,
+    },
+    {
+      path: "/anicerex",
+      element: <AniceRex />,
     },
     {
       path: "/passionelego",

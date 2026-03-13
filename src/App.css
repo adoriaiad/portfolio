@@ -103,7 +103,7 @@
 .BookCard {
   display: flex;
   flex-direction: column;
-  max-width: 600px;
+  max-width: 650px;
   justify-content: space-around;
   margin-top: 25px;
   margin-bottom: 10px;

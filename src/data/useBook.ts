@@ -4,6 +4,7 @@ import cover02 from '../../src/assets/img/books/cover_02.png';
 import cover03 from '../../src/assets/img/books/cover_03.png';
 import sentichemusica from '../../src/assets/img/books/sentichemusica.png';
 import aspassotraipianeti from '../../src/assets/img/books/aspassotraipianeti.png';
+import anicerex from '../../src/assets/img/books/anicerex.png';
 
 export function useBook() {
   const booksCover: BookItemType[] = [
@@ -49,6 +50,13 @@ export function useBook() {
       illustrator: 'Angelita Doria',
       externalUrl: '/aspassotraipianeti',
     },
+    {
+      src: anicerex,
+      description: 'Piccolo T-Rex va a scuola',
+      edition: 'Ed. Splen edizioni - 2026',
+      illustrator: 'Angelita Doria',
+      externalUrl: '/anicerex',
+    }
   ];
 
   return { booksCover, books };
