@@ -24,12 +24,12 @@ function AniceRex() {
       }}
     >
         <img className="book-image" src={img01} alt="" />
+        <img className="book-image" src={img06} alt="" />
+        <img className="book-image" src={img07} alt="" />
         <img className="book-image" src={img02} alt="" />
         <img className="book-image" src={img03} alt="" />
         <img className="book-image" src={img04} alt="" />
         <img className="book-image" src={img05} alt="" />
-        <img className="book-image" src={img06} alt="" />
-        <img className="book-image" src={img07} alt="" />
         <Grid>
         <Button
           variant="outlined"
