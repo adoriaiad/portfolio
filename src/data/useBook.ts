@@ -2,6 +2,7 @@ import { BookItemType } from '../models/type';
 import cover01 from '../../src/assets/img/books/cover_01.png';
 import cover02 from '../../src/assets/img/books/cover_02.png';
 import cover03 from '../../src/assets/img/books/cover_03.png';
+import cover04 from '../../src/assets/img/books/cover_04.jpg';
 import sentichemusica from '../../src/assets/img/books/sentichemusica.png';
 import aspassotraipianeti from '../../src/assets/img/books/aspassotraipianeti.png';
 import anicerex from '../../src/assets/img/books/anicerex.png';
@@ -31,6 +32,14 @@ export function useBook() {
       illustrator: 'Angelita Doria',
       author: 'Francesco Frangioja',
       externalUrl: '/formulauno',
+    },
+    {
+      src: cover04,
+      description: 'I dinosauri con i LEGO®',
+      edition: 'Ed. libri SANDIT - 2026',
+      illustrator: 'Angelita Doria',
+      author: 'Francesco Frangioja',
+      externalUrl: '/dinosauri',
     },
   ];
 

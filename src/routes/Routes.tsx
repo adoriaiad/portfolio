@@ -16,6 +16,7 @@ import PassioneLego from '../pages/passionelego/PassioneLego';
 import Robot from '../pages/robottoni/Robot';
 import FormulaUno from '../pages/formulauno/FormulaUno';
 import AniceRex from '../pages/anicerex/anicerex';
+import Dinosauri from '../pages/dinosauri/Dinosauri';
 
 const Routes = () => {
   return useRoutes([routes]);
@@ -99,6 +100,10 @@ const routes: RouteObject = {
       path: "/formulauno",
       element: <FormulaUno />,
     },
+    {
+      path: "/dinosauri",
+      element: <Dinosauri />,
+    }
   ],
 };
 
