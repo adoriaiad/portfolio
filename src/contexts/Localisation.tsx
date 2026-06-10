@@ -16,7 +16,7 @@ export function useLanguage() {
 const I18N = "i18nextLng";
 
 const LanguageProvider: React.FC<{ children: React.ReactNode}> = (props) => {
-    const [lang, setLang] = useState<string>(localStorage.getItem(I18N) || '');
+    const [lang, setLang] = useState<string>(localStorage.getItem(I18N) || 'en');
     
     const langSelected = useMemo(() => ({
         languageMode: (lang: string) => {
@@ -24,7 +24,7 @@ const LanguageProvider: React.FC<{ children: React.ReactNode}> = (props) => {
         },
         selected: lang
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    }),[]);
+    }),[lang]);
 
     useEffect(() => {
         !isEmpty(lang) && localStorage.setItem(I18N, lang);

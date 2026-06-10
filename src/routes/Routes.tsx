@@ -4,7 +4,6 @@ import oops from '../../src/assets/comics/oops.png';
 import MainLayout from '../layouts/main/MainLayout';
 import Bio from '../pages/Bio';
 import Books from '../pages/Books';
-import Comics from '../pages/Comic';
 import Contact from '../pages/Contact';
 import DataProtection from '../pages/DataProtection';
 import Home from '../pages/Home';
@@ -34,7 +33,7 @@ const routes: RouteObject = {
       element: <Bio />,
     },
     {
-      path: '/portfolio',
+      path: '/gallery',
       element: <Portfolio />,
     },
     {
@@ -48,10 +47,6 @@ const routes: RouteObject = {
     {
       path: '/contact',
       element: <Contact />,
-    },
-    {
-      path: '/comics',
-      element: <Comics />,
     },
     {
       path: '/*',

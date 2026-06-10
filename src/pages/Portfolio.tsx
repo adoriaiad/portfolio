@@ -23,6 +23,8 @@ function Portfolio() {
         emulateTouch={true}
         dynamicHeight={true}
         showStatus={false}
+        infiniteLoop={true}
+        showThumbs={false}
       >
         {items.images.map((image, index) => (
           <div key={index}>

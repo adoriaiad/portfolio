@@ -1,4 +1,4 @@
-import { Grid, Typography } from '@mui/material';
+import { Grid, Typography, useMediaQuery } from '@mui/material';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { useBook } from '../data/useBook';
@@ -8,6 +8,8 @@ function Books() {
   const { t } = useTranslation();
   const { booksCover, books } = useBook();
   const navigation = useNavigate();
+  const matches = useMediaQuery('(max-width:600px)');
+  const alignItem = matches? 'center' : 'flex-start';
 
   function openInternalUrl(path: string | undefined){
     if(path) {
@@ -29,7 +31,8 @@ function Books() {
         container
         spacing={2}
         className="BookCard"
-        style={{ alignItems: 'flex-start' }}
+        justifyContent={'space-around'}
+        style={{ alignItems: alignItem }}
       >
         {books.map((item, index) => (
           <div className={'BookCard'} key={index}>
@@ -106,7 +109,8 @@ function Books() {
         container
         spacing={2}
         className="BookCard"
-        style={{ alignItems: 'flex-start' }}
+        style={{ alignItems: alignItem }}
+        justifyContent={'space-around'}
       >
         {booksCover.map((item, index) => (
           <div className={'BookCard'} key={`cover-${index}`}>

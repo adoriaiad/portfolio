@@ -10,10 +10,10 @@
 .Menu-header {
   min-height: 60vh;
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row;
   align-items: top;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: center; */
+  font-size: calc(12px + 2vmin);
   color: #332d2d;
 }
 

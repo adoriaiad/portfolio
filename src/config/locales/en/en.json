@@ -7,7 +7,8 @@
     "BOOKS": "Publications",
     "COMICS": "Comics",
     "EVENTS": "Events",
-    "DISCOVER": "See more"
+    "DISCOVER": "See more",
+    "BIO": "About"
   },
   "COMICS": {
     "TITLE": "Short italian comic strips"

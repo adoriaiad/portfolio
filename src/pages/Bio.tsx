@@ -1,7 +1,7 @@
 import { Link, Typography } from '@mui/material';
 import Grid from '@mui/material/Grid';
 import lita from './../assets/img/lita-disegna.gif';
-import lita2 from './../assets/img/lita2.png';
+import lita2 from './../assets/img/lita2.webp';
 import { useTranslation } from 'react-i18next';
 
 function Bio() {
@@ -19,14 +19,7 @@ function Bio() {
           alignItems: 'flex-end',
         }}
       >
-        <Typography
-          variant="h4"
-          color="text.secondary"
-          align="center"
-          style={{ marginLeft: '60px', fontFamily: 'Yomogi' }}
-        >
-          {t('BIO.WHO')}
-        </Typography>
+       
       </Grid>
       <Grid
         container

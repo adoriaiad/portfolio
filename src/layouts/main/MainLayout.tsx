@@ -7,7 +7,6 @@ import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import MenuBookOutlinedIcon from "@mui/icons-material/MenuBookOutlined";
 import CollectionsOutlinedIcon from "@mui/icons-material/CollectionsOutlined";
 import PermIdentityOutlinedIcon from "@mui/icons-material/PermIdentityOutlined";
-import BrushIcon from '@mui/icons-material/Brush';
 import { MenuItemType } from "../../models/type";
 import { useTranslation } from "react-i18next";
 import { useMenuNavigation } from "../../contexts/MenuNavigation";
@@ -17,10 +16,9 @@ function MainLayout() {
   const menuNavigation = useMenuNavigation();
   const isContactPage = menuNavigation.selected === '/contact'? true : false;
   const sections: MenuItemType[] = [
-    { title: t("MENU.GALLERY"), url: "/portfolio", icon: <MenuBookOutlinedIcon /> },
     { title:  t("MENU.BOOKS"), url: "/books", icon: <CollectionsOutlinedIcon /> },
-    { title:  t("MENU.COMICS"), url: "/comics", icon: <BrushIcon /> },
-    { title: "Bio", url: "/bio", icon: <PermIdentityOutlinedIcon /> },
+    { title: t("MENU.GALLERY"), url: "/gallery", icon: <MenuBookOutlinedIcon /> },
+    { title: t("MENU.BIO"), url: "/bio", icon: <PermIdentityOutlinedIcon /> },
     { title: t("MENU.CONTACTS"), url: "/contact", icon: <EmailOutlinedIcon /> },
   ];
 
